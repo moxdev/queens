@@ -41,6 +41,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 # Media
 	## Captions
 	## Galleries
+# Page Templates
+  ## Frontpage
 --------------------------------------------------------------*/
 @import "variables-site/variables-site";
 @import "mixins/mixins-master";
@@ -101,6 +103,16 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 @import "modules/infinite-scroll";
 
 /*--------------------------------------------------------------
+# Flexslider
+--------------------------------------------------------------*/
+@import "modules/flexslider";
+
+/*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
 @import "media/media";
+
+/*--------------------------------------------------------------
+# Page Templates
+--------------------------------------------------------------*/
+@import "page-templates/page-templates";

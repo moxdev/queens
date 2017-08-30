@@ -1,4 +1,76 @@
-$font__main: sans-serif;
+@font-face {
+  font-family: 'TeXGyreAdventor-Regular';
+  src: url('fonts/TeXGyreAdventor-Regular.eot?#iefix') format('embedded-opentype'),  url('fonts/TeXGyreAdventor-Regular.otf')  format('opentype'),
+       url('fonts/TeXGyreAdventor-Regular.woff') format('woff'), url('fonts/TeXGyreAdventor-Regular.ttf')  format('truetype'), url('fonts/TeXGyreAdventor-Regular.svg#TeXGyreAdventor-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TeXGyreAdventor-Bold';
+  src: url('fonts/TeXGyreAdventor-Bold.eot?#iefix') format('embedded-opentype'),  url('fonts/TeXGyreAdventor-Bold.otf')  format('opentype'),
+       url('fonts/TeXGyreAdventor-Bold.woff') format('woff'), url('fonts/TeXGyreAdventor-Bold.ttf')  format('truetype'), url('fonts/TeXGyreAdventor-Bold.svg#TeXGyreAdventor-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway-Light';
+  src: url('fonts/Raleway-Light.eot?#iefix') format('embedded-opentype'),  url('fonts/Raleway-Light.woff') format('woff'), url('fonts/Raleway-Light.ttf')  format('truetype'), url('fonts/Raleway-Light.svg#Raleway-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway-Regular';
+  src: url('fonts/Raleway-Regular.eot?#iefix') format('embedded-opentype'),  url('fonts/Raleway-Regular.otf')  format('opentype'),
+       url('fonts/Raleway-Regular.woff') format('woff'), url('fonts/Raleway-Regular.ttf')  format('truetype'), url('fonts/Raleway-Regular.svg#Raleway-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway-Medium';
+  src: url('fonts/Raleway-Medium.eot?#iefix') format('embedded-opentype'),  url('fonts/Raleway-Medium.otf')  format('opentype'),
+       url('fonts/Raleway-Medium.woff') format('woff'), url('fonts/Raleway-Medium.ttf')  format('truetype'), url('fonts/Raleway-Medium.svg#Raleway-Medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway-SemiBold';
+  src: url('fonts/Raleway-SemiBold.eot?#iefix') format('embedded-opentype'),  url('fonts/Raleway-SemiBold.woff') format('woff'), url('fonts/Raleway-SemiBold.ttf')  format('truetype'), url('fonts/Raleway-SemiBold.svg#Raleway-SemiBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway-Bold';
+  src: url('fonts/Raleway-Bold.eot?#iefix') format('embedded-opentype'),  url('fonts/Raleway-Bold.otf')  format('opentype'),
+       url('fonts/Raleway-Bold.woff') format('woff'), url('fonts/Raleway-Bold.ttf')  format('truetype'), url('fonts/Raleway-Bold.svg#Raleway-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway-Heavy';
+  src: url('fonts/Raleway-Heavy.eot?#iefix') format('embedded-opentype'),  url('fonts/Raleway-Heavy.woff') format('woff'), url('fonts/Raleway-Heavy.ttf')  format('truetype'), url('fonts/Raleway-Heavy.svg#Raleway-Heavy') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+$font__light: 'Raleway-Light';
+$font__regular: 'Raleway-Regular';
+$font__medium: 'Raleway-Medium';
+$font__semi: 'Raleway-SemiBold';
+$font__bold: 'Raleway-Bold';
+$font__heavy: 'Raleway-Heavy';
+$font__texRegular: 'TeXGyreAdventor-Regular';
+$font__texBold: 'TeXGyreAdventor-Bold';
+
+
+$font__main: $font__light, sans-serif;
 $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;

@@ -41,10 +41,11 @@ if ( ! function_exists( 'resone_template_setup' ) ) :
 		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		 */
 		add_theme_support( 'post-thumbnails' );
+		add_image_size('home-carousel', 9999, 500, false);
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary', 'resone_template' ),
+			'primary' => esc_html__( 'Primary Menu', 'resone_template' ),
 		) );
 
 		/*
@@ -58,12 +59,6 @@ if ( ! function_exists( 'resone_template_setup' ) ) :
 			'gallery',
 			'caption',
 		) );
-
-		// Set up the WordPress core custom background feature.
-		add_theme_support( 'custom-background', apply_filters( 'resone_template_custom_background_args', array(
-			'default-color' => 'ffffff',
-			'default-image' => '',
-		) ) );
 
 		// Add theme support for selective refresh for widgets.
 		add_theme_support( 'customize-selective-refresh-widgets' );
@@ -112,6 +107,32 @@ function resone_template_widgets_init() {
 	) );
 }
 add_action( 'widgets_init', 'resone_template_widgets_init' );
+
+/**
+ * Custom ACF Options
+ */
+if( function_exists('acf_add_options_page') ) {
+	acf_add_options_page(array(
+	    'page_title'    => 'Company Information',
+	    'menu_title'    => 'Company Information',
+	    'menu_slug'     => 'company-information',
+	    'capability'    => 'edit_posts',
+	    'redirect'      => false
+	));
+}
+
+/**
+ * Register scripts for later use.
+ */
+function resone_template_register_scripts()  {
+    if (!is_admin()) {
+        wp_deregister_script('jquery');
+        // Load the copy of jQuery that comes with WordPress
+        // The last parameter set to TRUE states that it should be loaded in the footer.
+        wp_register_script('jquery', '/wp-includes/js/jquery/jquery.js', FALSE, FALSE, TRUE);
+    }
+}
+add_action('init', 'resone_template_register_scripts');
 
 /**
  * Enqueue scripts and styles.
