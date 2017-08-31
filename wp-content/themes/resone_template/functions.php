@@ -41,7 +41,7 @@ if ( ! function_exists( 'resone_template_setup' ) ) :
 		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		 */
 		add_theme_support( 'post-thumbnails' );
-		add_image_size('home-carousel', 9999, 500, false);
+		add_image_size('home-carousel', 1600, 500, true);
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
@@ -147,6 +147,18 @@ function resone_template_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
+	if(is_page_template('frontpage.php')) {
+	  wp_enqueue_script( 'millennium-marketing-solutions-touchswipe-library', get_template_directory_uri() . '/js/min/jquery.touchSwipe.min.js', array('jquery'), '20151001', true );
+
+	  $addCarousel = get_field('add_a_carousel_to_the_hompage');
+
+	  if($addCarousel == "Yes") {
+	    wp_enqueue_script( 'millennium-marketing-solutions-images-loaded', get_template_directory_uri() . '/js/jquery.imagesloaded.min.js', array(), '20141217', true );
+	    wp_enqueue_script( 'millennium-marketing-solutions-image-fill', get_template_directory_uri() . '/js/jquery-imagefill.min.js', array(), '20141217', true );
+	    wp_enqueue_script( 'millennium-marketing-solutions-home-carousel', get_template_directory_uri() . '/js/home-carousel.js', array('jquery','millennium-marketing-solutions-touchswipe-library'), '20151006', true );
+	  }
+	}
 }
 add_action( 'wp_enqueue_scripts', 'resone_template_scripts' );
 
@@ -176,3 +188,8 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+/**
+ * Homepage Carousel.
+ */
+require get_template_directory() . '/inc/home-slider.php';

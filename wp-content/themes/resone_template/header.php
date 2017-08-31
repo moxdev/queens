@@ -46,4 +46,9 @@
 
 	</header><!-- #masthead -->
 
+	<?php if ( function_exists( 'resone_template_homepage_slider' ) && is_page_template( 'frontpage.php' ) ) {
+		resone_template_homepage_slider();
+
+	} ?>
+
 	<div id="content" class="site-content">
