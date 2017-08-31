@@ -4,7 +4,7 @@ $color__brand-2: #ffffff;
 $color__brand-3: #111111;
 
 // BACKGROUND COLORS
-$color__background-body: $color__brand-3;
+$color__background-body: #E3E3E3;
 $color__background-alt-body: #E3E3E3;
 //$color__background-alt-body: #EEEDEE;
 $color__background-screen: #f1f1f1;
@@ -18,14 +18,14 @@ $color__text-input-focus: #111111;
 $color__text-screen: #21759b;
 
 // LINK COLORS
-$color__link: $color__brand-1;
-$color__link-visited: $color__brand-3;
+$color__link: #21759b;
+$color__link-visited: red;
 $color__link-hover: midnightblue;
 
 $color__background-hr: #ccc;
 
 // BUTTON COLORS
-$color__button-background: $color__brand-1;
+$color__button-background: red;
 $color__border-button: #ccc #ccc #bbb;
 $color__border-button-hover: #ccc #bbb #aaa;
 $color__border-button-focus: #aaa #bbb #bbb;
