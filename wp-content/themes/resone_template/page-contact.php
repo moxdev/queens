@@ -1,8 +1,8 @@
 <?php
 /**
- * Template Name: Home Page
+ * Template Name: Contact Page
  *
- * This is the template that displays the Homepage
+ * This is the template that displays the Gallery Page
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -29,6 +29,10 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+
+	<?php if ( function_exists( 'resone_template_contact_page_sidebar' ) ) {
+	    resone_template_contact_page_sidebar();
+	} ?>
 
 <?php
 

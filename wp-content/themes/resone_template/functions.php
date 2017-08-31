@@ -119,6 +119,34 @@ if( function_exists('acf_add_options_page') ) {
 	    'capability'    => 'edit_posts',
 	    'redirect'      => false
 	));
+	acf_add_options_page(array(
+	    'page_title'    => 'Social',
+	    'menu_title'    => 'Social',
+	    'menu_slug'     => 'social',
+	    'capability'    => 'edit_posts',
+	    'redirect'      => false
+	));
+	acf_add_options_page(array(
+	    'page_title'    => 'Specials',
+	    'menu_title'    => 'Specials',
+	    'menu_slug'     => 'specials',
+	    'capability'    => 'edit_posts',
+	    'redirect'      => false
+	));
+	acf_add_options_page(array(
+	    'page_title'    => 'Footer',
+	    'menu_title'    => 'Footer',
+	    'menu_slug'     => 'footer',
+	    'capability'    => 'edit_posts',
+	    'redirect'      => false
+	));
+	acf_add_options_page(array(
+	    'page_title'    => 'Header',
+	    'menu_title'    => 'Header',
+	    'menu_slug'     => 'header',
+	    'capability'    => 'edit_posts',
+	    'redirect'      => false
+	));
 }
 
 /**
@@ -193,3 +221,14 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  * Homepage Carousel.
  */
 require get_template_directory() . '/inc/home-slider.php';
+
+/**
+ * INclude the MM4 Contact Form.
+ */
+
+include_once( get_stylesheet_directory() . '/plugins/mm4-you-contact-form/mm4-you-cf.php' );
+
+/**
+ * Directions Map Contact Page.
+ */
+require get_template_directory() . '/inc/directions-map.php';

@@ -800,7 +800,6 @@ object {
     left: 1.25em;
     opacity: 1;
     -webkit-transition: opacity 2s ease-in-out;
-    -o-transition: opacity 2s ease-in-out;
     transition: opacity 2s ease-in-out;
     z-index: 50; }
     .page-template-frontpage .home-slider ol .active {
@@ -820,11 +819,21 @@ object {
         display: block;
         text-indent: -999em;
         -webkit-transition: opacity 1s ease-in-out;
-        -o-transition: opacity 1s ease-in-out;
         transition: opacity 1s ease-in-out; }
 
 .page-template-frontpage-php .home-slider ol li
 .page-template-frontpage-php .home-slider ol li.active
 .page-template-frontpage-php .home-slider ol li a:focus {
   outline: none; }
+
+/*--------------------------------------------------------------
+## Contact Page
+--------------------------------------------------------------*/
+.page-template-page-contact #map-canvas {
+  height: 300px; }
+
+.page-template-page-contact #response-panel {
+  display: none; }
+  .page-template-page-contact #response-panel.active {
+    display: block; }
 /*# sourceMappingURL=style.css.map */

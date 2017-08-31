@@ -1,8 +1,8 @@
 <?php
 /**
- * Template Name: Home Page
+ * Template Name: Gallery Page
  *
- * This is the template that displays the Homepage
+ * This is the template that displays the Gallery Page
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *

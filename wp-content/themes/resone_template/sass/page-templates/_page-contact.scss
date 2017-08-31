@@ -1,0 +1,14 @@
+.page-template-page-contact {
+
+  #map-canvas {
+    height: 300px;
+  }
+
+  #response-panel {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+}
