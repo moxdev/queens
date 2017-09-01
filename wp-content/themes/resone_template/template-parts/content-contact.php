@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying page content in page.php
+ * Template part for displaying page content in Contact Page.php
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -52,3 +52,17 @@
 		</footer><!-- .entry-footer -->
 	<?php endif; ?>
 </article><!-- #post-<?php the_ID(); ?> -->
+
+<?php if ( function_exists( 'mm4_you_contact_form' ) ) {
+
+	if ( function_exists( 'get_field' ) ) {
+		$form_header = get_field( 'contact_form_header' ); ?>
+
+		<h2><?php echo esc_html( $form_header ); ?></h2>
+
+		<?php
+	}
+
+  mm4_you_contact_form();
+
+} ?>

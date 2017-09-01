@@ -15,29 +15,36 @@ function resone_template_contact_page_sidebar() {
       $ph     = get_field('phone', option);
       $fx     = get_field('fax', option);
       $email  = get_field('email', option);
-      $hours1 = get_field('hours_1', option);
-      $hours2 = get_field('hours_2', option);
-      $hours3 = get_field('hours_3', option);
+      $hours  = get_field('office_hours', option);
 
-      if( $hours1 || $hours2 || $hours3 ) {
-        ?>
-        <aside id="office-hours">
-          <h2>Office Hours</h2>
+      if ($hours) {
 
-          <?php if($hours1): ?>
-            <span class="hours" id="side-hours-1"><?php echo $hours1; ?></span>
-          <?php endif;
+        if( have_rows('office_hours', option) ): ?>
 
-          if($hours2): ?>
-            <span class="hours" id="side-hours-2"><?php echo $hours2; ?></span>
-          <?php endif;
+            <aside class="office-hours">
+              <h2>Office Hours</h2>
 
-          if($hours3): ?>
-            <span class="hours" id="side-hours-3"><?php echo $hours3; ?></span>
-          <?php endif; ?>
+            <?php while( have_rows('office_hours', option) ): the_row();
 
-        </aside>
-        <?php
+                $days = get_sub_field('days');
+                $hours = get_sub_field('hours');
+
+                ?>
+
+                <div class="hours">
+
+                    <?php if( !empty($days) ) : ?>
+                      <span class="hours" id="side-hours-1"><?php echo $days; ?></span>
+                      <span class="hours" id="side-hours-1"><?php echo $hours; ?></span>
+                    <?php endif; ?>
+
+                </div>
+
+            <?php endwhile; ?>
+
+            </aside>
+
+        <?php endif;
       }
 
       if( $ph || $fx ) { ?>
@@ -64,7 +71,7 @@ function resone_template_contact_page_sidebar() {
 
       if( $add || $city || $state || $zip || $ph || $fx ) {
         ?>
-        <aside id="address">
+        <aside id="directions">
           <h2>Find Us</h2>
 
           <?php
@@ -75,28 +82,63 @@ function resone_template_contact_page_sidebar() {
 
           ?>
 
+          <div id="side-map-canvas" class="map-canvas" style="height:300px;"></div>
+          <form id="form-directions" onSubmit="calcRoute(); return false;">
+            <label for="start">Starting Address</label>
+            <input type="text" id="start" name="start">
+            <input type="hidden" id="end" name="end" value="<?php echo $add . ', ' . $city . ', ' . $state . ' ' . $zip; ?>">
+            <div class="error-box" id="map-error"></div>
+            <input type="button" onclick="calcRoute();" value="Get Directions" class="btn">
+          </form>
+          <div id="directions-panel"></div>
+
         </aside>
 
         <?php
       }
     }
-
-    if( function_exists( 'acf_add_options_page' ) ) {
-      $lat = get_field('lat', option);
-      $lng = get_field('long', option);
-
-      if($lat && $lng) { ?>
-        <div id="map-canvas" style="height:350px"></div>
-        <form id="get-directions">
-          <label>Starting Address: <input id="start" type="text"></label>
-          <input id="end" value="<?php echo $lat; ?>, <?php echo $lng; ?>" type="hidden">
-          <div id="response-panel"></div>
-          <input value="Get Directions" type="submit">
-        </form>
-
-        <?php //wp_enqueue_script( string $handle, string $src = false, array $deps = array(), string|bool|null $ver = false, bool $in_footer = false );
-      }
-    }
   }
 }
 
+/*
+
+if( function_exists( 'acf_add_options_page' ) ) {
+  $lat = get_field('lat', option);
+  $lng = get_field('long', option);
+
+   ?> Hi! <?php
+
+  if($lat && $lng) { ?>
+    <div id="map-canvas" style="height:350px"></div>
+    <form id="get-directions">
+      <label>Starting Address: <input id="start" type="text"></label>
+      <input id="end" value="<?php echo $lat; ?>, <?php echo $lng; ?>" type="hidden">
+      <div id="response-panel"></div>
+      <input value="Get Directions" type="submit">
+    </form>
+
+    <?php //wp_enqueue_script( string $handle, string $src = false, array $deps = array(), string|bool|null $ver = false, bool $in_footer = false );
+  }
+}
+
+if( $hours1 || $hours2 || $hours3 ) {
+  ?>
+  <aside id="office-hours">
+    <h2>Office Hours</h2>
+
+    <?php if($hours1): ?>
+      <span class="hours" id="side-hours-1"><?php echo $hours1; ?></span>
+    <?php endif;
+
+    if($hours2): ?>
+      <span class="hours" id="side-hours-2"><?php echo $hours2; ?></span>
+    <?php endif;
+
+    if($hours3): ?>
+      <span class="hours" id="side-hours-3"><?php echo $hours3; ?></span>
+    <?php endif; ?>
+
+  </aside>
+  <?php
+}
+*/

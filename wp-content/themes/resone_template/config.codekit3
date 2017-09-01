@@ -351,6 +351,12 @@
 		"oAP": "\/inc\/directions-map.php",
 		"oF": 0
 		},
+	"\/inc\/floor-plans.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/floor-plans.php",
+		"oF": 0
+		},
 	"\/inc\/home-slider.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -361,6 +367,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/inc\/jetpack.php",
+		"oF": 0
+		},
+	"\/inc\/photo-gallery.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/photo-gallery.php",
 		"oF": 0
 		},
 	"\/inc\/template-functions.php": {
@@ -406,8 +418,28 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/js\/home-carousel-min.js",
-		"oF": 0,
+		"oAP": "\/js\/min\/home-carousel-min.js",
+		"oF": 2,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/js\/imagelightbox.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/min\/imagelightbox-min.js",
+		"oF": 2,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/js\/map-directions.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/min\/map-directions-min.js",
+		"oF": 2,
 		"sC": 3,
 		"tS": 0
 		},
@@ -427,6 +459,16 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/js\/min\/home-carousel-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/js\/min\/imagelightbox-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/min\/imagelightbox-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -471,6 +513,26 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/js\/min\/map-directions-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/min\/map-directions-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/js\/min\/reslightbox-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/min\/reslightbox-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/js\/navigation.js": {
 		"ft": 64,
 		"ma": 0,
@@ -478,6 +540,16 @@
 		"oA": 0,
 		"oAP": "\/js\/navigation-min.js",
 		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/js\/reslightbox.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/min\/reslightbox-min.js",
+		"oF": 2,
 		"sC": 3,
 		"tS": 0
 		},
@@ -812,6 +884,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/sass\/media\/_galleries.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/media\/_lightbox.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/media\/_lightbox.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1210,6 +1295,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/style.css.map",
+		"oF": 0
+		},
+	"\/template-parts\/content-contact.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/template-parts\/content-contact.php",
 		"oF": 0
 		},
 	"\/template-parts\/content-none.php": {

@@ -166,26 +166,37 @@ add_action('init', 'resone_template_register_scripts');
  * Enqueue scripts and styles.
  */
 function resone_template_scripts() {
-	wp_enqueue_style( 'resone_template-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'resone-template-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'resone_template-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'resone-template-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
-	wp_enqueue_script( 'resone_template-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+	wp_enqueue_script( 'resone-template-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
 	if(is_page_template('frontpage.php')) {
-	  wp_enqueue_script( 'millennium-marketing-solutions-touchswipe-library', get_template_directory_uri() . '/js/min/jquery.touchSwipe.min.js', array('jquery'), '20151001', true );
 
 	  $addCarousel = get_field('add_a_carousel_to_the_hompage');
 
 	  if($addCarousel == "Yes") {
-	    wp_enqueue_script( 'millennium-marketing-solutions-images-loaded', get_template_directory_uri() . '/js/jquery.imagesloaded.min.js', array(), '20141217', true );
-	    wp_enqueue_script( 'millennium-marketing-solutions-image-fill', get_template_directory_uri() . '/js/jquery-imagefill.min.js', array(), '20141217', true );
-	    wp_enqueue_script( 'millennium-marketing-solutions-home-carousel', get_template_directory_uri() . '/js/home-carousel.js', array('jquery','millennium-marketing-solutions-touchswipe-library'), '20151006', true );
+	    wp_enqueue_script( 'resone-template-images-loaded', get_template_directory_uri() . '/js/min/jquery.imagesloaded.min.js', array('jquery'), '20141217', true );
+	    wp_enqueue_script( 'resone-template-image-fill', get_template_directory_uri() . '/js/min/jquery-imagefill.min.js', array('resone-template-images-loaded'), '20141217', true );
+	    wp_enqueue_script( 'resone-template-touchswipe-library', get_template_directory_uri() . '/js/min/jquery.touchSwipe.min.js', array('resone-template-image-fill'), '20151001', true );
+	    wp_enqueue_script( 'resone-template-home-carousel', get_template_directory_uri() . '/js/min/home-carousel-min.js', array('resone-template-touchswipe-library'), '20151006', true );
 	  }
+	}
+
+	if(is_page_template('page-contact.php')) {
+		wp_enqueue_script( 'resone-template-google-map-api', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBoWrSHgKv9M1pBU5NebahO66UtQPsIUkI', array('jquery'), '', true );
+		wp_enqueue_script( 'resone-template-directions', get_template_directory_uri() . '/js/min/map-directions-min.js', array('resone-template-google-map-api'), '20150904', true );
+	}
+
+	if( is_page_template( 'page-floorplans.php' ) || is_page_template( 'page-gallery.php' ) ) {
+		wp_enqueue_script( 'imagelightbox', get_template_directory_uri() . '/js/min/imagelightbox-min.js', array('jquery'), '20150904', true );
+		wp_enqueue_script( 'resone-template-lightbox', get_template_directory_uri() . '/js/min/reslightbox-min.js', array('imagelightbox'), '20150904', true );
+
 	}
 }
 add_action( 'wp_enqueue_scripts', 'resone_template_scripts' );
@@ -232,3 +243,13 @@ include_once( get_stylesheet_directory() . '/plugins/mm4-you-contact-form/mm4-yo
  * Directions Map Contact Page.
  */
 require get_template_directory() . '/inc/directions-map.php';
+
+/**
+ * Photo Gallery for the Gallery Page.
+ */
+require get_template_directory() . '/inc/photo-gallery.php';
+
+/**
+ * Photo Gallery for the Floor Plans Page.
+ */
+require get_template_directory() . '/inc/floor-plans.php';

@@ -27,6 +27,10 @@ get_header(); ?>
 			endwhile; // End of the loop.
 			?>
 
+			<?php if ( function_exists( 'resone_template_floor_plans' ) ) {
+				resone_template_floor_plans();
+			} ?>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

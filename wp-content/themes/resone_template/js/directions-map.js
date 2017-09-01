@@ -5,7 +5,7 @@ var directionsForm = 'get-directions';
 var mapResponses = 'response-panel';
 
 // Google Maps API Key
-var apiKey = 'ADD_YOUR_GOOGLE_MAPS_API_KEY';
+var apiKey = 'AIzaSyBoWrSHgKv9M1pBU5NebahO66UtQPsIUkI';
 
 // Path to JSON Data with Latitude and Longitude
 var apiPath = '/THE_PATH_YOU_WANT_TO_USE/wp-json/acf/v2/options/';
@@ -75,7 +75,7 @@ function callback() {
 	xhr.open('GET', apiPath, true);
 	xhr.send();
 	document.getElementById('map-canvas').innerHTML = 'Loading map...';
-	
+
 	directionsService = new google.maps.DirectionsService();
 }
 

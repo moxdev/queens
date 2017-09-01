@@ -28,6 +28,11 @@ get_header(); ?>
 			?>
 
 		</main><!-- #main -->
+
+		<?php if ( function_exists( 'resone_template_photo_gallery' ) ) {
+		   resone_template_photo_gallery();
+		} ?>
+
 	</div><!-- #primary -->
 
 <?php
