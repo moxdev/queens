@@ -9,7 +9,8 @@
  * @package Residential_One_Properties
  */
 
-get_header(); ?>
+get_header();
+get_sidebar('specials'); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">

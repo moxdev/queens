@@ -375,6 +375,18 @@
 		"oAP": "\/inc\/photo-gallery.php",
 		"oF": 0
 		},
+	"\/inc\/sidebar-features.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/sidebar-features.php",
+		"oF": 0
+		},
+	"\/inc\/sidebar-specials.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/sidebar-specials.php",
+		"oF": 0
+		},
 	"\/inc\/template-functions.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -529,6 +541,16 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/js\/min\/reslightbox-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/js\/navigation-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/navigation-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -1267,6 +1289,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/search.php",
+		"oF": 0
+		},
+	"\/sidebar-specials.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sidebar-specials.php",
 		"oF": 0
 		},
 	"\/sidebar.php": {

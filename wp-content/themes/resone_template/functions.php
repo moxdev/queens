@@ -253,3 +253,13 @@ require get_template_directory() . '/inc/photo-gallery.php';
  * Photo Gallery for the Floor Plans Page.
  */
 require get_template_directory() . '/inc/floor-plans.php';
+
+/**
+ * Features Sidebar for the Home Page.
+ */
+require get_template_directory() . '/inc/sidebar-features.php';
+
+/**
+ * Specials Sidebar for the Home Page.
+ */
+require get_template_directory() . '/inc/sidebar-specials.php';
