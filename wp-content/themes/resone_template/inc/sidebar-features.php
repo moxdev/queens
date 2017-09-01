@@ -12,7 +12,7 @@ function resone_template_features_sidebar() {
 
     if ( $add_apartment || $add_community ) { ?>
 
-      <div class="specials-sidebar">
+      <div class="features-sidebar">
 
         <?php if ( $add_apartment ):
           $apt_header = get_field( 'apartment_header' );
@@ -40,7 +40,7 @@ function resone_template_features_sidebar() {
 
         <?php endif; ?>
 
-      </div><!-- specials-sidebar -->
+      </div>
 
       <?php
     }
