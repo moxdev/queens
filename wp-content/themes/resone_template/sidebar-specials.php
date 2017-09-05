@@ -9,7 +9,7 @@
 
 ?>
 
-<aside id="specials-secondary" class="widget-area">
+<aside id="specials-secondary">
 
   <?php if( is_page_template( 'frontpage.php' ) && function_exists( 'resone_template_specials_sidebar' ) ) {
     resone_template_specials_sidebar();

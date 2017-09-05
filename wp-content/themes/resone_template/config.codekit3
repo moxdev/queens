@@ -333,6 +333,48 @@
 		"oAP": "\/header.php",
 		"oF": 0
 		},
+	"\/imgs\/icon-phone copy.png": {
+		"ft": 32768,
+		"iS": 677,
+		"oA": 0,
+		"oAP": "\/imgs\/icon-phone copy.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/imgs\/icon-phone copy.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/imgs\/icon-phone copy.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/imgs\/icon-phone.png": {
+		"ft": 32768,
+		"iS": 677,
+		"oA": 0,
+		"oAP": "\/imgs\/icon-phone.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/imgs\/icon-phone.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/imgs\/icon-phone.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/inc\/custom-header.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -988,32 +1030,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/sass\/modules\/_flexslider.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/sass\/modules\/_flexslider.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/sass\/modules\/_home-slider.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/sass\/modules\/_home-slider.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"\/sass\/modules\/_infinite-scroll.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1036,6 +1052,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/sass\/navigation\/_links.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/navigation\/_masthead.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/navigation\/_masthead.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

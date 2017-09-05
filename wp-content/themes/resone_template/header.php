@@ -25,7 +25,10 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'resone_template' ); ?></a>
 
 	<header id="masthead" class="site-header">
-		<div class="site-branding">
+		<?php $ph = get_field( 'phone', option ); ?>
+
+		<div class="flex-wrapper">
+			<div class="site-branding">
 			<?php
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) : ?>
@@ -42,13 +45,25 @@
 			endif; ?>
 		</div><!-- .site-branding -->
 
-		<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container'=> 'nav', 'container_class'=>'main-navigation', 'container_id'=> 'site-navigation' ) ); ?>
+		
+		 <?php if( $ph ): ?>
+			
+			<div id="masthead-tel">
+				<a class="tel-link" href="tel:<?php echo esc_html($ph) ?>"><span><img src="<?php echo get_template_directory_uri() . '/imgs/icon-phone.svg' ?>"></span><span class="call">Call Today!</span><span class="tel"><?php echo esc_html( $ph ); ?></span></a>
+			</div>
+
+		<?php endif; ?>
+		</div>
+
+		<?php if ( has_nav_menu( 'primary' ) ) : ?>
+
+			<button class="menu-toggle" aria-expanded="false"><?php esc_html_e( 'Menu', 'resone_template' ); ?></button>
+			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container'=> 'nav', 'container_class'=>'main-navigation', 'container_id'=> 'site-navigation' ) ); ?>
+
+		<?php endif; ?>
 
 	</header><!-- #masthead -->
 
 	<?php if ( function_exists( 'resone_template_homepage_slider' ) && is_page_template( 'frontpage.php' ) ) {
 		resone_template_homepage_slider();
-
 	} ?>
-
-	<div id="content" class="site-content">

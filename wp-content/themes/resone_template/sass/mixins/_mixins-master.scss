@@ -119,12 +119,12 @@
     padding-left: 1.75rem;
     padding-right: 1.75rem;
 
-    @include respond-to(tablet) {
+    @include respond-to('750') {
         padding-left: 2.75rem;
         padding-right: 2.75rem;
     }
 
-    @media screen and (min-width:1400px) {
+    @media screen and ('1450') {
         padding-left: 4.75rem;
         padding-right: 4.75rem;
     }

@@ -1,11 +1,14 @@
 // COMPANY BRAND COLORS
-$color__brand-1: #81bc00;
-$color__brand-2: #ffffff;
-$color__brand-3: #111111;
+$color__brand-1: #00467e;
+$color__brand-2: #d0a449;
+$color__brand-3: #F4EAD5;
 
+// MASTHEAD
+$color__border-bottom-masthead: $color__brand-1; 
 // BACKGROUND COLORS
-$color__background-body: #E3E3E3;
+$color__background-body: f1f1f1;
 $color__background-alt-body: #E3E3E3;
+$color__background-masthead: #ffffff;
 //$color__background-alt-body: #EEEDEE;
 $color__background-screen: #f1f1f1;
 $color__background-pre: #eee;
@@ -33,3 +36,13 @@ $color__border-button-focus: #aaa #bbb #bbb;
 // FORM COLORS
 $color__border-input: #ccc;
 $color__border-abbr: #666;
+
+// HEADING COLORS
+$color__h1: $color__brand-1;
+$color__h2: $color__brand-2;
+$color__h2-specials: $color__brand-1;
+$color__h3-specials: $color__brand-2;
+$color__h2-quick-form: $color__brand-1;
+$color__h2-features: #ffffff;
+
+

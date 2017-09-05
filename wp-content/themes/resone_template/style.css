@@ -29,6 +29,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 # Navigation
 	## Links
 	## Menus
+	## Masthead
 # Accessibility
 # Alignments
 # Clearings
@@ -285,7 +286,31 @@ textarea {
   line-height: 1.5; }
 
 h1, h2, h3, h4, h5, h6 {
-  clear: both; }
+  clear: both;
+  font-weight: normal; }
+
+h1 {
+  color: #00467e;
+  font-family: "Raleway-Bold"; }
+
+h2 {
+  color: #d0a449;
+  font-family: "Raleway-Bold"; }
+
+.specials h2 {
+  color: #00467e;
+  font-family: "Raleway-Heavy"; }
+
+.specials h3 {
+  color: #d0a449; }
+
+.form-quick-contact-wrapper h2 {
+  color: #00467e; }
+
+.features h2 {
+  color: #ffffff;
+  background-color: #d0a449;
+  padding: 5px; }
 
 p {
   margin-bottom: 1.5em; }
@@ -341,7 +366,7 @@ html {
           box-sizing: inherit; }
 
 body {
-  background: #E3E3E3;
+  background: f1f1f1;
   /* Fallback for when there is no custom background color defined. */ }
 
 blockquote, q {
@@ -356,7 +381,8 @@ hr {
   margin-bottom: 1.5em; }
 
 ul, ol {
-  margin: 0 0 1.5em 3em; }
+  margin: 0;
+  padding: 0; }
 
 ul {
   list-style: disc; }
@@ -367,13 +393,13 @@ ol {
 li > ul,
 li > ol {
   margin-bottom: 0;
-  margin-left: 1.5em; }
+  margin-left: 0; }
 
 dt {
   font-weight: bold; }
 
 dd {
-  margin: 0 1.5em 1.5em; }
+  margin: 0; }
 
 img {
   height: auto;
@@ -550,6 +576,46 @@ a {
   width: 50%; }
 
 /*--------------------------------------------------------------
+## Masthead
+--------------------------------------------------------------*/
+#masthead {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #ffffff;
+  border-bottom: 5px solid #00467e; }
+  @media (min-width: 750px) {
+    #masthead {
+      padding-left: 2.75rem;
+      padding-right: 2.75rem; } }
+  @media screen and (1450) {
+    #masthead {
+      padding-left: 4.75rem;
+      padding-right: 4.75rem; } }
+  #masthead .flex-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  #masthead .tel-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  #masthead .tel {
+    display: none; }
+  #masthead .menu-toggle {
+    float: right; }
+
+/*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
 /* Text meant only for screen readers. */
@@ -665,6 +731,21 @@ a {
   clear: both;
   margin: 0 0 1.5em; }
 
+#primary,
+aside {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem; }
+  @media (min-width: 750px) {
+    #primary,
+    aside {
+      padding-left: 2.75rem;
+      padding-right: 2.75rem; } }
+  @media screen and (1450) {
+    #primary,
+    aside {
+      padding-left: 4.75rem;
+      padding-right: 4.75rem; } }
+
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
@@ -687,9 +768,6 @@ a {
 .infinity-end.neverending .site-footer {
   display: block; }
 
-/*--------------------------------------------------------------
-# Flexslider
---------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -761,7 +839,7 @@ button.imagelightbox-arrow {
       -ms-flex-align: start;
           align-items: flex-start;
   border-radius: 50%;
-  color: #81bc00;
+  color: #00467e;
   background-color: transparent;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -770,7 +848,7 @@ button.imagelightbox-arrow {
   min-width: auto;
   font-family: "Raleway-Light", sans-serif; }
   button.imagelightbox-arrow:hover {
-    color: #81bc00; }
+    color: #00467e; }
 
 .imagelightbox-arrow-left {
   left: .75rem; }
@@ -783,7 +861,7 @@ button.imagelightbox-arrow {
   top: 1rem;
   right: 1.25rem;
   z-index: 8500;
-  color: #81bc00;
+  color: #00467e;
   background-color: transparent;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -795,7 +873,7 @@ button.imagelightbox-arrow {
   min-width: auto;
   font-family: "Raleway-Light", sans-serif; }
   .imagelightbox-close:hover {
-    color: #81bc00;
+    color: #00467e;
     cursor: pointer; }
 
 .imagelightbox-caption {
@@ -832,10 +910,10 @@ button.imagelightbox-arrow {
   top: 50%;
   margin: -20px 0 0 -20px;
   z-index: 9999;
-  border-top: 6px solid #3b5600;
-  border-right: 6px solid #3b5600;
-  border-bottom: 6px solid #81bc00;
-  border-left: 6px solid #81bc00;
+  border-top: 6px solid #000d18;
+  border-right: 6px solid #000d18;
+  border-bottom: 6px solid #00467e;
+  border-left: 6px solid #00467e;
   -webkit-animation: loading 1.2s infinite linear;
           animation: loading 1.2s infinite linear; }
 
@@ -917,7 +995,6 @@ button.imagelightbox-arrow {
       top: 0;
       bottom: 0;
       width: 100%;
-      padding: 2.5em 1em 1.5em;
       opacity: 0;
       z-index: 5; }
       .page-template-frontpage .home-slider ul li.active {

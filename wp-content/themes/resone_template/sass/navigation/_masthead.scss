@@ -1,0 +1,26 @@
+#masthead {
+  @include padding-left-right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: $color__background-masthead;
+  border-bottom: 5px solid $color__border-bottom-masthead;
+
+  .flex-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .tel-link {
+    display: flex;
+    align-items: center;
+  }
+
+  .tel {
+    display: none;
+  }
+
+  .menu-toggle {
+    float: right;
+  }
+}

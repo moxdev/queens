@@ -23,9 +23,9 @@ function resone_template_specials_sidebar() {
         <h3><?php echo esc_html( $content ); ?></h3>
       <?php endif ?>
 
-      <?php if ( $details ): ?>
-        <h4><?php echo $details; ?></h4>
-      <?php endif ?>
+      <?php if ( $details ):
+        echo $details;
+      endif ?>
 
     </div>
 
