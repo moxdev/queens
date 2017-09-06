@@ -9,10 +9,11 @@ function resone_template_features_sidebar() {
   if ( function_exists( 'get_field' ) ) {
     $add_apartment = get_field( 'add_an_apartment_features_section' );
     $add_community = get_field( 'add_an_community_features_section' );
+    $disclaimer = get_field( 'features_disclaimer' );
 
     if ( $add_apartment || $add_community ) { ?>
 
-      <div class="features-sidebar">
+      <div class="right-sidebar">
 
         <?php if ( $add_apartment ):
           $apt_header = get_field( 'apartment_header' );
@@ -39,6 +40,12 @@ function resone_template_features_sidebar() {
             </div>
 
         <?php endif; ?>
+
+        <?php if ( $disclaimer ): ?>
+
+          <p class="features-disclaimer"><?php echo esc_html( $disclaimer ) ?></p>
+
+        <?php endif ?>
 
       </div>
 

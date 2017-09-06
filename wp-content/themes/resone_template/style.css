@@ -273,6 +273,22 @@ th {
   font-weight: normal;
   font-style: normal; }
 
+html {
+  font-size: 15px;
+  font-size: 0.9375rem; }
+  @media (min-width: 575px) {
+    html {
+      font-size: 16px;
+      font-size: 1rem; } }
+  @media (min-width: 1150px) {
+    html {
+      font-size: 16.8px;
+      font-size: 1.05rem; } }
+  @media (min-width: 1450px) {
+    html {
+      font-size: 18px;
+      font-size: 1.125rem; } }
+
 body,
 button,
 input,
@@ -291,29 +307,18 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   color: #00467e;
-  font-family: "Raleway-Bold"; }
+  font-family: "Raleway-Bold";
+  line-height: 1.2;
+  margin: .5em 0; }
 
 h2 {
   color: #d0a449;
   font-family: "Raleway-Bold"; }
 
-.specials h2 {
-  color: #00467e;
-  font-family: "Raleway-Heavy"; }
-
-.specials h3 {
-  color: #d0a449; }
-
-.form-quick-contact-wrapper h2 {
-  color: #00467e; }
-
-.features h2 {
-  color: #ffffff;
-  background-color: #d0a449;
-  padding: 5px; }
-
 p {
-  margin-bottom: 1.5em; }
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1em; }
 
 dfn, cite, em, i {
   font-style: italic; }
@@ -381,11 +386,11 @@ hr {
   margin-bottom: 1.5em; }
 
 ul, ol {
-  margin: 0;
-  padding: 0; }
+  margin: 0; }
 
 ul {
-  list-style: disc; }
+  list-style: disc;
+  padding: 0 1.1em; }
 
 ol {
   list-style: decimal; }
@@ -425,7 +430,7 @@ input[type="submit"] {
   border: 1px solid;
   border-color: #ccc #ccc #bbb;
   border-radius: 3px;
-  background: red;
+  background: #ccc;
   color: rgba(0, 0, 0, 0.8);
   font-size: 12px;
   font-size: 0.75rem;
@@ -1037,6 +1042,73 @@ button.imagelightbox-arrow {
   outline: none; }
 
 /*--------------------------------------------------------------
+### Specials
+--------------------------------------------------------------*/
+#left-secondary .specials h2 {
+  color: #00467e;
+  font-family: "Raleway-Heavy";
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-size: 2em;
+  margin: 0; }
+
+#left-secondary .specials h3 {
+  color: #d0a449;
+  font-family: "Raleway-Bold";
+  font-size: 1.5em;
+  margin: .25em 0;
+  letter-spacing: 1px; }
+
+#left-secondary .specials p {
+  color: #6d6e70;
+  font-family: "Raleway-SemiBold";
+  margin: 0; }
+
+#left-secondary .specials hr {
+  background-color: #babbbc;
+  margin: 0;
+  padding: 0; }
+
+/*--------------------------------------------------------------
+### Quick Form
+--------------------------------------------------------------*/
+#left-secondary .form-quick-contact-wrapper {
+  display: none; }
+  #left-secondary .form-quick-contact-wrapper h2 {
+    color: #00467e;
+    margin-top: 2em;
+    margin-bottom: 0; }
+  #left-secondary .form-quick-contact-wrapper form .flex > div {
+    margin-bottom: 1em; }
+  #left-secondary .form-quick-contact-wrapper form label,
+  #left-secondary .form-quick-contact-wrapper form input {
+    width: 100%; }
+  #left-secondary .form-quick-contact-wrapper form label {
+    display: block;
+    color: #53534a; }
+  #left-secondary .form-quick-contact-wrapper form .form-button {
+    color: #d0a449;
+    text-transform: uppercase;
+    background: transparent;
+    font-family: "Raleway-Bold";
+    text-align: left; }
+  @media (min-width: 950px) {
+    #left-secondary .form-quick-contact-wrapper {
+      display: block; } }
+
+/*--------------------------------------------------------------
+### Features
+--------------------------------------------------------------*/
+.right-sidebar .features h2 {
+  color: #ffffff;
+  background-color: #d0a449;
+  padding: 5px;
+  text-align: center; }
+
+.right-sidebar .features-disclaimer {
+  margin: 1em 0; }
+
+/*--------------------------------------------------------------
 ## Contact Page
 --------------------------------------------------------------*/
 .page-template-page-contact #map-canvas {
@@ -1046,4 +1118,23 @@ button.imagelightbox-arrow {
   display: none; }
   .page-template-page-contact #response-panel.active {
     display: block; }
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.site-footer {
+  background-color: #F4EAD5; }
+  .site-footer .site-info {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em; }
+    @media (min-width: 750px) {
+      .site-footer .site-info {
+        padding-left: 2.75rem;
+        padding-right: 2.75rem; } }
+    @media screen and (1450) {
+      .site-footer .site-info {
+        padding-left: 4.75rem;
+        padding-right: 4.75rem; } }
 /*# sourceMappingURL=style.css.map */

@@ -4,11 +4,11 @@ $color__brand-2: #d0a449;
 $color__brand-3: #F4EAD5;
 
 // MASTHEAD
-$color__border-bottom-masthead: $color__brand-1; 
+$color__background-masthead: #ffffff;
+$color__border-bottom-masthead: $color__brand-1;
 // BACKGROUND COLORS
 $color__background-body: f1f1f1;
 $color__background-alt-body: #E3E3E3;
-$color__background-masthead: #ffffff;
 //$color__background-alt-body: #EEEDEE;
 $color__background-screen: #f1f1f1;
 $color__background-pre: #eee;
@@ -28,7 +28,7 @@ $color__link-hover: midnightblue;
 $color__background-hr: #ccc;
 
 // BUTTON COLORS
-$color__button-background: red;
+$color__button-background: #ccc;
 $color__border-button: #ccc #ccc #bbb;
 $color__border-button-hover: #ccc #bbb #aaa;
 $color__border-button-focus: #aaa #bbb #bbb;
@@ -40,9 +40,20 @@ $color__border-abbr: #666;
 // HEADING COLORS
 $color__h1: $color__brand-1;
 $color__h2: $color__brand-2;
+
+
+// SPECIALS SIDEBAR
 $color__h2-specials: $color__brand-1;
 $color__h3-specials: $color__brand-2;
+$color__p-specials: #6d6e70;
+$color__hr-specials: lighten( $color__p-specials, 30% );
+
+// QUICK FORM SIDEBAR
 $color__h2-quick-form: $color__brand-1;
+
+// FEATURES SIDEBAR
 $color__h2-features: #ffffff;
+$color__h2-background-features: $color__brand-2;
 
-
+// FOOTER
+$color__background-footer: $color__brand-3;

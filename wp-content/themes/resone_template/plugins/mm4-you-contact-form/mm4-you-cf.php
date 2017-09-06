@@ -140,21 +140,22 @@ function mm4_you_quick_contact_form() {
 
 	<div class="form-quick-contact-wrapper">
 		<h2>Have a Question?</h2>
+		<hr>
 		<form id="form-quick-contact" name="form-quick-contact" method="post" action="<?php echo $form_action; ?>" novalidate>
 			<input type="hidden" value="<?php echo $subject_line; ?>" name="subject" id="subject">
 			<div class="flex">
 				<div>
-					<label for="contact-names"><span class="asterisk">*</span> Name</label>
+					<label for="contact-names">Name</label>
 					<input type="text" id="contact-names" name="contact-names">
 				</div>
 				<div>
-					<label for="contact-email"><span class="asterisk">*</span> Email</label>
+					<label for="contact-email">Email</label>
 					<input type="email" id="contact-email" name="contact-email">
 				</div>
-				<div>
+				<!-- <div>
 					<label for="contact-phone">Phone</label>
 					<input type="tel" id="contact-phone" name="contact-phone">
-				</div>
+				</div> -->
 			</div>
 			<div class="flex">
 				<div>
@@ -164,7 +165,7 @@ function mm4_you_quick_contact_form() {
 			</div>
 			<div class="g-recaptcha" data-sitekey="<?php echo $public_key; ?>"></div>
 			<div class="msg-box"></div>
-			<input type="submit" value="submit request">
+			<input class="form-button" type="submit" value="submit request">
 		</form>
 	</div>
 <?php }

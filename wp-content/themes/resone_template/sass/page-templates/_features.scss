@@ -1,0 +1,16 @@
+.right-sidebar {
+
+  .features {
+
+    h2 {
+      color: $color__h2-features;
+      background-color: $color__h2-background-features;
+      padding: 5px;
+      text-align: center;
+    }
+  }
+
+  .features-disclaimer {
+    margin: 1em 0;
+  }
+}

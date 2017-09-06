@@ -1,0 +1,32 @@
+#left-secondary {
+  .specials {
+    h2 {
+      color: $color__h2-specials;
+      font-family: $font__heavy;
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      font-size: 2em;
+      margin:0;
+    }
+
+    h3 {
+      color: $color__h3-specials;
+      font-family: $font__bold;
+      font-size: 1.5em;
+      margin:.25em 0;
+      letter-spacing: 1px;
+    }
+
+    p {
+      color: $color__p-specials;
+      font-family: $font__semi;
+      margin:0;
+    }
+
+    hr {
+      background-color: $color__hr-specials;
+      margin:0;
+      padding:0;
+    }
+  }
+}

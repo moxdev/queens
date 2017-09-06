@@ -19,6 +19,8 @@ function resone_template_specials_sidebar() {
         <h2><?php echo esc_html( $header ); ?></h2>
       <?php endif ?>
 
+      <hr>
+
       <?php if ( $content ): ?>
         <h3><?php echo esc_html( $content ); ?></h3>
       <?php endif ?>

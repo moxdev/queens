@@ -59,6 +59,22 @@
   font-style: normal;
 }
 
+html {
+    @include font-size(.9375);
+
+    @include respond-to('575') {
+        @include font-size(1);
+    }
+
+    @include respond-to('1150') {
+        @include font-size(1.05);
+    }
+
+    @include respond-to('1450') {
+        @include font-size(1.125);
+    }
+}
+
 body,
 button,
 input,

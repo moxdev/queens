@@ -1,0 +1,8 @@
+.site-footer {
+    background-color: $color__background-footer;
+
+    .site-info {
+    @include padding-left-right;
+    @include section-padding;
+  }
+}
