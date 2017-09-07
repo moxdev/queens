@@ -1,8 +1,73 @@
 .site-footer {
-    background-color: $color__background-footer;
+  background-color: $color__background-footer;
+  padding-bottom: 3em;
+  margin-top: 3em;
 
-    .site-info {
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .site-info {
     @include padding-left-right;
     @include section-padding;
+    text-align: center;
+  }
+
+  .contact-information {
+    padding: 1em 0 2em;
+
+    .email {
+      text-decoration: underline;
+    }
+  }
+
+  .bill-of-rights {
+    padding: 1em 0;
+  }
+
+  .social {
+    margin: 1em 0;
+  }
+
+  .translate {
+    padding: 10px;
+    margin-bottom: 2em;
+    background-color: $color__background-google-translate;
+  }
+
+  .property-management-logos {
+    font-size: 12px;
+    margin-bottom: 1em;
+
+    a, span {
+      display: block;
+    }
+
+    .res1-logo {
+      margin-top: .5em;
+    }
+  }
+
+  .eho {
+    font-size: 9px;
+    line-height: 11px;
+    margin-bottom: 2em;
+    text-align: justify;
+
+    .eho-icons {
+      display: block;
+      margin-bottom: 5px;
+      text-align: center;
+    }
+
+    svg {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  #mms {
+    font-size: 11px;
   }
 }
