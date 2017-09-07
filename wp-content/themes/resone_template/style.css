@@ -1109,6 +1109,30 @@ button.imagelightbox-arrow {
   margin: 1em 0; }
 
 /*--------------------------------------------------------------
+## Floor PLans Page
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+### Specials Callout
+--------------------------------------------------------------*/
+.specials-callout {
+  background-color: #B5C9DA;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem; }
+  @media (min-width: 750px) {
+    .specials-callout {
+      padding-left: 2.75rem;
+      padding-right: 2.75rem; } }
+  @media screen and (1450) {
+    .specials-callout {
+      padding-left: 4.75rem;
+      padding-right: 4.75rem; } }
+  .specials-callout h2, .specials-callout span {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    color: #ffffff; }
+
+/*--------------------------------------------------------------
 ## Contact Page
 --------------------------------------------------------------*/
 .page-template-page-contact #map-canvas {

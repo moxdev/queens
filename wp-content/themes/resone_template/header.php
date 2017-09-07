@@ -45,9 +45,9 @@
 			endif; ?>
 		</div><!-- .site-branding -->
 
-		
+
 		 <?php if( $ph ): ?>
-			
+
 			<div id="masthead-tel">
 				<a class="tel-link" href="tel:<?php echo esc_html($ph) ?>"><span><img src="<?php echo get_template_directory_uri() . '/imgs/icon-phone.svg' ?>"></span><span class="call">Call Today!</span><span class="tel"><?php echo esc_html( $ph ); ?></span></a>
 			</div>
@@ -67,3 +67,7 @@
 	<?php if ( function_exists( 'resone_template_homepage_slider' ) && is_page_template( 'frontpage.php' ) ) {
 		resone_template_homepage_slider();
 	} ?>
+
+	<?php if ( function_exists( 'resone_template_specials_callout' ) && is_page_template( 'page-floorplans.php' ) ) {
+	    resone_template_specials_callout();
+	}  ?>

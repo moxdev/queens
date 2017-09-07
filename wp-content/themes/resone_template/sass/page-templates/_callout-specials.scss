@@ -1,0 +1,10 @@
+.specials-callout {
+  background-color: $color__background-specials-callout;
+    @include padding-left-right;
+
+  h2, span {
+    @include reset;
+    display: inline-block;
+    color: $color__specials-callout;
+  }
+}

@@ -263,3 +263,8 @@ require get_template_directory() . '/inc/sidebar-features.php';
  * Specials Sidebar for the Home Page.
  */
 require get_template_directory() . '/inc/sidebar-specials.php';
+
+/**
+ * Specials Callout for the Floor Plans Page.
+ */
+require get_template_directory() . '/inc/callout-specials.php';
