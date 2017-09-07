@@ -1,8 +1,8 @@
 <?php
 /**
- * Template Name: Gallery Page
+ * Template Name: Community Page
  *
- * This is the template that displays the Gallery Page
+ * This is the template that displays the Community Page
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -30,9 +30,7 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-	<?php if ( function_exists( 'resone_template_photo_gallery' ) ) {
-	   resone_template_photo_gallery();
-	} ?>
+	<div id="side-map-canvas" class="map-canvas" style="height:300px;"></div>
 
 <?php
 

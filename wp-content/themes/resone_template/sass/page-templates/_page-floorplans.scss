@@ -1,3 +1,37 @@
+.floorplans {
+    text-align: center;
+
+  .floorplan {
+
+    hr {
+      margin-bottom: 1em;
+    }
+
+    h2 {
+      @include reset;
+    }
+
+    span {
+      color: $color__description-title-floorplans;
+      display: block;
+      font-family: $font__medium;
+    }
+
+    .accent-color {
+      color: $color__description-floorplans;
+      display: inline-block;
+    }
+
+    .img-wrapper {
+      margin: 1em 0 2em;
+    }
+  }
+
+  .floor-plan-disclaimer {
+    font-size: 12px
+  }
+}
+
 /*--------------------------------------------------------------
 ### Specials Callout
 --------------------------------------------------------------*/

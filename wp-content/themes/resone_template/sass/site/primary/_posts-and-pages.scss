@@ -25,3 +25,7 @@
 aside {
 	@include padding-left-right;
 }
+
+#primary {
+  @include container;
+}

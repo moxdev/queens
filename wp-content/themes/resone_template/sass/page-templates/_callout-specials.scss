@@ -1,10 +1,16 @@
 .specials-callout {
   background-color: $color__background-specials-callout;
     @include padding-left-right;
+    @include section-padding;
+    color: $color__specials-callout;
+    text-align: center;
 
-  h2, span {
+  h2 {
     @include reset;
+    @include font-smooth;
     display: inline-block;
     color: $color__specials-callout;
+    line-height: 1.2;
+    margin-bottom: .25em;
   }
 }

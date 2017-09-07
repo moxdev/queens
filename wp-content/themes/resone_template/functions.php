@@ -42,6 +42,8 @@ if ( ! function_exists( 'resone_template_setup' ) ) :
 		 */
 		add_theme_support( 'post-thumbnails' );
 		add_image_size('home-carousel', 1600, 500, true);
+		add_image_size('floorplans', 900, 9999, false);
+		add_image_size('gallery', 300, 260, true);
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
@@ -188,7 +190,7 @@ function resone_template_scripts() {
 	  }
 	}
 
-	if(is_page_template('page-contact.php')) {
+	if(is_page_template('page-contact.php') || is_page_template( 'page-community.php' )) {
 		wp_enqueue_script( 'resone-template-google-map-api', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBoWrSHgKv9M1pBU5NebahO66UtQPsIUkI', array('jquery'), '', true );
 		wp_enqueue_script( 'resone-template-directions', get_template_directory_uri() . '/js/min/map-directions-min.js', array('resone-template-google-map-api'), '20150904', true );
 	}

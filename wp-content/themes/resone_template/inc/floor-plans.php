@@ -24,6 +24,7 @@ function resone_template_floor_plans() {
               $img   = get_sub_field('floor_plan_image'); ?>
 
               <div class="floorplan">
+                <hr>
                 <div class="description">
 
                   <?php if( !empty($style) ) : ?>
@@ -34,19 +35,19 @@ function resone_template_floor_plans() {
 
                   <?php if( !empty($bed) ) : ?>
 
-                    <span><?php echo esc_html( $bed ); ?></span>
+                    <span>Bed: <span class="accent-color"><?php echo esc_html( $bed ); ?></span></span>
 
                   <?php endif; ?>
 
                   <?php if( !empty($bath) ) : ?>
 
-                    <span><?php echo esc_html( $bath ); ?></span>
+                    <span>Bath: <span class="accent-color"><?php echo esc_html( $bath ); ?></span></span>
 
                   <?php endif; ?>
 
                   <?php if( !empty($price) ) : ?>
 
-                    <span><?php echo esc_html( $price ); ?></span>
+                    <span>Rent: <span class="accent-color"><?php echo esc_html( $price ); ?></span></span>
 
                   <?php endif; ?>
 
@@ -56,7 +57,7 @@ function resone_template_floor_plans() {
 
                 <div class="img-wrapper">
 
-                  <a href="<?php echo $img['url']; ?>" class="fp-trigger" data-imagelightbox="a"><img src="<?php echo esc_url( $img['sizes']['thumbnail'] ); ?>" alt="<?php echo esc_attr( $img['alt'] ); ?>" description="<?php echo esc_attr( $img['description'] ); ?>"></a>
+                  <a href="<?php echo $img['url']; ?>" class="fp-trigger" data-imagelightbox="a"><img src="<?php echo esc_url( $img['sizes']['floorplans'] ); ?>" alt="<?php echo esc_attr( $img['alt'] ); ?>" description="<?php echo esc_attr( $img['description'] ); ?>"></a>
 
                 </div><!-- img-wrapper -->
 

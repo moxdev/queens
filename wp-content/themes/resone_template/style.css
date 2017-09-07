@@ -44,6 +44,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 	## Galleries
 # Page Templates
   ## Frontpage
+  ## Floor Plans Page
+    ### Specials Callout
+  ## Contact Page
+# Footer
+
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Normalize
@@ -313,7 +318,8 @@ h1 {
 
 h2 {
   color: #d0a449;
-  font-family: "Raleway-Bold"; }
+  font-family: "Raleway-Bold";
+  margin: .5em 0; }
 
 p {
   margin: 0;
@@ -751,6 +757,11 @@ aside {
       padding-left: 4.75rem;
       padding-right: 4.75rem; } }
 
+#primary {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
@@ -1109,15 +1120,38 @@ button.imagelightbox-arrow {
   margin: 1em 0; }
 
 /*--------------------------------------------------------------
-## Floor PLans Page
+## Floor Plans Page
 --------------------------------------------------------------*/
+.floorplans {
+  text-align: center; }
+  .floorplans .floorplan hr {
+    margin-bottom: 1em; }
+  .floorplans .floorplan h2 {
+    margin: 0;
+    padding: 0; }
+  .floorplans .floorplan span {
+    color: #00467e;
+    display: block;
+    font-family: "Raleway-Medium"; }
+  .floorplans .floorplan .accent-color {
+    color: #111111;
+    display: inline-block; }
+  .floorplans .floorplan .img-wrapper {
+    margin: 1em 0 2em; }
+  .floorplans .floor-plan-disclaimer {
+    font-size: 12px; }
+
 /*--------------------------------------------------------------
 ### Specials Callout
 --------------------------------------------------------------*/
 .specials-callout {
   background-color: #B5C9DA;
   padding-left: 1.75rem;
-  padding-right: 1.75rem; }
+  padding-right: 1.75rem;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  color: #ffffff;
+  text-align: center; }
   @media (min-width: 750px) {
     .specials-callout {
       padding-left: 2.75rem;
@@ -1126,11 +1160,52 @@ button.imagelightbox-arrow {
     .specials-callout {
       padding-left: 4.75rem;
       padding-right: 4.75rem; } }
-  .specials-callout h2, .specials-callout span {
+  .specials-callout h2 {
     margin: 0;
     padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     display: inline-block;
-    color: #ffffff; }
+    color: #ffffff;
+    line-height: 1.2;
+    margin-bottom: .25em; }
+
+/*--------------------------------------------------------------
+## Gallery Page
+--------------------------------------------------------------*/
+.gallery {
+  max-width: 1300px;
+  margin: 0 auto; }
+  .gallery ul {
+    list-style-type: none; }
+    .gallery ul li {
+      margin-bottom: .5em; }
+  @media (min-width: 575px) {
+    .gallery ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+    .gallery li {
+      -webkit-box-flex: 1;
+          -ms-flex: 1 1 50%;
+              flex: 1 1 50%;
+      padding: 0 .5em .5em;
+      margin-bottom: 0; } }
+  @media (min-width: 750px) {
+    .gallery li {
+      -webkit-box-flex: 1;
+          -ms-flex: 1 1 33%;
+              flex: 1 1 33%; } }
+  @media (min-width: 950px) {
+    .gallery li {
+      -webkit-box-flex: 1;
+          -ms-flex: 1 1 25%;
+              flex: 1 1 25%; } }
 
 /*--------------------------------------------------------------
 ## Contact Page
@@ -1148,8 +1223,7 @@ button.imagelightbox-arrow {
 --------------------------------------------------------------*/
 .site-footer {
   background-color: #F4EAD5;
-  padding-bottom: 3em;
-  margin-top: 3em; }
+  padding-bottom: 3em; }
   .site-footer a {
     text-decoration: none;
     color: inherit; }
