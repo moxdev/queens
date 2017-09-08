@@ -30,7 +30,9 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-	<div id="side-map-canvas" class="map-canvas" style="height:300px;"></div>
+	<?php if ( function_exists( 'resone_template_community_map' ) ) {
+		resone_template_community_map();
+	} ?>
 
 <?php
 

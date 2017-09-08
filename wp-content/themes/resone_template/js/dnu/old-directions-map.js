@@ -8,7 +8,7 @@ var mapResponses = 'response-panel';
 var apiKey = 'AIzaSyBoWrSHgKv9M1pBU5NebahO66UtQPsIUkI';
 
 // Path to JSON Data with Latitude and Longitude
-var apiPath = '/wp-json/acf/v2/options/';
+var apiPath = '/THE_PATH_YOU_WANT_TO_USE/wp-json/acf/v2/options/';
 
 var directionsDisplay;
 var directionsService;
@@ -48,7 +48,7 @@ function initMap(myMap, lat, lng) {
 
 	var marker = new google.maps.Marker({
 		position: {lat: lat, lng: lng},
-		map: map
+		map: map,
 	});
 
 	bounds.extend(marker.getPosition());

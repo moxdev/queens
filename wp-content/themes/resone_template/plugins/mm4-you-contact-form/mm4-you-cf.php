@@ -178,28 +178,37 @@ function mm4_you_contact_form() {
 	wp_enqueue_script( 'mm4-recaptcha', '//www.google.com/recaptcha/api.js', array(), NULL, TRUE );
 	wp_enqueue_script('mm4-you-validate', get_template_directory_uri() . '/plugins/mm4-you-contact-form/js/min/mm4-you-validate-min.js', array(), NULL, TRUE );
 
-	$options_arr = get_option('mm4-you-cf-settings');
+	$options_arr  = get_option('mm4-you-cf-settings');
 	$subject_line = $options_arr['form-subject'];
-	$public_key = $options_arr['recaptcha-public-key'];
-	$form_action = get_permalink($options_arr['form-thank-you']); ?>
+	$public_key   = $options_arr['recaptcha-public-key'];
+	$form_action  = get_permalink($options_arr['form-thank-you']); ?>
 
 	<form name="contact-form" method="POST" action="<?php echo $form_action; ?>" novalidate>
 		<input type="hidden" value="<?php echo $subject_line; ?>" name="subject" id="subject">
-		<label for="first-name">
-			<input type="text" name="first-name" id="first-name" class="required" data-error-label="First Name" placeholder="NAME">
+		<label for="first-name">First Name
+			<input type="text" name="first-name" id="first-name" class="required" data-error-label="First Name">
 		</label>
-		<label for="email-address">
-			<input type="email" name="email-address" id="email-address" class="required" data-error-label="Email" placeholder="EMAIL">
+		<label for="last-name">Last Name
+			<input type="text" name="last-name" id="last-name" class="required" data-error-label="Last Name">
 		</label>
-		<label for="primary-phone">
-			<input type="tel" name="primary-phone" id="primary-phone" class="required" data-error-label="Primary Phone" placeholder="PHONE">
+		<label for="email-address">Email
+			<input type="email" name="email-address" id="email-address" class="required" data-error-label="Email">
 		</label>
-		<label for="comments">
-			<textarea name="comments" id="comments" rows="6" placeholder="MESSAGE"></textarea>
+		<label for="primary-phone">Phone Number
+			<input type="tel" name="primary-phone" id="primary-phone" class="required" data-error-label="Primary Phone">
+		</label>
+		<label for="primary-phone">Desired Move In Date
+			<input type="tel" name="move-in" id="move-in" class="required" data-error-label="Move In">
+		</label>
+		<label for="primary-phone">How Did You Hear About Us?
+			<input type="tel" name="how-hear" id="how-hear" class="required" data-error-label="How Hear">
+		</label>
+		<label for="comments">Comments
+			<textarea name="comments" id="comments" rows="6"></textarea>
 		</label>
 		<div class="g-recaptcha" data-sitekey="<?php echo $public_key; ?>"></div>
 		<div class="msg-box"></div>
-		<input type="submit" value="Submit">
+		<input class="submit-button" type="submit" value="Submit Request">
 	</form>
 <?php }
 

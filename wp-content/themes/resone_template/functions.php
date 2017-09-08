@@ -190,11 +190,6 @@ function resone_template_scripts() {
 	  }
 	}
 
-	if(is_page_template('page-contact.php') || is_page_template( 'page-community.php' )) {
-		wp_enqueue_script( 'resone-template-google-map-api', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBoWrSHgKv9M1pBU5NebahO66UtQPsIUkI', array('jquery'), '', true );
-		wp_enqueue_script( 'resone-template-directions', get_template_directory_uri() . '/js/min/map-directions-min.js', array('resone-template-google-map-api'), '20150904', true );
-	}
-
 	if( is_page_template( 'page-floorplans.php' ) || is_page_template( 'page-gallery.php' ) ) {
 		wp_enqueue_script( 'imagelightbox', get_template_directory_uri() . '/js/min/imagelightbox-min.js', array('jquery'), '20150904', true );
 		wp_enqueue_script( 'resone-template-lightbox', get_template_directory_uri() . '/js/min/reslightbox-min.js', array('imagelightbox'), '20150904', true );
@@ -236,15 +231,15 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 require get_template_directory() . '/inc/home-slider.php';
 
 /**
- * INclude the MM4 Contact Form.
+ * Include the MM4 Contact Form.
  */
 
 include_once( get_stylesheet_directory() . '/plugins/mm4-you-contact-form/mm4-you-cf.php' );
 
 /**
- * Directions Map Contact Page.
+ * Directions Sidebar Contact Page.
  */
-require get_template_directory() . '/inc/directions-map.php';
+require get_template_directory() . '/inc/sidebar-contact-page.php';
 
 /**
  * Photo Gallery for the Gallery Page.
@@ -270,3 +265,8 @@ require get_template_directory() . '/inc/sidebar-specials.php';
  * Specials Callout for the Floor Plans Page.
  */
 require get_template_directory() . '/inc/callout-specials.php';
+
+/**
+ * Displays Map for the Community Page.
+ */
+require get_template_directory() . '/inc/community-map.php';

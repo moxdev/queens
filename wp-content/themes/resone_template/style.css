@@ -433,9 +433,9 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  border: 1px solid;
+  border: none;
   border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
+  border-radius: 0;
   background: #ccc;
   color: rgba(0, 0, 0, 0.8);
   font-size: 12px;
@@ -474,7 +474,7 @@ input[type="color"],
 textarea {
   color: #666;
   border: 1px solid #ccc;
-  border-radius: 3px;
+  border-radius: 0;
   padding: 3px; }
   input[type="text"]:focus,
   input[type="email"]:focus,
@@ -1208,15 +1208,62 @@ button.imagelightbox-arrow {
               flex: 1 1 25%; } }
 
 /*--------------------------------------------------------------
+## Community Page
+--------------------------------------------------------------*/
+.page-template-page-community #map-canvas {
+  min-height: 300px; }
+
+/*--------------------------------------------------------------
 ## Contact Page
 --------------------------------------------------------------*/
-.page-template-page-contact #map-canvas {
-  height: 300px; }
+.page-template-page-contact form label, .page-template-page-contact form input {
+  display: block;
+  width: 100%; }
 
-.page-template-page-contact #response-panel {
+.page-template-page-contact form label {
+  font-family: "Raleway-Bold";
+  margin-bottom: 1em; }
+
+.page-template-page-contact form .submit-button {
+  background-color: #d0a449;
+  color: #fff;
+  border-radius: 20px;
+  width: 30%;
+  padding: 10px; }
+
+.page-template-page-contact aside {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  font-family: "Raleway-Regular"; }
+  .page-template-page-contact aside h2 {
+    text-transform: uppercase;
+    margin: .25em 0; }
+
+.page-template-page-contact #address-phone span {
+  display: block; }
+
+.page-template-page-contact #address-phone a {
+  text-decoration: none;
+  color: inherit; }
+
+.page-template-page-contact #directions .side-address {
+  display: block; }
+
+.page-template-page-contact #directions #map-canvas {
+  height: 300px;
+  margin: 1em 0; }
+
+.page-template-page-contact #directions #response-panel {
   display: none; }
-  .page-template-page-contact #response-panel.active {
+  .page-template-page-contact #directions #response-panel.active {
     display: block; }
+
+.page-template-page-contact #directions .directions-submit-button {
+  color: #fff;
+  background-color: #00467e;
+  width: 30%;
+  text-transform: uppercase;
+  padding: 10px; }
 
 /*--------------------------------------------------------------
 # Footer
