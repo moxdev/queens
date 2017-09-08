@@ -1,29 +1,29 @@
 function carousel() {
-	var firstSlide = jQuery('.home-slider ul li:first');
-	var lastSlide = jQuery('.home-slider ul li:last');
-	var firstNav = jQuery('.home-slider ol li:first');
-	var lastNav = jQuery('.home-slider ol li:last');
-	
+	var firstSlide = jQuery('#home-carousel ul li:first');
+	var lastSlide = jQuery('#home-carousel ul li:last');
+	var firstNav = jQuery('ol.carousel-nav li:first');
+	var lastNav = jQuery('ol.carousel-nav li:last');
+
 	function cycleSlides() {
-		var nextSlide, selectedSlide = jQuery('.home-slider ul li.active');
+		var nextSlide, selectedSlide = jQuery('#home-carousel ul li.active');
     	next = selectedSlide.next('li').length ? selectedSlide.next('li') : firstSlide;
 		selectedSlide.removeClass('active');
     	next.addClass('active');
 	}
-	
+
 	function cycleNav() {
-		var nextNav, selectedNav = jQuery('.home-slider ol li.active');
+		var nextNav, selectedNav = jQuery('ol.carousel-nav li.active');
     	next = selectedNav.next('li').length ? selectedNav.next('li') : firstNav;
 		selectedNav.removeClass('active');
     	next.addClass('active');
 	}
-	
-	var timerSlides = setInterval(cycleSlides, 12000);
-	var timerNav = setInterval(cycleNav, 12000);
-	
+
+	var timerSlides = setInterval(cycleSlides, 8000);
+	var timerNav = setInterval(cycleNav, 8000);
+
 	function nextImage() {
-		var nextSlide, selectedSlide = jQuery('.home-slider ul li.active');
-		var nextNav, selectedNav = jQuery('.home-slider ol li.active');
+		var nextSlide, selectedSlide = jQuery('#home-carousel ul li.active');
+		var nextNav, selectedNav = jQuery('ol.carousel-nav li.active');
 		nextSlide = selectedSlide.next('li').length ? selectedSlide.next('li') : firstSlide;
 		nextNav = selectedNav.next('li').length ? selectedNav.next('li') : firstNav;
 		selectedSlide.removeClass('active');
@@ -32,14 +32,14 @@ function carousel() {
 		nextNav.addClass('active');
 		clearInterval(timerSlides);
 		clearInterval(timerNav);
-		timerSlides = setInterval(cycleSlides, 12000);
-		timerNav = setInterval(cycleNav, 12000);
+		timerSlides = setInterval(cycleSlides, 8000);
+		timerNav = setInterval(cycleNav, 8000);
 		return false;
 	}
-	
+
 	function prevImage() {
-		var prevSlide, selectedSlide = jQuery('.home-slider ul li.active');
-		var prevNav, selectedNav = jQuery('.home-slider ol li.active');
+		var prevSlide, selectedSlide = jQuery('#home-carousel ul li.active');
+		var prevNav, selectedNav = jQuery('ol.carousel-nav li.active');
 		prevSlide= selectedSlide.prev('li').length ? selectedSlide.prev('li') : lastSlide;
 		prevNav= selectedNav.prev('li').length ? selectedNav.prev('li') : lastNav;
 		selectedSlide.removeClass('active');
@@ -48,41 +48,38 @@ function carousel() {
 		prevNav.addClass('active');
 		clearInterval(timerSlides);
 		clearInterval(timerNav);
-		timerSlides = setInterval(cycleSlides, 12000);
-		timerNav = setInterval(cycleNav, 12000);
+		timerSlides = setInterval(cycleSlides, 8000);
+		timerNav = setInterval(cycleNav, 8000);
 		return false;
 	}
-	
-	jQuery('.home-slider ol li a').click(function() {
-		var position = jQuery( '.home-slider ol li a' ).index(this);
-		jQuery( '.home-slider ul li' ).removeClass('active');
-		jQuery( '.home-slider ul li' ).eq(position).addClass('active');
-		jQuery('.home-slider ol li').removeClass('active');
+
+	jQuery('ol.carousel-nav li a').click(function() {
+		var position = jQuery( 'ol.carousel-nav li a' ).index(this);
+		jQuery( '#home-carousel ul li' ).removeClass('active');
+		jQuery( '#home-carousel ul li' ).eq(position).addClass('active');
+		jQuery('ol.carousel-nav li').removeClass('active');
 		jQuery(this).parent().addClass('active');
 		clearInterval(timerSlides);
 		clearInterval(timerNav);
-		timerSlides = setInterval(cycleSlides, 12000);
-		timerNav = setInterval(cycleNav, 12000);
+		timerSlides = setInterval(cycleSlides, 8000);
+		timerNav = setInterval(cycleNav, 8000);
 		return false;
 	});
-	
-	jQuery('#home-carousel-prev').click(function() {
-		prevImage();
-	})
-	
-	jQuery('#home-carousel-next').click(function() {
-		nextImage();
-	})
-	
+
 	// TOUCHSWIPE FUNCTIONALITY
-	jQuery(".home-slider ul li").swipe( {
+	jQuery("#home-carousel ul li").swipe( {
+		//Generic swipe handler for all directions
 		swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+			//alert("You swiped " + direction );
 			if(direction === 'left') {
 				nextImage();
 			} else if(direction === 'right') {
 				prevImage();
-			}
+			} /*else if(direction === 'up' || direction === 'down') {
+				return false;
+			}*/
 		},
+		//Default is 75px, set to 0 for demo so any distance triggers swipe
 	   threshold:0,
 	   triggerOnTouchEnd: true,
 	   allowPageScroll:"vertical"
@@ -90,8 +87,9 @@ function carousel() {
 }
 
 jQuery(window).load(function() {
-	jQuery('.home-slider ul li').first().addClass('active');
-	jQuery('.home-slider ol').first().addClass('active');
-	jQuery('.home-slider ol li').first().addClass('active');
+	jQuery('#home-carousel').imagefill();
+	jQuery('#home-carousel ul li').first().addClass('active');
+	jQuery('ol.carousel-nav').addClass('active');
+	jQuery('ol.carousel-nav li').first().addClass('active');
 	carousel();
 })

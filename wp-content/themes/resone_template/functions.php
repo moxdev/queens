@@ -41,7 +41,7 @@ if ( ! function_exists( 'resone_template_setup' ) ) :
 		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		 */
 		add_theme_support( 'post-thumbnails' );
-		add_image_size('home-carousel', 1600, 500, true);
+		add_image_size('home-carousel', 1400, 500, false);
 		add_image_size('floorplans', 900, 9999, false);
 		add_image_size('gallery', 300, 260, true);
 
@@ -185,8 +185,8 @@ function resone_template_scripts() {
 	  if($addCarousel == "Yes") {
 	    wp_enqueue_script( 'resone-template-images-loaded', get_template_directory_uri() . '/js/min/jquery.imagesloaded.min.js', array('jquery'), '20141217', true );
 	    wp_enqueue_script( 'resone-template-image-fill', get_template_directory_uri() . '/js/min/jquery-imagefill.min.js', array('resone-template-images-loaded'), '20141217', true );
-	    wp_enqueue_script( 'resone-template-touchswipe-library', get_template_directory_uri() . '/js/min/jquery.touchSwipe.min.js', array('resone-template-image-fill'), '20151001', true );
-	    wp_enqueue_script( 'resone-template-home-carousel', get_template_directory_uri() . '/js/min/home-carousel-min.js', array('resone-template-touchswipe-library'), '20151006', true );
+	    wp_enqueue_script( 'resone-template-touchswipe-library', get_template_directory_uri() . '/js/min/jquery.touchSwipe.min.js', array('resone-template-image-fill'), '20141217', true );
+	    wp_enqueue_script( 'resone-template-home-carousel', get_template_directory_uri() . '/js/min/home-carousel-min.js', array('resone-template-touchswipe-library'), '20141217', true );
 	  }
 	}
 

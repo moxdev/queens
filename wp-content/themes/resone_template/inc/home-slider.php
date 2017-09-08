@@ -6,42 +6,51 @@
  */
 
 function resone_template_homepage_slider() {
-  if ( function_exists( 'get_field' ) ) {
-    $addCarousel = get_field('add_a_carousel_to_the_hompage');
 
-    if($addCarousel == "Yes") { ?>
+  if( is_page_template('frontpage.php') ) {
+    if( function_exists('get_field') ) {
 
-      <div class="home-slider">
-        <?php
+      $addCarousel = get_field('add_a_carousel_to_the_hompage');
 
-        if( have_rows('slides') ): ?>
+      if( $addCarousel == 'Yes' && have_rows('slides') ): ?>
+
+        <div id="home-carousel" class="carousel">
           <ul>
-          <?php while ( have_rows('slides') ) : the_row();
-            $image = get_sub_field('slide_image'); ?>
+
+          <?php while ( have_rows('slides') ) : the_row(); ?>
 
             <li>
-              <?php if($image): ?>
-                <div class="slide-img"><img src="<?php echo $image['sizes']['home-carousel']; ?>" alt="<?php echo $image['alt']; ?>"></div>
-              <?php endif; ?>
+
+            <?php
+
+              $imageArr = get_sub_field('slide_image');
+              $image    = wp_get_attachment_image_src($imageArr[id], 'front-page-slide-1'); ?>
+
+              <img src="<?php echo esc_url( $image[0] ); ?>" alt="<?php echo esc_attr( $imageArr[title] ); ?>">
+
             </li>
 
           <?php endwhile; ?>
+
           </ul>
 
-          <?php $rows = get_field('slides');
+          <?php
+
+          $rows     = get_field('slides');
           $rowCount = count($rows); ?>
-          <ol>
+
+          <ol class="carousel-nav">
+
           <?php for ($i = 1; $i <= $rowCount; $i++) { ?>
+
             <li><a href="#"><?php echo $i; ?></a></li>
+
           <?php } ?>
+
           </ol>
-        <?php endif;
+        </div><!-- #home-carousel -->
 
-        ?>
-        <!--<img src="<?php //echo get_template_directory_uri() . '/imgs/home-ph1.gif'; ?>" style="display:block; margin:0 auto;">-->
-      </div>
-
-      <?php
+      <?php endif;
     }
   }
 }

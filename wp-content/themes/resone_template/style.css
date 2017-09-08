@@ -993,64 +993,96 @@ button.imagelightbox-arrow {
 /*--------------------------------------------------------------
 ### Homepage Slider
 --------------------------------------------------------------*/
-.page-template-frontpage .home-slider {
-  clear: both;
+/*--------------------------------------------------------------
+### Carousel
+--------------------------------------------------------------*/
+#home-carousel {
+  min-height: 200px;
   position: relative; }
-  .page-template-frontpage .home-slider img {
-    width: 100%;
-    height: auto; }
-  .page-template-frontpage .home-slider ul {
-    position: relative;
-    min-height: 300px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden; }
-    .page-template-frontpage .home-slider ul li {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      width: 100%;
-      opacity: 0;
-      z-index: 5; }
-      .page-template-frontpage .home-slider ul li.active {
-        opacity: 1;
-        z-index: 50; }
-  .page-template-frontpage .home-slider ol {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    position: absolute;
-    display: block;
-    bottom: 1.5em;
-    left: 1.25em;
-    opacity: 1;
-    -webkit-transition: opacity 2s ease-in-out;
-    transition: opacity 2s ease-in-out;
-    z-index: 50; }
-    .page-template-frontpage .home-slider ol .active {
-      opacity: 1; }
-    .page-template-frontpage .home-slider ol .active a {
-      background-color: #00609c; }
-    .page-template-frontpage .home-slider ol li {
-      margin: 0 .25em 0 0;
-      float: left; }
-      .page-template-frontpage .home-slider ol li a {
-        overflow: hidden;
-        padding: .5em;
-        background-color: red;
-        border-radius: 50%;
-        width: 35px;
-        height: 35px;
-        display: block;
-        text-indent: -999em;
-        -webkit-transition: opacity 1s ease-in-out;
-        transition: opacity 1s ease-in-out; }
 
-.page-template-frontpage-php .home-slider ol li
-.page-template-frontpage-php .home-slider ol li.active
-.page-template-frontpage-php .home-slider ol li a:focus {
-  outline: none; }
+#home-carousel ul, ol.carousel-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+#home-carousel ul, #home-carousel ul li {
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0; }
+
+#home-carousel ul li {
+  opacity: 0;
+  -webkit-transition: opacity 2s ease-in-out;
+  transition: opacity 2s ease-in-out;
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0; }
+
+#home-carousel ul li.active {
+  opacity: 1; }
+
+#home-carousel span {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: absolute;
+  z-index: 10;
+  top: 4em;
+  left: 2em;
+  font-size: 1.8em;
+  font-family: "Raleway-Bold";
+  text-align: left;
+  line-height: 1;
+  color: #FFF;
+  text-shadow: 2px 2px 4px black; }
+
+#home-carousel ul li img {
+  max-width: none; }
+
+ol.carousel-nav {
+  display: none;
+  opacity: 0;
+  -webkit-transition: opacity 2s ease-in-out;
+  transition: opacity 2s ease-in-out; }
+
+#home-carousel ol {
+  position: absolute;
+  bottom: 2.5em;
+  left: 2em;
+  z-index: 30; }
+
+ol.carousel-nav.active {
+  opacity: 1; }
+
+ol.carousel-nav li {
+  display: inline-block;
+  margin: 0 1em 0 0; }
+
+ol.carousel-nav li:last-of-type {
+  margin: 0; }
+
+ol.carousel-nav li a {
+  display: block;
+  overflow: hidden;
+  width: 60px;
+  height: 20px;
+  -webkit-transform: skewX(20deg);
+          transform: skewX(20deg);
+  text-decoration: none;
+  background-color: #000;
+  text-indent: -9999em;
+  -webkit-transition: background-color 2s;
+  transition: background-color 2s; }
+
+ol.carousel-nav li.active a {
+  background-color: #00467e; }
+
+ol.carousel-nav li.active a:hover {
+  cursor: text; }
 
 /*--------------------------------------------------------------
 ### Specials
