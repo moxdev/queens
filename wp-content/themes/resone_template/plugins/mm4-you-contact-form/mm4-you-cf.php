@@ -165,7 +165,7 @@ function mm4_you_quick_contact_form() {
 			</div>
 			<div class="g-recaptcha" data-sitekey="<?php echo $public_key; ?>"></div>
 			<div class="msg-box"></div>
-			<input class="form-button" type="submit" value="submit request">
+			<button class="form-button">Submit Request</button>
 		</form>
 	</div>
 <?php }

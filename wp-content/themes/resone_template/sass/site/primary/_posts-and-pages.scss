@@ -25,67 +25,10 @@
 
   #primary,
   aside {
-    padding-left: 1.75em;
-    padding-right: 1.75em;
+    @include padding-left-right;
   }
 
   #primary {
     @include container;
-  }
-}
-
-#page {
-
-  @include respond-to('950') {
-
-  }
-
-  @include respond-to('1150') {
-    .page-flex-wrapper {
-      padding-top: 2em;
-      display: flex;
-      justify-content: space-between;
-    }
-
-    #left-secondary {
-      flex: 1 1 30%;
-      padding-right:1em;
-    }
-
-    #primary {
-      flex: 1 1 50%;
-      padding-left: 0;
-      padding-right: 0;
-    }
-
-    #secondary {
-      flex: 1 1 20%;
-      padding-left: 1em;
-    }
-  }
-
-  @include respond-to('1350') {
-    .page-flex-wrapper {
-      padding-top: 2em;
-      padding-bottom: 2em;
-      display: flex;
-      justify-content: space-between;
-    }
-
-    #left-secondary {
-      flex: 1 1 20%;
-      padding-right:1em;
-    }
-
-    #primary {
-      flex: 1 1 50%;
-      padding-left: 1em;
-      padding-right: 1em;
-    }
-
-    #secondary {
-      flex: 1 1 20%;
-      padding-left: 1em;
-    }
   }
 }

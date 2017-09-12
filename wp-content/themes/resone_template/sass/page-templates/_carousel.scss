@@ -1,9 +1,13 @@
 #home-carousel {
-  min-height:300px;
+  min-height:250px;
   position:relative;
 
   img {
     max-width:none;
+  }
+
+  @include respond-to('575') {
+     min-height: 300px;
   }
 
   @include respond-to('950') {

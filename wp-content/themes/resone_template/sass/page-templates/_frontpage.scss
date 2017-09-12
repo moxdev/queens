@@ -1,11 +1,135 @@
 .page-template-frontpage {
 
-  @include respond-to('1150') {
+  #page {
 
     h1 {
-      @include reset;
-      font-size: 1.8em;
-      line-height: 1.2;
+      font-size: 1.7em;
+    }
+
+    .page-flex-wrapper {
+      padding-bottom: 2em;
+    }
+
+    @include respond-to('750') {
+      #secondary {
+        .right-sidebar {
+          display: flex;
+          justify-content: space-between;
+
+          .features {
+            flex: 1 1 50%;
+            padding-right: 1em;
+
+            h2 {
+              text-align: left;
+              padding-left: 1em;
+            }
+
+            ul {
+              padding-left: 2.8em;
+            }
+          }
+        }
+      }
+
+    }
+
+    @include respond-to('950') {
+      .page-flex-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      #left-secondary {
+        flex: 1 1 20%;
+        padding-right: 0;
+      }
+
+      #primary {
+        flex: 1 1 50%;
+      }
+
+      #secondary {
+        flex: 0 0 100%;
+        padding-top: 2em;
+      }
+    }
+
+    @include respond-to('1150') {
+
+      h1 {
+        @include reset;
+        font-size: 1.8em;
+        line-height: 1.2;
+      }
+
+      .page-flex-wrapper {
+        padding-top: 2em;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+      }
+
+      #left-secondary {
+        flex: 1 1 30%;
+        padding-left:1.75em;
+        padding-right:1em;
+      }
+
+      #primary {
+        flex: 1 1 50%;
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      #secondary {
+        flex: 1 1 20%;
+        padding-top: 0;
+        padding-left: 1em;
+        padding-right: 1.75em;
+
+        .right-sidebar {
+          display: block;
+
+          .features {
+            padding-right: 1em;
+
+            h2 {
+              text-align: center;
+              padding-left: 0;
+            }
+
+            ul {
+              padding-left: 1.5em;
+            }
+          }
+        }
+      }
+    }
+
+    @include respond-to('1350') {
+      .page-flex-wrapper {
+        padding-top: 2em;
+        padding-bottom: 2em;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      #left-secondary {
+        flex: 1 1 20%;
+        padding-right:1em;
+      }
+
+      #primary {
+        flex: 1 1 50%;
+        padding-left: 1em;
+        padding-right: 1em;
+      }
+
+      #secondary {
+        flex: 1 1 20%;
+        padding-left: 1em;
+      }
     }
   }
 }

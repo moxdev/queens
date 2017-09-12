@@ -25,15 +25,32 @@
       }
 
       .form-button {
+        @include reset;
         color: $color__brand-2;
         text-transform: uppercase;
         background: transparent;
         font-family: $font__bold;
         text-align: left;
+        font-size: 1em;
+        position: relative;
+        padding-top: 10px;
+
+        &:after {
+          content: '';
+          position: absolute;
+          top: 4px;
+          left: 100%;
+          background-image: url('/wp-content/themes/resone_template/imgs/submit-arrow.svg');
+          background-repeat: no-repeat;
+          display: inline-flex;
+          width: 27px;
+          height: 27px;
+          margin-left: 10px;
+        }
       }
     }
 
-    @include respond-to('1150') {
+    @include respond-to('950') {
       display: block;
       font-size: .9em;
 
