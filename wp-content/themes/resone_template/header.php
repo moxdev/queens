@@ -29,40 +29,43 @@
 
 		<div class="flex-wrapper">
 			<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-			<?php
-			endif;
+				<?php
+				the_custom_logo();
+				if ( is_front_page() && is_home() ) : ?>
+					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+				<?php else : ?>
+					<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+				<?php
+				endif;
 
-			$description = get_bloginfo( 'description', 'display' );
-			if ( $description || is_customize_preview() ) : ?>
-				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-			<?php
-			endif; ?>
-		</div><!-- .site-branding -->
+				$description = get_bloginfo( 'description', 'display' );
+				if ( $description || is_customize_preview() ) : ?>
+					<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
+				<?php
+				endif; ?>
+			</div><!-- .site-branding -->
 
+			<div class="flex-group">
 
-		 <?php if( $ph ): ?>
+				 <?php if( $ph ): ?>
 
-			<div id="masthead-tel">
-				<a class="tel-link" href="tel:<?php echo esc_html($ph) ?>"><span><img src="<?php echo get_template_directory_uri() . '/imgs/icon-phone.svg' ?>"></span><span class="call">Call Today!</span><span class="tel"><?php echo esc_html( $ph ); ?></span></a>
-			</div>
+					<div id="masthead-tel">
+						<a class="tel-link" href="tel:<?php echo esc_html( $ph ) ?>"><span><img src="<?php echo get_template_directory_uri() . '/imgs/icon-phone.svg' ?>"></span><span class="call">Call Today!</span><span class="tel"><?php echo esc_html( $ph ); ?></span></a>
+					</div>
 
-		<?php endif; ?>
+				<?php endif; ?>
 
-		<?php if ( has_nav_menu( 'primary' ) ) : ?>
+				<?php if ( has_nav_menu( 'primary' ) ) : ?>
 
-			<button class="menu-toggle" aria-expanded="false"><?php esc_html_e( 'Menu', 'resone_template' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container'=> 'nav', 'container_class'=>'main-navigation', 'container_id'=> 'site-navigation' ) ); ?>
+					<button class="menu-toggle" aria-expanded="false"><?php esc_html_e( 'Menu', 'resone_template' ); ?></button>
 
-		<?php endif; ?>
-		</div>
+					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container'=> 'nav', 'container_class'=>'main-navigation', 'container_id'=> 'site-navigation' ) ); ?>
 
+				<?php endif; ?>
 
+			</div><!-- flex-group -->
+
+		</div><!-- flex-wrapper -->
 
 	</header><!-- #masthead -->
 

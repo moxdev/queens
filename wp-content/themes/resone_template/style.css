@@ -547,14 +547,18 @@ a {
     position: relative; }
   .main-navigation a {
     display: block;
-    text-decoration: none; }
+    text-decoration: none;
+    margin-left: .5em; }
+    @media (min-width: 1150px) {
+      .main-navigation a {
+        margin-left: 1em; } }
 
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
   display: block; }
 
-@media screen and (min-width: 37.5em) {
+@media (min-width: 950px) {
   .menu-toggle {
     display: none; }
   .main-navigation ul {
@@ -615,21 +619,49 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+  #masthead .site-branding img {
+    max-width: 175px; }
   #masthead .tel-link {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
+    display: none;
+    text-decoration: none;
+    font-family: "Raleway-Bold";
+    color: #00467e; }
+    #masthead .tel-link img {
+      max-width: 30px;
+      margin-right: 5px; }
   #masthead .tel {
-    display: none; }
+    display: none;
+    font-size: 1.1em; }
   #masthead .menu-toggle {
-    float: right; }
-  @media (min-width: 750px) {
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    background-color: transparent;
+    font-family: "Raleway-Regular";
+    text-transform: uppercase;
+    font-size: 1.4em;
+    color: #6d6e70; }
+  @media (min-width: 450px) {
     #masthead .flex-wrapper {
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap; } }
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end; }
+    #masthead .site-branding img {
+      max-width: 250px; }
+    #masthead .tel-link {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; } }
+  @media (min-width: 650px) {
+    #masthead .call {
+      display: none; }
+    #masthead .tel {
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex; } }
 
 /*--------------------------------------------------------------
 # Accessibility

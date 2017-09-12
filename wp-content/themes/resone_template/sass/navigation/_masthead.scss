@@ -13,31 +13,65 @@
     align-items: center;
   }
 
+  .site-branding {
+
+    img {
+      max-width: 175px;
+    }
+  }
+
   .tel-link {
-    display: flex;
-    align-items: center;
+    display: none;
+    text-decoration: none;
+    font-family: $font__bold;
+    color: $color__nav-phone;
+
+    img {
+      max-width: 30px;
+      margin-right: 5px;
+    }
   }
 
   .tel {
     display: none;
+    font-size: 1.1em;
   }
 
   .menu-toggle {
-    float: right;
+    @include reset;
+    margin-left: auto;
+    background-color: transparent;
+    font-family: $font__regular;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    color: $color__mobile-toggle-btn;
+
   }
 
-  @include respond-to('750') {
+  @include respond-to('450') {
+
     .flex-wrapper {
-      flex-wrap: wrap;
+      align-items: flex-end;
     }
 
-    #masthead-tel {
-      // flex: 1 1 50%;
-      // margin-left: auto;
+    .site-branding img {
+      max-width: 250px;
+    }
+    .tel-link {
+      display: flex;
+      justify-content: flex-end;
     }
 
-    #site-navigation {
-      // flex: 1 1 100%;
+  }
+
+  @include respond-to('650') {
+
+    .call {
+      display: none;
+    }
+
+    .tel {
+      display: inline-flex;
     }
   }
 }
