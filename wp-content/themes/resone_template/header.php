@@ -76,3 +76,5 @@
 	<?php if ( function_exists( 'resone_template_specials_callout' ) && is_page_template( 'page-floorplans.php' ) ) {
 	    resone_template_specials_callout();
 	}  ?>
+
+	<div class="page-flex-wrapper">

@@ -281,7 +281,7 @@ th {
 html {
   font-size: 15px;
   font-size: 0.9375rem; }
-  @media (min-width: 575px) {
+  @media (min-width: 450px) {
     html {
       font-size: 16px;
       font-size: 1rem; } }
@@ -773,31 +773,74 @@ a {
 .page-content,
 .entry-content,
 .entry-summary {
-  margin: 1.5em 0 0; }
+  margin: 1em 0 0; }
 
 .page-links {
   clear: both;
   margin: 0 0 1.5em; }
 
-#primary,
-aside {
-  padding-left: 1.75rem;
-  padding-right: 1.75rem; }
-  @media (min-width: 750px) {
-    #primary,
-    aside {
-      padding-left: 2.75rem;
-      padding-right: 2.75rem; } }
-  @media screen and (1450) {
-    #primary,
-    aside {
-      padding-left: 4.75rem;
-      padding-right: 4.75rem; } }
+#page #primary,
+#page aside {
+  padding-left: 1.75em;
+  padding-right: 1.75em; }
 
-#primary {
+#page #primary {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto; }
+
+@media (min-width: 1150px) {
+  #page .page-flex-wrapper {
+    padding-top: 2em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  #page #left-secondary {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 30%;
+            flex: 1 1 30%;
+    padding-right: 1em; }
+  #page #primary {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 50%;
+            flex: 1 1 50%;
+    padding-left: 0;
+    padding-right: 0; }
+  #page #secondary {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 20%;
+            flex: 1 1 20%;
+    padding-left: 1em; } }
+
+@media (min-width: 1350px) {
+  #page .page-flex-wrapper {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  #page #left-secondary {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 20%;
+            flex: 1 1 20%;
+    padding-right: 1em; }
+  #page #primary {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 50%;
+            flex: 1 1 50%;
+    padding-left: 1em;
+    padding-right: 1em; }
+  #page #secondary {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 20%;
+            flex: 1 1 20%;
+    padding-left: 1em; } }
 
 /*--------------------------------------------------------------
 ## Comments
@@ -1027,9 +1070,13 @@ button.imagelightbox-arrow {
 /*--------------------------------------------------------------
 ## Frontpage
 --------------------------------------------------------------*/
-/*--------------------------------------------------------------
-### Homepage Slider
---------------------------------------------------------------*/
+@media (min-width: 1150px) {
+  .page-template-frontpage h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.8em;
+    line-height: 1.2; } }
+
 /*--------------------------------------------------------------
 ### Carousel
 --------------------------------------------------------------*/
@@ -1115,30 +1162,42 @@ ol.carousel-nav li.active a:hover {
 /*--------------------------------------------------------------
 ### Specials
 --------------------------------------------------------------*/
-#left-secondary .specials h2 {
-  color: #00467e;
-  font-family: "Raleway-Heavy";
-  text-transform: uppercase;
-  letter-spacing: 2.5px;
-  font-size: 2em;
-  margin: 0; }
-
-#left-secondary .specials h3 {
-  color: #d0a449;
-  font-family: "Raleway-Bold";
-  font-size: 1.5em;
-  margin: .25em 0;
-  letter-spacing: 1px; }
-
-#left-secondary .specials p {
-  color: #6d6e70;
-  font-family: "Raleway-SemiBold";
-  margin: 0; }
-
-#left-secondary .specials hr {
-  background-color: #babbbc;
-  margin: 0;
-  padding: 0; }
+#left-secondary .specials {
+  padding-top: 1em;
+  padding-bottom: 1em; }
+  #left-secondary .specials h2 {
+    color: #00467e;
+    font-family: "Raleway-Heavy";
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-size: 2.5em;
+    margin: 0; }
+  #left-secondary .specials h3 {
+    color: #d0a449;
+    font-family: "Raleway-Bold";
+    font-size: 2em;
+    margin: .25em 0;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    padding-right: 20%; }
+  #left-secondary .specials p {
+    color: #6d6e70;
+    font-family: "Raleway-SemiBold";
+    margin: 0;
+    padding-right: 10%; }
+  #left-secondary .specials hr {
+    background-color: #babbbc;
+    margin: 0;
+    padding: 0; }
+  @media (min-width: 1150px) {
+    #left-secondary .specials {
+      padding-top: 0; }
+      #left-secondary .specials h2 {
+        font-size: 2em; }
+      #left-secondary .specials h3 {
+        font-size: 1.5em; }
+      #left-secondary .specials p {
+        font-size: .9em; } }
 
 /*--------------------------------------------------------------
 ### Quick Form
@@ -1163,9 +1222,13 @@ ol.carousel-nav li.active a:hover {
     background: transparent;
     font-family: "Raleway-Bold";
     text-align: left; }
-  @media (min-width: 950px) {
+  @media (min-width: 1150px) {
     #left-secondary .form-quick-contact-wrapper {
-      display: block; } }
+      display: block;
+      font-size: .9em; }
+      #left-secondary .form-quick-contact-wrapper h2 {
+        margin: 0;
+        padding: 0; } }
 
 /*--------------------------------------------------------------
 ### Features
@@ -1175,6 +1238,15 @@ ol.carousel-nav li.active a:hover {
   background-color: #d0a449;
   padding: 5px;
   text-align: center; }
+
+@media (min-width: 1150px) {
+  .right-sidebar .features {
+    font-size: .9em; }
+    .right-sidebar .features h2 {
+      font-size: 1.2em;
+      margin: 0; }
+    .right-sidebar .features .wrapper {
+      padding: 1em 0; } }
 
 .right-sidebar .features-disclaimer {
   margin: 1em 0; }

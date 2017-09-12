@@ -62,7 +62,7 @@
 html {
     @include font-size(.9375);
 
-    @include respond-to('575') {
+    @include respond-to('450') {
         @include font-size(1);
     }
 
