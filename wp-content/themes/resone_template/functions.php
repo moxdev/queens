@@ -41,7 +41,7 @@ if ( ! function_exists( 'resone_template_setup' ) ) :
 		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		 */
 		add_theme_support( 'post-thumbnails' );
-		add_image_size('home-carousel', 1400, 500, false);
+		add_image_size('home-carousel-slide', 1600, 500, true);
 		add_image_size('floorplans', 900, 9999, false);
 		add_image_size('gallery', 300, 260, true);
 

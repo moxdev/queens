@@ -23,10 +23,9 @@ function resone_template_homepage_slider() {
 
             <?php
 
-              $imageArr = get_sub_field('slide_image');
-              $image    = wp_get_attachment_image_src($imageArr[id], 'front-page-slide-1'); ?>
+              $img = get_sub_field('slide_image') ?>
 
-              <img src="<?php echo esc_url( $image[0] ); ?>" alt="<?php echo esc_attr( $imageArr[title] ); ?>">
+              <img src="<?php echo esc_url( $img['sizes']['home-carousel-slide'] ); ?>" alt="<?php echo esc_attr( $img['alt'] ); ?>" description="<?php echo esc_attr( $img['description'] ); ?>">
 
             </li>
 
