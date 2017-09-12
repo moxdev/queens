@@ -5,6 +5,8 @@
   background-color: $color__background-masthead;
   border-bottom: 5px solid $color__border-bottom-masthead;
 
+  @include linx($color__nav-links, $color__nav-links, $color__nav-links, $color__nav-links);
+
   .flex-wrapper {
     display: flex;
     justify-content: space-between;
@@ -22,5 +24,20 @@
 
   .menu-toggle {
     float: right;
+  }
+
+  @include respond-to('750') {
+    .flex-wrapper {
+      flex-wrap: wrap;
+    }
+
+    #masthead-tel {
+      // flex: 1 1 50%;
+      // margin-left: auto;
+    }
+
+    #site-navigation {
+      // flex: 1 1 100%;
+    }
   }
 }

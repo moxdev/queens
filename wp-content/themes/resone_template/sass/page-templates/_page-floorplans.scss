@@ -28,7 +28,34 @@
   }
 
   .floor-plan-disclaimer {
-    font-size: 12px
+    font-size: 12px;
+  }
+
+
+  @include respond-to('750') {
+    .floorplan-inner-wrapper {
+      display: flex;
+      justify-content: flex-start;
+
+      img {
+        max-width: 400px;
+      }
+
+      .description,
+      .img-wrapper {
+        flex: 1 1 50%;
+        text-align: left;
+      }
+    }
+  }
+
+  @include respond-to('950') {
+    .floorplan-inner-wrapper {
+
+      img {
+        max-width: 500px;
+      }
+    }
   }
 }
 

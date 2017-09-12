@@ -53,7 +53,6 @@
 			</div>
 
 		<?php endif; ?>
-		</div>
 
 		<?php if ( has_nav_menu( 'primary' ) ) : ?>
 
@@ -61,6 +60,9 @@
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container'=> 'nav', 'container_class'=>'main-navigation', 'container_id'=> 'site-navigation' ) ); ?>
 
 		<?php endif; ?>
+		</div>
+
+
 
 	</header><!-- #masthead -->
 
