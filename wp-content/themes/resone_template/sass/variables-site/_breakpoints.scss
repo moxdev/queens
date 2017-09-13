@@ -5,6 +5,7 @@ $breakpoints: (
   '650'  : ( min-width:  650px ),
   '750'  : ( min-width:  750px ),
   '950'  : ( min-width:  950px ),
+  '1050' : ( min-width: 1050px ),
   '1150' : ( min-width: 1150px ),
   '1350' : ( min-width: 1350px ),
   '1450' : ( min-width: 1450px ),
@@ -15,8 +16,8 @@ $breakpoints: (
 );
 
 // $width__max-content-width-sm: 600px;
-$width__max-content-width: 1200px;
-$width__max-content-width-lg: 1300px;
+$width__max-content-width: 1400px;
+$width__max-content-width-lg: 1500px;
 // $width__max-content-width-xlg: 1800px;
 // $width__max-content-width-xxlg: 2000px;
 // $width__max-content-width-xxxlg: 2200px;

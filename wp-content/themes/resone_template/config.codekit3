@@ -413,6 +413,26 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/imgs\/handi.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/imgs\/handi.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/imgs\/handicap.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/imgs\/handicap.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/imgs\/handicapped.gif": {
 		"ft": 4194304,
 		"iS": 378,
@@ -552,6 +572,17 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/imgs\/icon-handicap.png": {
+		"ft": 32768,
+		"iS": 455,
+		"oA": 0,
+		"oAP": "\/imgs\/icon-handicap.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/imgs\/icon-phone.png": {
 		"ft": 32768,
 		"iS": 677,
@@ -614,6 +645,12 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/imgs\/og-submit-arrow.xml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/imgs\/og-submit-arrow.xml",
+		"oF": 0
 		},
 	"\/imgs\/slider-test\/Queens-Manor-Exterior-1400.png": {
 		"ft": 32768,

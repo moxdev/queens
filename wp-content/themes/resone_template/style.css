@@ -795,7 +795,7 @@ a {
       padding-right: 4.75rem; } }
 
 #page #primary {
-  max-width: 1200px;
+  max-width: 1400px;
   margin-left: auto;
   margin-right: auto; }
 
@@ -1031,7 +1031,10 @@ button.imagelightbox-arrow {
   font-size: 1.7em; }
 
 .page-template-frontpage #page .page-flex-wrapper {
-  padding-bottom: 2em; }
+  padding-bottom: 2em;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto; }
 
 @media (min-width: 750px) {
   .page-template-frontpage #page #secondary .right-sidebar {
@@ -1415,7 +1418,7 @@ ol.carousel-nav li.active a:hover {
 ## Gallery Page
 --------------------------------------------------------------*/
 .gallery {
-  max-width: 1300px;
+  max-width: 1500px;
   margin: 0 auto; }
   .gallery ul {
     list-style-type: none; }
@@ -1511,35 +1514,40 @@ ol.carousel-nav li.active a:hover {
 --------------------------------------------------------------*/
 .site-footer {
   background-color: #F4EAD5;
-  padding-bottom: 3em; }
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em; }
+  @media (min-width: 750px) {
+    .site-footer {
+      padding-left: 2.75rem;
+      padding-right: 2.75rem; } }
+  @media screen and (1450) {
+    .site-footer {
+      padding-left: 4.75rem;
+      padding-right: 4.75rem; } }
   .site-footer a {
     text-decoration: none;
     color: inherit; }
   .site-footer .site-info {
-    padding-left: 1.75rem;
-    padding-right: 1.75rem;
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
     text-align: center; }
-    @media (min-width: 750px) {
-      .site-footer .site-info {
-        padding-left: 2.75rem;
-        padding-right: 2.75rem; } }
-    @media screen and (1450) {
-      .site-footer .site-info {
-        padding-left: 4.75rem;
-        padding-right: 4.75rem; } }
+  .site-footer .right-column {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto; }
   .site-footer .contact-information {
     padding: 1em 0 2em; }
     .site-footer .contact-information .email {
-      text-decoration: underline; }
+      text-decoration: underline;
+      display: block; }
   .site-footer .bill-of-rights {
     padding: 1em 0; }
   .site-footer .social {
     margin: 1em 0; }
   .site-footer .translate {
     padding: 10px;
-    margin-bottom: 2em;
+    max-width: 200px;
+    margin: 0 auto 2em auto;
     background-color: #111111; }
   .site-footer .property-management-logos {
     font-size: 12px;
@@ -1548,6 +1556,12 @@ ol.carousel-nav li.active a:hover {
       display: block; }
     .site-footer .property-management-logos .res1-logo {
       margin-top: .5em; }
+  .site-footer .footer-disclaimer {
+    padding-bottom: 3em;
+    text-align: center;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto; }
   .site-footer .eho {
     font-size: 9px;
     line-height: 11px;
@@ -1557,9 +1571,63 @@ ol.carousel-nav li.active a:hover {
       display: block;
       margin-bottom: 5px;
       text-align: center; }
-    .site-footer .eho svg {
-      width: 40px;
-      height: 40px; }
   .site-footer #mms {
     font-size: 11px; }
+  @media (min-width: 1050px) {
+    .site-footer .site-info {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+    .site-footer .left-column {
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      text-align: left;
+      font-size: .8em; }
+    .site-footer .right-column {
+      -webkit-box-flex: 2;
+          -ms-flex: 2;
+              flex: 2;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      max-width: 670px;
+      margin: 0; }
+    .site-footer .social {
+      margin-right: 1em; }
+    .site-footer .translate {
+      -ms-flex-item-align: baseline;
+          align-self: baseline;
+      margin-left: 1em;
+      margin-right: 1em; }
+    .site-footer .property-management-logos {
+      margin-left: 1em; }
+    .site-footer .footer-disclaimer {
+      padding-top: 1em;
+      margin: 0;
+      text-align: left; }
+    .site-footer .eho {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -ms-flex-line-pack: center;
+          align-content: center; }
+      .site-footer .eho .eho-icons {
+        -webkit-box-flex: 1;
+            -ms-flex: 1 1 10%;
+                flex: 1 1 10%; }
+      .site-footer .eho .eho-text {
+        -webkit-box-flex: 1;
+            -ms-flex: 1 1 85%;
+                flex: 1 1 85%;
+        margin-left: 1em; } }
 /*# sourceMappingURL=style.css.map */
