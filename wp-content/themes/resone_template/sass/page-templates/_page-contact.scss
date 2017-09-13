@@ -15,7 +15,7 @@
       background-color: $color__background-contact-submit-button;
       color: $color__contact-submit-button;
       border-radius: 20px;
-      width: 30%;
+      width: 50%;
       padding: 10px;
     }
   }
@@ -26,8 +26,12 @@
 
     h2 {
       text-transform: uppercase;
-      margin: .25em 0;
+      margin: 0;
     }
+  }
+
+  aside > div {
+    padding-bottom: 1em;
   }
 
   #address-phone {
@@ -63,9 +67,42 @@
     .directions-submit-button {
       color: $color__directions-submit-button;
       background-color: $color__background-directions-submit-button;
-      width: 30%;
+      width: 50%;
       text-transform: uppercase;
       padding: 10px;
     }
   }
+
+  @include respond-to('950') {
+    #page {
+
+      .page-flex-wrapper {
+        @include container;
+        display: flex;
+        padding-bottom: 2em;
+      }
+      #primary {
+        flex: 1 1 50%;
+      }
+      #secondary {
+        flex: 1 1 30%;
+      }
+    }
+
+    form {
+      .submit-button {
+        max-width: 30%;
+        font-size: 1em;
+      }
+    }
+
+    #directions {
+      .directions-submit-button {
+        max-width: 40%;
+      }
+
+    }
+  }
+
+
 }

@@ -3,4 +3,16 @@
   #map-canvas {
     min-height: 300px;
   }
+
+  @include respond-to('950') {
+    #map-canvas {
+      min-height: 500px;
+    }
+  }
+
+  @include respond-to('1150') {
+    #map-canvas {
+      min-height: 600px;
+    }
+  }
 }

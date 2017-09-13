@@ -1,3 +1,16 @@
+#page {
+  background-color: $color__background-page;
+
+  #primary,
+  aside {
+    @include padding-left-right;
+  }
+
+  #primary {
+    @include container;
+  }
+}
+
 .sticky {
 	display: block;
 }
@@ -19,16 +32,4 @@
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
-}
-
-#page {
-
-  #primary,
-  aside {
-    @include padding-left-right;
-  }
-
-  #primary {
-    @include container;
-  }
 }

@@ -7,8 +7,12 @@ $color__brand-4: #111111;
 // MASTHEAD
 $color__background-masthead: #ffffff;
 $color__border-bottom-masthead: $color__brand-1;
+
 // BACKGROUND COLORS
-$color__background-body: f1f1f1;
+$color__background-page: #fff;
+
+
+$color__background-body: $color__brand-3;
 $color__background-alt-body: #E3E3E3;
 //$color__background-alt-body: #EEEDEE;
 $color__background-screen: #f1f1f1;
@@ -54,7 +58,6 @@ $color__h2: $color__brand-2;
 $color__background-carousel-nav: #fff;
 $color__background-carousel-nav-active: $color__brand-2;
 
-
 // SPECIALS SIDEBAR
 $color__h2-specials: $color__brand-1;
 $color__h3-specials: $color__brand-2;
@@ -86,3 +89,7 @@ $color__directions-submit-button: #fff;
 // FOOTER
 $color__background-footer: $color__brand-3;
 $color__background-google-translate: $color__brand-4;
+
+// LIGHTBOX COLORS
+$color__lightbox-nav-arrows: $color__brand-1;
+$color__lightbox-close-btn: $color__brand-1;

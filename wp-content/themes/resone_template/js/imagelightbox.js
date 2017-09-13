@@ -94,7 +94,7 @@
                 allowedTypes:   'png|jpg|jpeg|gif', // TODO make it work again
                 animationSpeed: 250,
                 activity:       false,
-                arrows:         false,
+                arrows:         true,
                 button:         false,
                 caption:        false,
                 enableKeyboard: true,

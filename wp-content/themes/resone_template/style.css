@@ -377,7 +377,7 @@ html {
           box-sizing: inherit; }
 
 body {
-  background: f1f1f1;
+  background: #F4EAD5;
   /* Fallback for when there is no custom background color defined. */ }
 
 blockquote, q {
@@ -761,6 +761,27 @@ a {
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
+#page {
+  background-color: #fff; }
+  #page #primary,
+  #page aside {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem; }
+    @media (min-width: 750px) {
+      #page #primary,
+      #page aside {
+        padding-left: 2.75rem;
+        padding-right: 2.75rem; } }
+    @media screen and (1450) {
+      #page #primary,
+      #page aside {
+        padding-left: 4.75rem;
+        padding-right: 4.75rem; } }
+  #page #primary {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto; }
+
 .sticky {
   display: block; }
 
@@ -778,26 +799,6 @@ a {
 .page-links {
   clear: both;
   margin: 0 0 1.5em; }
-
-#page #primary,
-#page aside {
-  padding-left: 1.75rem;
-  padding-right: 1.75rem; }
-  @media (min-width: 750px) {
-    #page #primary,
-    #page aside {
-      padding-left: 2.75rem;
-      padding-right: 2.75rem; } }
-  @media screen and (1450) {
-    #page #primary,
-    #page aside {
-      padding-left: 4.75rem;
-      padding-right: 4.75rem; } }
-
-#page #primary {
-  max-width: 1400px;
-  margin-left: auto;
-  margin-right: auto; }
 
 /*--------------------------------------------------------------
 ## Comments
@@ -877,37 +878,45 @@ object {
   background-color: rgba(255, 255, 255, 0.95); }
 
 button.imagelightbox-arrow {
-  position: fixed;
-  z-index: 9000;
-  top: 47.5%;
-  font-size: 2rem;
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  border-radius: 50%;
-  color: #00467e;
+  cursor: pointer;
+  width: 3.75em;
+  height: 7.5em;
   background-color: transparent;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  -webkit-transition: color .125s;
-  transition: color .125s;
-  min-width: auto;
+  vertical-align: middle;
+  position: fixed;
+  z-index: 10001;
+  top: 50%;
+  margin-top: -3.75em;
+  border: none;
+  outline: none;
+  color: #00467e;
   font-family: "Raleway-Light", sans-serif; }
   button.imagelightbox-arrow:hover {
     color: #00467e; }
 
+.imagelightbox-arrow:before {
+  width: 0;
+  height: 0;
+  border: 1em solid transparent;
+  content: '';
+  display: inline-block;
+  margin-bottom: -0.125em; }
+
 .imagelightbox-arrow-left {
   left: .75rem; }
 
+.imagelightbox-arrow-left:before {
+  border-left: none;
+  border-right-color: #00467e;
+  margin-left: -0.313em; }
+
 .imagelightbox-arrow-right {
   right: .75rem; }
+
+.imagelightbox-arrow-right:before {
+  border-right: none;
+  border-left-color: #00467e;
+  margin-right: -0.313em; }
 
 .imagelightbox-close {
   position: fixed;
@@ -1454,33 +1463,38 @@ ol.carousel-nav li.active a:hover {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
     .gallery li {
-      -webkit-box-flex: 1;
-          -ms-flex: 1 1 50%;
-              flex: 1 1 50%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 1 50%;
+              flex: 0 1 50%;
       padding: 0 .5em .5em;
       margin-bottom: 0; } }
   @media (min-width: 750px) {
     .gallery li {
-      -webkit-box-flex: 1;
-          -ms-flex: 1 1 33%;
-              flex: 1 1 33%; } }
+      -webkit-box-flex: 0;
+          -ms-flex: 0 1 33%;
+              flex: 0 1 33%; } }
   @media (min-width: 950px) {
     .gallery li {
-      -webkit-box-flex: 1;
-          -ms-flex: 1 1 25%;
-              flex: 1 1 25%; } }
+      -webkit-box-flex: 0;
+          -ms-flex: 0 1 25%;
+              flex: 0 1 25%; } }
 
 /*--------------------------------------------------------------
 ## Community Page
 --------------------------------------------------------------*/
 .page-template-page-community #map-canvas {
   min-height: 300px; }
+
+@media (min-width: 950px) {
+  .page-template-page-community #map-canvas {
+    min-height: 500px; } }
+
+@media (min-width: 1150px) {
+  .page-template-page-community #map-canvas {
+    min-height: 600px; } }
 
 /*--------------------------------------------------------------
 ## Contact Page
@@ -1497,7 +1511,7 @@ ol.carousel-nav li.active a:hover {
   background-color: #d0a449;
   color: #fff;
   border-radius: 20px;
-  width: 30%;
+  width: 50%;
   padding: 10px; }
 
 .page-template-page-contact aside {
@@ -1506,7 +1520,10 @@ ol.carousel-nav li.active a:hover {
   font-family: "Raleway-Regular"; }
   .page-template-page-contact aside h2 {
     text-transform: uppercase;
-    margin: .25em 0; }
+    margin: 0; }
+
+.page-template-page-contact aside > div {
+  padding-bottom: 1em; }
 
 .page-template-page-contact #address-phone span {
   display: block; }
@@ -1530,9 +1547,32 @@ ol.carousel-nav li.active a:hover {
 .page-template-page-contact #directions .directions-submit-button {
   color: #fff;
   background-color: #00467e;
-  width: 30%;
+  width: 50%;
   text-transform: uppercase;
   padding: 10px; }
+
+@media (min-width: 950px) {
+  .page-template-page-contact #page .page-flex-wrapper {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 2em; }
+  .page-template-page-contact #page #primary {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 50%;
+            flex: 1 1 50%; }
+  .page-template-page-contact #page #secondary {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 30%;
+            flex: 1 1 30%; }
+  .page-template-page-contact form .submit-button {
+    max-width: 30%;
+    font-size: 1em; }
+  .page-template-page-contact #directions .directions-submit-button {
+    max-width: 40%; } }
 
 /*--------------------------------------------------------------
 # Footer

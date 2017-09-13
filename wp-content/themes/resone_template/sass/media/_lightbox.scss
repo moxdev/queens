@@ -16,29 +16,33 @@
 }
 
 button.imagelightbox-arrow {
-  position: fixed;
-  z-index: 9000;
-  top: 47.5%;
-  font-size: 2rem;
-  padding: 0;
-  display: flex;
-  justify-content:center;
-  align-items: flex-start;
-  border-radius: 50%;
-  color: $color__brand-1;
+  cursor: pointer;
+  width: 3.75em;
+  height: 7.5em;
   background-color: transparent;
-  box-shadow: none;
-  transition: color .125s;
-  min-width: auto;
+  vertical-align: middle;
+  // display: none;
+  position: fixed;
+  z-index: 10001;
+  top: 50%;
+  margin-top: -3.75em;
+  border: none;
+  outline: none;
+  color: $color__lightbox-nav-arrows;
   font-family: $font__main;
 
   &:hover {
-    color:$color__brand-1;
+    color:$color__lightbox-nav-arrows;
   }
+}
 
-  // @include respond-to(small) {
-  //   font-size: 3rem;
-  // }
+.imagelightbox-arrow:before {
+  width: 0;
+  height: 0;
+  border: 1em solid transparent;
+  content: '';
+  display: inline-block;
+  margin-bottom: -0.125em
 }
 
 .imagelightbox-arrow-left {
@@ -49,6 +53,12 @@ button.imagelightbox-arrow {
   // }
 }
 
+.imagelightbox-arrow-left:before {
+  border-left: none;
+  border-right-color: $color__lightbox-nav-arrows;
+  margin-left: -0.313em;
+}
+
 .imagelightbox-arrow-right {
   right: .75rem;
 
@@ -57,12 +67,18 @@ button.imagelightbox-arrow {
   // }
 }
 
+.imagelightbox-arrow-right:before {
+  border-right: none;
+  border-left-color: $color__lightbox-nav-arrows;
+  margin-right: -0.313em;
+}
+
 .imagelightbox-close {
   position: fixed;
   top: 1rem;
   right: 1.25rem;
   z-index: 8500;
-  color: $color__brand-1;
+  color: $color__lightbox-close-btn;
   background-color: transparent;
   box-shadow: none;
   font-size: 2rem;
@@ -73,7 +89,7 @@ button.imagelightbox-arrow {
   font-family: $font__main;
 
   &:hover {
-    color:$color__brand-1;
+    color:$color__lightbox-close-btn;
     cursor: pointer;
   }
 
