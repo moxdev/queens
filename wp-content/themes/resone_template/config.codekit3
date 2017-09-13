@@ -351,6 +351,45 @@
 		"oAP": "\/imgs\/ai\/res1-logo.ai",
 		"oF": 0
 		},
+	"\/imgs\/copies\/handi.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/imgs\/copies\/handi.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/imgs\/copies\/handicap.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/imgs\/copies\/handicap.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/imgs\/copies\/handicapped.gif": {
+		"ft": 4194304,
+		"iS": 378,
+		"oA": 0,
+		"oAP": "\/imgs\/copies\/handicapped.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/imgs\/copies\/handicapped.png": {
+		"ft": 32768,
+		"iS": 1244,
+		"oA": 0,
+		"oAP": "\/imgs\/copies\/handicapped.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/imgs\/copies\/icon-ahd-logo copy.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -360,6 +399,17 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/imgs\/copies\/icon-ahd-logo.png": {
+		"ft": 32768,
+		"iS": 1229,
+		"oA": 0,
+		"oAP": "\/imgs\/copies\/icon-ahd-logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/imgs\/copies\/icon-eho copy.png": {
 		"ft": 32768,
@@ -381,6 +431,66 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/imgs\/copies\/icon-eho.png": {
+		"ft": 32768,
+		"iS": 725,
+		"oA": 0,
+		"oAP": "\/imgs\/copies\/icon-eho.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/imgs\/copies\/icon-facebook.png": {
+		"ft": 32768,
+		"iS": 461,
+		"oA": 0,
+		"oAP": "\/imgs\/copies\/icon-facebook.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/imgs\/copies\/icon-g-plus.png": {
+		"ft": 32768,
+		"iS": 730,
+		"oA": 0,
+		"oAP": "\/imgs\/copies\/icon-g-plus.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/imgs\/copies\/icon-handicap copy.gif": {
+		"ft": 4194304,
+		"iS": 389,
+		"oA": 0,
+		"oAP": "\/imgs\/copies\/icon-handicap copy.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/imgs\/copies\/icon-handicap.gif": {
+		"ft": 4194304,
+		"iS": 389,
+		"oA": 0,
+		"oAP": "\/imgs\/copies\/icon-handicap.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/imgs\/copies\/icon-handicap.png": {
+		"ft": 32768,
+		"iS": 455,
+		"oA": 0,
+		"oAP": "\/imgs\/copies\/icon-handicap.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/imgs\/copies\/icon-phone copy.png": {
 		"ft": 32768,
@@ -413,54 +523,565 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/imgs\/handi.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/imgs\/handi.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/imgs\/handicap.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/imgs\/handicap.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/imgs\/handicapped.gif": {
-		"ft": 4194304,
-		"iS": 378,
-		"oA": 0,
-		"oAP": "\/imgs\/handicapped.gif",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/imgs\/handicapped.png": {
+	"\/imgs\/copies\/icon-res1-logo.png": {
 		"ft": 32768,
-		"iS": 1244,
+		"iS": 1331,
 		"oA": 0,
-		"oAP": "\/imgs\/handicapped.png",
+		"oAP": "\/imgs\/copies\/icon-res1-logo.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/imgs\/icon-ahd-logo.png": {
-		"ft": 32768,
-		"iS": 1229,
+	"\/imgs\/floorplans\/1br_lg.gif": {
+		"ft": 4194304,
+		"iS": 30578,
 		"oA": 0,
-		"oAP": "\/imgs\/icon-ahd-logo.png",
+		"oAP": "\/imgs\/floorplans\/1br_lg.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/imgs\/floorplans\/1br_th.gif": {
+		"ft": 4194304,
+		"iS": 3367,
+		"oA": 0,
+		"oAP": "\/imgs\/floorplans\/1br_th.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/imgs\/floorplans\/2br_lg.gif": {
+		"ft": 4194304,
+		"iS": 27383,
+		"oA": 0,
+		"oAP": "\/imgs\/floorplans\/2br_lg.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/imgs\/floorplans\/2br_th.gif": {
+		"ft": 4194304,
+		"iS": 3195,
+		"oA": 0,
+		"oAP": "\/imgs\/floorplans\/2br_th.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/imgs\/floorplans\/3br_lg.gif": {
+		"ft": 4194304,
+		"iS": 28828,
+		"oA": 0,
+		"oAP": "\/imgs\/floorplans\/3br_lg.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/imgs\/floorplans\/3br_th.gif": {
+		"ft": 4194304,
+		"iS": 3537,
+		"oA": 0,
+		"oAP": "\/imgs\/floorplans\/3br_th.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/imgs\/for-gallery\/downloaded-from-site\/gallery\/1_lg.jpg": {
+		"ft": 16384,
+		"iS": 120073,
+		"oA": 0,
+		"oAP": "\/imgs\/for-gallery\/downloaded-from-site\/gallery\/1_lg.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
-		"oT": 1,
+		"q": 100
+		},
+	"\/imgs\/for-gallery\/downloaded-from-site\/gallery\/1_th.jpg": {
+		"ft": 16384,
+		"iS": 2713,
+		"oA": 0,
+		"oAP": "\/imgs\/for-gallery\/downloaded-from-site\/gallery\/1_th.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/imgs\/for-gallery\/downloaded-from-site\/gallery\/2_lg.jpg": {
+		"ft": 16384,
+		"iS": 53364,
+		"oA": 0,
+		"oAP": "\/imgs\/for-gallery\/downloaded-from-site\/gallery\/2_lg.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/imgs\/for-gallery\/downloaded-from-site\/gallery\/2_lgBK.jpg": {
+		"ft": 16384,
+		"iS": 67621,
+		"oA": 0,
+		"oAP": "\/imgs\/for-gallery\/downloaded-from-site\/gallery\/2_lgBK.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/imgs\/for-gallery\/downloaded-from-site\/gallery\/2_th.jpg": {
+		"ft": 16384,
+		"iS": 2096,
+		"oA": 0,
+		"oAP": "\/imgs\/for-gallery\/downloaded-from-site\/gallery\/2_th.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/imgs\/for-gallery\/downloaded-from-site\/gallery\/2_thBK.jpg": {
+		"ft": 16384,
+		"iS": 2042,
+		"oA": 0,
+		"oAP": "\/imgs\/for-gallery\/downloaded-from-site\/gallery\/2_thBK.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/imgs\/for-gallery\/downloaded-from-site\/gallery\/3_lg.jpg": {
+		"ft": 16384,
+		"iS": 69968,
+		"oA": 0,
+		"oAP": "\/imgs\/for-gallery\/downloaded-from-site\/gallery\/3_lg.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/imgs\/for-gallery\/downloaded-from-site\/gallery\/3_th.jpg": {
+		"ft": 16384,
+		"iS": 2057,
+		"oA": 0,
+		"oAP": "\/imgs\/for-gallery\/downloaded-from-site\/gallery\/3_th.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/imgs\/for-gallery\/downloaded-from-site\/gallery\/4_lg.jpg": {
+		"ft": 16384,
+		"iS": 44567,
+		"oA": 0,
+		"oAP": "\/imgs\/for-gallery\/downloaded-from-site\/gallery\/4_lg.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/imgs\/for-gallery\/downloaded-from-site\/gallery\/4_th.jpg": {
+		"ft": 16384,
+		"iS": 1494,
+		"oA": 0,
+		"oAP": "\/imgs\/for-gallery\/downloaded-from-site\/gallery\/4_th.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/imgs\/for-gallery\/downloaded-from-site\/gallery\/5_lg.jpg": {
+		"ft": 16384,
+		"iS": 41329,
+		"oA": 0,
+		"oAP": "\/imgs\/for-gallery\/downloaded-from-site\/gallery\/5_lg.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/imgs\/for-gallery\/downloaded-from-site\/gallery\/5_th.jpg": {
+		"ft": 16384,
+		"iS": 1813,
+		"oA": 0,
+		"oAP": "\/imgs\/for-gallery\/downloaded-from-site\/gallery\/5_th.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/imgs\/for-gallery\/downloaded-from-site\/gallery\/6_lg.jpg": {
+		"ft": 16384,
+		"iS": 27539,
+		"oA": 0,
+		"oAP": "\/imgs\/for-gallery\/downloaded-from-site\/gallery\/6_lg.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/imgs\/for-gallery\/downloaded-from-site\/gallery\/6_th.jpg": {
+		"ft": 16384,
+		"iS": 1453,
+		"oA": 0,
+		"oAP": "\/imgs\/for-gallery\/downloaded-from-site\/gallery\/6_th.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/imgs\/for-gallery\/downloaded-from-site\/gallery\/new\/10_lg.jpg": {
+		"ft": 16384,
+		"iS": 304178,
+		"oA": 0,
+		"oAP": "\/imgs\/for-gallery\/downloaded-from-site\/gallery\/new\/10_lg.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/imgs\/for-gallery\/downloaded-from-site\/gallery\/new\/10_th.jpg": {
+		"ft": 16384,
+		"iS": 6750,
+		"oA": 0,
+		"oAP": "\/imgs\/for-gallery\/downloaded-from-site\/gallery\/new\/10_th.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/imgs\/for-gallery\/downloaded-from-site\/gallery\/new\/1_lg.jpg": {
+		"ft": 16384,
+		"iS": 351095,
+		"oA": 0,
+		"oAP": "\/imgs\/for-gallery\/downloaded-from-site\/gallery\/new\/1_lg.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/imgs\/for-gallery\/downloaded-from-site\/gallery\/new\/1_th.jpg": {
+		"ft": 16384,
+		"iS": 7436,
+		"oA": 0,
+		"oAP": "\/imgs\/for-gallery\/downloaded-from-site\/gallery\/new\/1_th.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/imgs\/for-gallery\/downloaded-from-site\/gallery\/new\/2_lg.jpg": {
+		"ft": 16384,
+		"iS": 306941,
+		"oA": 0,
+		"oAP": "\/imgs\/for-gallery\/downloaded-from-site\/gallery\/new\/2_lg.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/imgs\/for-gallery\/downloaded-from-site\/gallery\/new\/2_th.jpg": {
+		"ft": 16384,
+		"iS": 6974,
+		"oA": 0,
+		"oAP": "\/imgs\/for-gallery\/downloaded-from-site\/gallery\/new\/2_th.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/imgs\/for-gallery\/downloaded-from-site\/gallery\/new\/3_lg.jpg": {
+		"ft": 16384,
+		"iS": 319845,
+		"oA": 0,
+		"oAP": "\/imgs\/for-gallery\/downloaded-from-site\/gallery\/new\/3_lg.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/imgs\/for-gallery\/downloaded-from-site\/gallery\/new\/3_th.jpg": {
+		"ft": 16384,
+		"iS": 7047,
+		"oA": 0,
+		"oAP": "\/imgs\/for-gallery\/downloaded-from-site\/gallery\/new\/3_th.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/imgs\/for-gallery\/downloaded-from-site\/gallery\/new\/4_lg.jpg": {
+		"ft": 16384,
+		"iS": 333153,
+		"oA": 0,
+		"oAP": "\/imgs\/for-gallery\/downloaded-from-site\/gallery\/new\/4_lg.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/imgs\/for-gallery\/downloaded-from-site\/gallery\/new\/4_th.jpg": {
+		"ft": 16384,
+		"iS": 7414,
+		"oA": 0,
+		"oAP": "\/imgs\/for-gallery\/downloaded-from-site\/gallery\/new\/4_th.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/imgs\/for-gallery\/downloaded-from-site\/gallery\/new\/5_lg.jpg": {
+		"ft": 16384,
+		"iS": 375554,
+		"oA": 0,
+		"oAP": "\/imgs\/for-gallery\/downloaded-from-site\/gallery\/new\/5_lg.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/imgs\/for-gallery\/downloaded-from-site\/gallery\/new\/5_th.jpg": {
+		"ft": 16384,
+		"iS": 6911,
+		"oA": 0,
+		"oAP": "\/imgs\/for-gallery\/downloaded-from-site\/gallery\/new\/5_th.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/imgs\/for-gallery\/downloaded-from-site\/gallery\/new\/6_lg.jpg": {
+		"ft": 16384,
+		"iS": 346416,
+		"oA": 0,
+		"oAP": "\/imgs\/for-gallery\/downloaded-from-site\/gallery\/new\/6_lg.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/imgs\/for-gallery\/downloaded-from-site\/gallery\/new\/6_th.jpg": {
+		"ft": 16384,
+		"iS": 6982,
+		"oA": 0,
+		"oAP": "\/imgs\/for-gallery\/downloaded-from-site\/gallery\/new\/6_th.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/imgs\/for-gallery\/downloaded-from-site\/gallery\/new\/7_lg.jpg": {
+		"ft": 16384,
+		"iS": 311507,
+		"oA": 0,
+		"oAP": "\/imgs\/for-gallery\/downloaded-from-site\/gallery\/new\/7_lg.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/imgs\/for-gallery\/downloaded-from-site\/gallery\/new\/7_th.jpg": {
+		"ft": 16384,
+		"iS": 7266,
+		"oA": 0,
+		"oAP": "\/imgs\/for-gallery\/downloaded-from-site\/gallery\/new\/7_th.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/imgs\/for-gallery\/downloaded-from-site\/gallery\/new\/8_lg.jpg": {
+		"ft": 16384,
+		"iS": 376018,
+		"oA": 0,
+		"oAP": "\/imgs\/for-gallery\/downloaded-from-site\/gallery\/new\/8_lg.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/imgs\/for-gallery\/downloaded-from-site\/gallery\/new\/8_th.jpg": {
+		"ft": 16384,
+		"iS": 7381,
+		"oA": 0,
+		"oAP": "\/imgs\/for-gallery\/downloaded-from-site\/gallery\/new\/8_th.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/imgs\/for-gallery\/downloaded-from-site\/gallery\/new\/9_lg.jpg": {
+		"ft": 16384,
+		"iS": 332960,
+		"oA": 0,
+		"oAP": "\/imgs\/for-gallery\/downloaded-from-site\/gallery\/new\/9_lg.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/imgs\/for-gallery\/downloaded-from-site\/gallery\/new\/9_th.jpg": {
+		"ft": 16384,
+		"iS": 6940,
+		"oA": 0,
+		"oAP": "\/imgs\/for-gallery\/downloaded-from-site\/gallery\/new\/9_th.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/imgs\/for-gallery\/downloaded-from-site\/gallery\/new\/apartments-hyattsville-photos.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/imgs\/for-gallery\/downloaded-from-site\/gallery\/new\/apartments-hyattsville-photos.php",
+		"oF": 0
+		},
+	"\/imgs\/for-gallery\/Queens Manor Exterior.jpg": {
+		"ft": 16384,
+		"iS": 424816,
+		"oA": 0,
+		"oAP": "\/imgs\/for-gallery\/Queens Manor Exterior.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/imgs\/for-gallery\/Queens-Manor-Exterior-3.jpg": {
+		"ft": 16384,
+		"iS": 248159,
+		"oA": 0,
+		"oAP": "\/imgs\/for-gallery\/Queens-Manor-Exterior-3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/imgs\/for-gallery\/Queens-Manor-Exterior2.jpg": {
+		"ft": 16384,
+		"iS": 147654,
+		"oA": 0,
+		"oAP": "\/imgs\/for-gallery\/Queens-Manor-Exterior2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/imgs\/for-gallery\/Queens-Manor-Laundry-Room-1.jpg": {
+		"ft": 16384,
+		"iS": 72107,
+		"oA": 0,
+		"oAP": "\/imgs\/for-gallery\/Queens-Manor-Laundry-Room-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/imgs\/for-gallery\/Queens-Manor-Leasing-Office.jpg": {
+		"ft": 16384,
+		"iS": 103193,
+		"oA": 0,
+		"oAP": "\/imgs\/for-gallery\/Queens-Manor-Leasing-Office.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/imgs\/for-gallery\/QueensManorKitchenCMYK.jpg": {
+		"ft": 16384,
+		"iS": 107543,
+		"oA": 0,
+		"oAP": "\/imgs\/for-gallery\/QueensManorKitchenCMYK.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/imgs\/for-gallery\/shot1.jpg": {
+		"ft": 16384,
+		"iS": 265709,
+		"oA": 0,
+		"oAP": "\/imgs\/for-gallery\/shot1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/imgs\/for-gallery\/shot10.jpg": {
+		"ft": 16384,
+		"iS": 111622,
+		"oA": 0,
+		"oAP": "\/imgs\/for-gallery\/shot10.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/imgs\/for-gallery\/tinified (1).zip": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/imgs\/for-gallery\/tinified (1).zip",
+		"oF": 0
+		},
+	"\/imgs\/for-gallery\/tinified (1)\/Queens Manor Exterior.jpg": {
+		"ft": 16384,
+		"iS": 97623,
+		"oA": 0,
+		"oAP": "\/imgs\/for-gallery\/tinified (1)\/Queens Manor Exterior.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/imgs\/for-gallery\/tinified (1)\/Queens-Manor-Exterior-3.jpg": {
+		"ft": 16384,
+		"iS": 220948,
+		"oA": 0,
+		"oAP": "\/imgs\/for-gallery\/tinified (1)\/Queens-Manor-Exterior-3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/imgs\/for-gallery\/tinified (1)\/Queens-Manor-Exterior2.jpg": {
+		"ft": 16384,
+		"iS": 98172,
+		"oA": 0,
+		"oAP": "\/imgs\/for-gallery\/tinified (1)\/Queens-Manor-Exterior2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/imgs\/for-gallery\/tinified (1)\/Queens-Manor-Laundry-Room-1.jpg": {
+		"ft": 16384,
+		"iS": 60767,
+		"oA": 0,
+		"oAP": "\/imgs\/for-gallery\/tinified (1)\/Queens-Manor-Laundry-Room-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/imgs\/for-gallery\/tinified (1)\/Queens-Manor-Leasing-Office.jpg": {
+		"ft": 16384,
+		"iS": 90565,
+		"oA": 0,
+		"oAP": "\/imgs\/for-gallery\/tinified (1)\/Queens-Manor-Leasing-Office.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/imgs\/for-gallery\/tinified (1)\/QueensManorKitchenCMYK.jpg": {
+		"ft": 16384,
+		"iS": 80546,
+		"oA": 0,
+		"oAP": "\/imgs\/for-gallery\/tinified (1)\/QueensManorKitchenCMYK.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/imgs\/for-gallery\/tinified (1)\/shot1.jpg": {
+		"ft": 16384,
+		"iS": 221002,
+		"oA": 0,
+		"oAP": "\/imgs\/for-gallery\/tinified (1)\/shot1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"\/imgs\/icon-ahd-logo.svg": {
@@ -473,16 +1094,26 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/imgs\/icon-eho.png": {
+	"\/imgs\/icon-download.png": {
 		"ft": 32768,
-		"iS": 725,
+		"iS": 866,
 		"oA": 0,
-		"oAP": "\/imgs\/icon-eho.png",
+		"oAP": "\/imgs\/icon-download.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
+		},
+	"\/imgs\/icon-download.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/imgs\/icon-download.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/imgs\/icon-eho.svg": {
 		"ft": 2097152,
@@ -504,17 +1135,6 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/imgs\/icon-facebook.png": {
-		"ft": 32768,
-		"iS": 461,
-		"oA": 0,
-		"oAP": "\/imgs\/icon-facebook.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
 	"\/imgs\/icon-facebook.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -535,17 +1155,6 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/imgs\/icon-g-plus.png": {
-		"ft": 32768,
-		"iS": 730,
-		"oA": 0,
-		"oAP": "\/imgs\/icon-g-plus.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
 	"\/imgs\/icon-g-plus.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -556,32 +1165,15 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/imgs\/icon-handicap copy.gif": {
-		"ft": 4194304,
-		"iS": 389,
-		"oA": 0,
-		"oAP": "\/imgs\/icon-handicap copy.gif",
+	"\/imgs\/icon-handicap.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/imgs\/icon-handicap.svg",
 		"oF": 0,
-		"opt": 0
-		},
-	"\/imgs\/icon-handicap.gif": {
-		"ft": 4194304,
-		"iS": 389,
-		"oA": 0,
-		"oAP": "\/imgs\/icon-handicap.gif",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/imgs\/icon-handicap.png": {
-		"ft": 32768,
-		"iS": 455,
-		"oA": 0,
-		"oAP": "\/imgs\/icon-handicap.png",
-		"oF": 0,
-		"oIPL": 0,
 		"opt": 0,
-		"oT": 1,
-		"q": 100
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/imgs\/icon-phone.png": {
 		"ft": 32768,
@@ -603,17 +1195,6 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
-		},
-	"\/imgs\/icon-res1-logo.png": {
-		"ft": 32768,
-		"iS": 1331,
-		"oA": 0,
-		"oAP": "\/imgs\/icon-res1-logo.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
 		},
 	"\/imgs\/icon-res1-logo.svg": {
 		"ft": 2097152,
@@ -651,6 +1232,16 @@
 		"oA": 2,
 		"oAP": "\/imgs\/og-submit-arrow.xml",
 		"oF": 0
+		},
+	"\/imgs\/slider-test\/front-1600x500.jpg": {
+		"ft": 16384,
+		"iS": 240266,
+		"oA": 0,
+		"oAP": "\/imgs\/slider-test\/front-1600x500.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/imgs\/slider-test\/Queens-Manor-Exterior-1400.png": {
 		"ft": 32768,
@@ -702,6 +1293,26 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
+		"q": 100
+		},
+	"\/imgs\/slider-test\/shot10.jpg": {
+		"ft": 16384,
+		"iS": 153319,
+		"oA": 0,
+		"oAP": "\/imgs\/slider-test\/shot10.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/imgs\/slider-test\/shot12.jpg": {
+		"ft": 16384,
+		"iS": 72798,
+		"oA": 0,
+		"oAP": "\/imgs\/slider-test\/shot12.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"\/imgs\/submit-arrow.svg": {
@@ -928,6 +1539,16 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/js\/min\/navigation-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/min\/navigation-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/js\/min\/reslightbox-min.js": {
 		"ft": 64,
 		"ma": 0,
@@ -943,8 +1564,8 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/js\/navigation-min.js",
-		"oF": 0,
+		"oAP": "\/js\/min\/navigation-min.js",
+		"oF": 2,
 		"sC": 3,
 		"tS": 0
 		},
@@ -999,6 +1620,12 @@
 		"oAP": "\/layouts\/sidebar-content-min.css",
 		"oF": 0,
 		"oS": 3
+		},
+	"\/leasing_application.pdf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/leasing_application.pdf",
+		"oF": 0
 		},
 	"\/LICENSE": {
 		"ft": 8192,

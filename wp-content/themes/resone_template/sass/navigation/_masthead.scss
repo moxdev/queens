@@ -20,6 +20,29 @@
     }
   }
 
+  #masthead-tel {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .download-file {
+    margin-right: 10px;
+    display: none;
+    text-decoration: none;
+    color: $color__download-link !important;
+    font-family: $font__bold
+  }
+
+  .icon-download {
+    margin-right: 10px;
+    display: none;
+
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
   .tel-link {
     display: none;
     text-decoration: none;
@@ -72,6 +95,16 @@
 
     .tel {
       display: inline-flex;
+    }
+  }
+
+  @include respond-to('750') {
+    #masthead-tel {
+      margin-bottom: .5em;
+    }
+    .icon-download,
+    .download-file {
+      display: block;
     }
   }
 }
