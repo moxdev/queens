@@ -1383,36 +1383,61 @@ ol.carousel-nav li.active a:hover {
         text-align: left; } }
   @media (min-width: 950px) {
     .floorplans .floorplan-inner-wrapper img {
-      max-width: 500px; } }
+      max-width: 500px; }
+    .floorplans .floorplan-inner-wrapper .description {
+      -webkit-box-flex: 1;
+          -ms-flex: 1 1 40%;
+              flex: 1 1 40%; }
+    .floorplans .floorplan-inner-wrapper .img-wrapper {
+      -webkit-box-flex: 1;
+          -ms-flex: 1 1 60%;
+              flex: 1 1 60%; } }
+  @media (min-width: 1150px) {
+    .floorplans .floor-plan-disclaimer {
+      font-size: .9em; } }
 
 /*--------------------------------------------------------------
 ### Specials Callout
 --------------------------------------------------------------*/
 .specials-callout {
   background-color: #B5C9DA;
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
+  padding-top: .5em;
+  padding-bottom: .5em;
   color: #ffffff;
   text-align: center; }
-  @media (min-width: 750px) {
-    .specials-callout {
-      padding-left: 2.75rem;
-      padding-right: 2.75rem; } }
-  @media screen and (1450) {
-    .specials-callout {
-      padding-left: 4.75rem;
-      padding-right: 4.75rem; } }
-  .specials-callout h2 {
-    margin: 0;
-    padding: 0;
+  .specials-callout .callout-wrapper {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.75rem;
+    padding-right: 1.75rem; }
+    @media (min-width: 750px) {
+      .specials-callout .callout-wrapper {
+        padding-left: 2.75rem;
+        padding-right: 2.75rem; } }
+    @media screen and (1450) {
+      .specials-callout .callout-wrapper {
+        padding-left: 4.75rem;
+        padding-right: 4.75rem; } }
+  .specials-callout span {
+    display: inline-block;
+    color: #ffffff; }
+  .specials-callout .callout-special {
+    font-size: 1.7em;
+    font-family: "Raleway-Bold";
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    display: inline-block;
-    color: #ffffff;
-    line-height: 1.2;
-    margin-bottom: .25em; }
+    line-height: 1.2; }
+  .specials-callout .callout-details {
+    padding-top: .5em; }
+  @media (min-width: 750px) {
+    .specials-callout .callout-special {
+      font-size: 2em; } }
+  @media (min-width: 1150px) {
+    .specials-callout {
+      text-align: left; }
+      .specials-callout .callout-details {
+        padding-left: .5em; } }
 
 /*--------------------------------------------------------------
 ## Gallery Page

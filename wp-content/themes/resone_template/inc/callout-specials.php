@@ -13,15 +13,17 @@ function resone_template_specials_callout() {
     if( $content ): ?>
 
     <div class="specials-callout">
+      <div class="callout-wrapper">
 
-      <?php if ( $content ): ?>
-        <h2>Specials: <?php echo esc_html( $content ); ?></h2>
-      <?php endif ?>
+        <?php if ( $content ): ?>
+          <span class="callout-special">Specials: <?php echo esc_html( $content ); ?></span>
+        <?php endif ?>
 
-      <?php if ( $details ):  ?>
-        <span><?php echo $details; ?></span>
-      <?php endif ?>
+        <?php if ( $details ):  ?>
+          <span class="callout-details"><?php echo $details; ?></span>
+        <?php endif ?>
 
+      </div>
     </div>
 
     <?php endif;

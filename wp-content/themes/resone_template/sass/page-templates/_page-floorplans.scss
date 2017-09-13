@@ -55,6 +55,20 @@
       img {
         max-width: 500px;
       }
+
+      .description {
+        flex: 1 1 40%;
+      }
+
+      .img-wrapper {
+        flex: 1 1 60%;
+      }
+    }
+  }
+
+  @include respond-to('1150') {
+    .floor-plan-disclaimer {
+      font-size: .9em;
     }
   }
 }
