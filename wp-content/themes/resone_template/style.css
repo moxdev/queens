@@ -553,63 +553,17 @@ a {
       .main-navigation a {
         margin-left: 1em; } }
 
-/*--------------------------------------------------------------
-### Mobile Menu
---------------------------------------------------------------*/
-#mobile-navigation {
-  width: 100%;
-  height: 100vh;
-  font-family: "Raleway-Bold";
-  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s ease-out;
-  transition: opacity 0.5s, -webkit-transform 0.5s ease-out;
-  transition: transform 0.5s ease-out, opacity 0.5s;
-  transition: transform 0.5s ease-out, opacity 0.5s, -webkit-transform 0.5s ease-out;
-  opacity: 0;
-  -webkit-transform: translate3D(0, -150%, 0);
-          transform: translate3D(0, -150%, 0);
-  -webkit-transform-origin: center top;
-          transform-origin: center top;
-  position: absolute;
-  z-index: 999999;
-  top: 100%;
-  background-color: #003865;
-  padding-top: 1rem;
-  padding-bottom: 1rem; }
-  #mobile-navigation.active {
-    -webkit-transform: translate3D(0, 0, 0);
-            transform: translate3D(0, 0, 0);
-    opacity: 1;
-    letter-spacing: 1.5px; }
-  #mobile-navigation ul {
-    margin: 0;
-    padding: 0;
-    list-style: none; }
-    #mobile-navigation ul ul ul a {
-      padding-left: 5rem; }
-    #mobile-navigation ul ul a {
-      padding-top: .125em;
-      padding-bottom: .375em;
-      padding-left: 3rem;
-      font-family: "Raleway-Regular";
-      font-size: 1em; }
-  #mobile-navigation li {
-    position: relative; }
-    #mobile-navigation li:hover {
-      background-color: #002a4b;
-      width: 100%; }
-  #mobile-navigation a {
-    text-decoration: none;
-    color: #FFF !important;
-    font-size: 1.375em;
-    line-height: 1.25;
-    padding: .25em 1rem .5em 2rem;
-    display: block; }
-  #mobile-navigation .current_page_item > a {
-    color: #000; }
-    #mobile-navigation .current_page_item > a:hover {
-      cursor: text; }
-
 /* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+  display: block; }
+
+@media (min-width: 950px) {
+  .menu-toggle {
+    display: none; }
+  .main-navigation ul {
+    display: block; } }
+
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {

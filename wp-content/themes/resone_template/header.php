@@ -68,9 +68,7 @@
 
 				<?php if ( has_nav_menu( 'primary' ) ) : ?>
 
-					<button id="mobile-toggle" class="slant-btn" aria-controls="site-navigation" aria-expanded="false" aria-label="Menu"><?php esc_html_e( 'Menu', 'resone_template' ); ?></button>
-
-					<!-- <button class="menu-toggle" aria-expanded="false"><?php //esc_html_e( 'Menu', 'resone_template' ); ?></button> -->
+					<button class="menu-toggle" aria-expanded="false"><?php esc_html_e( 'Menu', 'resone_template' ); ?></button>
 
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container'=> 'nav', 'container_class'=>'main-navigation', 'container_id'=> 'site-navigation' ) ); ?>
 
@@ -80,9 +78,7 @@
 
 		</div><!-- flex-wrapper -->
 
-		<nav id="mobile-navigation" class="mobile-navigation" role="navigation">
-			<?php wp_nav_menu( array( 'theme_location' => 'mobile-nav', 'menu_id' => 'mobile-desktop-menu', 'container' => '' ) ); ?>
-		</nav><!-- mobile-navigation -->
+		<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container'=> 'nav', 'container_class'=>'mobile-navigation', 'container_id'=> 'mobile-navigation' ) ); ?>
 
 	</header><!-- #masthead -->
 
