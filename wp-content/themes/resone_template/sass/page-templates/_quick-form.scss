@@ -48,6 +48,10 @@
           margin-left: 10px;
         }
       }
+
+      .g-recaptcha {
+        padding: 1em 0;
+      }
     }
 
     @include respond-to('950') {

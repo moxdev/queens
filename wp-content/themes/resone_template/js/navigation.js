@@ -1,7 +1,7 @@
 (function() {
 	console.log('Ready');
 	var x = 0;
-	var btn = document.getElementById('mobile-toggle');
+	var btn = document.getElementById('menu-toggle');
 	var nav = document.getElementById('mobile-navigation');
 
 	btn.addEventListener('click', function() {

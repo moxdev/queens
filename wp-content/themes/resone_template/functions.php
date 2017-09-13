@@ -47,8 +47,7 @@ if ( ! function_exists( 'resone_template_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'primary' => esc_html__( 'Primary Menu', 'resone_template' ),
-			'mobile-nav' => esc_html__( 'Mobile Menu', 'resone_template' )
+			'primary' => esc_html__( 'Primary Menu', 'resone_template' )
 		) );
 
 		/*
