@@ -701,9 +701,10 @@ a {
     text-decoration: none;
     font-family: "Raleway-Bold";
     color: #00467e; }
-    #masthead .tel-link img {
-      max-width: 30px;
-      margin-right: 5px; }
+    #masthead .tel-link svg {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px; }
   #masthead .tel {
     display: none;
     font-size: 1.1em; }
@@ -1347,32 +1348,47 @@ ol.carousel-nav li.active a:hover {
   #left-secondary .form-quick-contact-wrapper form label {
     display: block;
     color: #53534a; }
-  #left-secondary .form-quick-contact-wrapper form .form-button {
-    margin: 0;
-    padding: 0;
-    color: #d0a449;
-    text-transform: uppercase;
-    background: transparent;
-    font-family: "Raleway-Bold";
-    text-align: left;
-    font-size: 1em;
-    position: relative;
-    padding-top: 10px; }
-    #left-secondary .form-quick-contact-wrapper form .form-button:after {
-      content: '';
-      position: absolute;
-      top: 4px;
-      left: 100%;
-      background-image: url("/wp-content/themes/resone_template/imgs/submit-arrow.svg");
-      background-repeat: no-repeat;
-      display: -webkit-inline-box;
-      display: -ms-inline-flexbox;
-      display: inline-flex;
-      width: 27px;
-      height: 27px;
-      margin-left: 10px; }
+  #left-secondary .form-quick-contact-wrapper form .quick-form-button-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    max-width: 280px; }
+    #left-secondary .form-quick-contact-wrapper form .quick-form-button-wrapper .form-button {
+      -webkit-box-flex: 1;
+          -ms-flex: 1 1 20%;
+              flex: 1 1 20%;
+      margin: 0;
+      padding: 0;
+      color: #d0a449;
+      text-transform: uppercase;
+      background: transparent;
+      font-family: "Raleway-Bold";
+      text-align: left;
+      font-size: 1em;
+      position: relative;
+      padding-top: 10px; }
+    #left-secondary .form-quick-contact-wrapper form .quick-form-button-wrapper .arrow {
+      -webkit-box-flex: 1;
+          -ms-flex: 1 1 25%;
+              flex: 1 1 25%;
+      padding-top: 2px; }
+      #left-secondary .form-quick-contact-wrapper form .quick-form-button-wrapper .arrow svg {
+        width: 27px;
+        height: 27px; }
   #left-secondary .form-quick-contact-wrapper form .g-recaptcha {
     padding: 1em 0; }
+  #left-secondary .form-quick-contact-wrapper form .msg-box.error {
+    padding-bottom: 1em; }
+    #left-secondary .form-quick-contact-wrapper form .msg-box.error span {
+      display: block; }
+    #left-secondary .form-quick-contact-wrapper form .msg-box.error strong {
+      color: red; }
   @media (min-width: 950px) {
     #left-secondary .form-quick-contact-wrapper {
       display: block;
@@ -1380,6 +1396,18 @@ ol.carousel-nav li.active a:hover {
       #left-secondary .form-quick-contact-wrapper h2 {
         margin: 0;
         padding: 0; } }
+  @media (min-width: 1150px) {
+    #left-secondary .form-quick-contact-wrapper form .quick-form-button-wrapper .form-button {
+      -webkit-box-flex: 1;
+          -ms-flex: 1 1 30%;
+              flex: 1 1 30%; } }
+  @media (min-width: 1450px) {
+    #left-secondary .form-quick-contact-wrapper form .quick-form-button-wrapper .form-button {
+      -webkit-box-flex: 1;
+          -ms-flex: 1 1 39%;
+              flex: 1 1 39%; }
+    #left-secondary .form-quick-contact-wrapper form .quick-form-button-wrapper .arrow {
+      padding-top: 3px; } }
 
 /*--------------------------------------------------------------
 ### Features

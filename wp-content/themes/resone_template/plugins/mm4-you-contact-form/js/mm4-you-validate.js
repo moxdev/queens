@@ -3,7 +3,7 @@
 	// SET REQUIRED VARIABLES:
 	// Error class to apply (defined in CSS)
 	var errorClass = 'error';
-	
+
 	// Form "name" attribute that you want to pass to the validator
 	// var form = document.forms['YOUR FORM NAME HERE'];
 	var form = document.forms['contact-form'];
@@ -11,9 +11,10 @@
 	// Message box where we want the errors to display.
 	// If you have set your "form" variable correctly, you shouldn't have to change this.
 	var msgs = document.querySelector('form[name="' + form.name + '"] .msg-box');
-	
+
 	// If you want to validate multiple forms, you can define them here:
-	// var form2 = document.forms['YOUR FORM NAME HERE'];
+	// var form2 = document.forms['form-quick-contact'];
+	// console.log(form2);
 
 	// var msgs2 = document.querySelector('form[name="' + form2.name + '"] .msg-box');
 
@@ -25,13 +26,13 @@
 	});
 
 	// If you want to validate multiple forms, add your additional listeners here:
-	/*form2.addEventListener('submit', function(event) {
-		validateForm(this, msgs2, event);
-	});*/
-	
+	// form2.addEventListener('submit', function(event) {
+	// 	validateForm(this, msgs2, event);
+	// });
 
 
-	
+
+
 
 
 	/***************** YOU SHOULD NOT HAVE TO EDIT ANYTHING BELOW THIS LINE !!!! *****************/
@@ -52,7 +53,7 @@
 		for(i = 0; i < form.length; i++) {
 			form[i].classList.remove(errorClass);
 		}
-		
+
 		var labels = form.getElementsByTagName('label');
 		for(i = 0; i < labels.length; i++) {
 			labels[i].classList.remove(errorClass);
@@ -84,7 +85,7 @@
 			if(required[i][0].type === 'checkbox') {
 				// If we come to a checkbox in required[], reset our "checked" variable from any previous loops.
 				checked = false;
-				
+
 				// Get its name, loop through the form and find if there are any checkboxes with that name checked.
 				checkboxes = document.getElementsByName(required[i][0].name);
 				for (var j = 0; j < checkboxes.length; j++) {
@@ -134,7 +135,7 @@
 		//console.log(errors);
 
 		// If the user has entered an email address in any input[type="email"], then to check to see if it follows an expected email pattern.
-		var emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;	
+		var emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 		for(i = 0; i < form.length; i++) {
 			if(form[i].type === 'email' && form[i].value !== '' && !form[i].value.match(emailRegex)) {
 				errors.push([form[i].name, '<span>Please enter a valid email address for the <strong><em>' + form[i].getAttribute('data-error-label') + '</em></strong> field.</span>']);

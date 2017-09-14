@@ -1675,22 +1675,12 @@
 		"oAP": "\/plugins\/mm4-you-contact-form\/inc\/contact.php",
 		"oF": 0
 		},
-	"\/plugins\/mm4-you-contact-form\/js\/form-quick-validate.js": {
+	"\/plugins\/mm4-you-contact-form\/js\/min\/mm4-you-quick-contact-validate-min.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/plugins\/mm4-you-contact-form\/js\/min\/form-quick-validate-min.js",
-		"oF": 2,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/plugins\/mm4-you-contact-form\/js\/min\/form-quick-validate-min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/plugins\/mm4-you-contact-form\/js\/min\/form-quick-validate-min-min.js",
+		"oAP": "\/plugins\/mm4-you-contact-form\/js\/min\/mm4-you-quick-contact-validate-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -1705,13 +1695,13 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"\/plugins\/mm4-you-contact-form\/js\/min\/validate.min.js": {
+	"\/plugins\/mm4-you-contact-form\/js\/mm4-you-quick-contact-validate.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/plugins\/mm4-you-contact-form\/js\/min\/validate.min-min.js",
-		"oF": 0,
+		"oAP": "\/plugins\/mm4-you-contact-form\/js\/min\/mm4-you-quick-contact-validate-min.js",
+		"oF": 2,
 		"sC": 3,
 		"tS": 0
 		},

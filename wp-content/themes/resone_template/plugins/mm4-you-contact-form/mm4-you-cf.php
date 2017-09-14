@@ -122,10 +122,9 @@ function mm4_you_add_quick_contact_form() {
 		$add_form = get_field('quick_contact_form');
 
 		if ( $add_form == 'Yes' && is_page_template( 'frontpage.php' ) ) {
+			wp_enqueue_script( 'mm4-recaptcha', '//www.google.com/recaptcha/api.js', array(), NULL, TRUE );
+			wp_enqueue_script('mm4-you-validate', get_template_directory_uri() . '/plugins/mm4-you-contact-form/js/min/mm4-you-quick-contact-validate-min.js', array('mm4-recaptcha'), NULL, TRUE );
 			mm4_you_quick_contact_form();
-			wp_enqueue_script( 'mm4-recaptcha', '//www.google.com/recaptcha/api.js', array('jquery'), NULL, TRUE );
-			wp_enqueue_script( 'mm4-you-validate-lib', get_template_directory_uri() . '/plugins/mm4-you-contact-form/js/validate.min.js', array('mm4-recaptcha'), '20150904', true );
-			wp_enqueue_script( 'mm4-you-quick-form-validate', get_template_directory_uri() . '/plugins/mm4-you-contact-form/js/form-quick-validate-min.js', array('mm4-you-validate-lib'), '20150904', true );
 		}
 	}
 }
@@ -133,6 +132,7 @@ function mm4_you_add_quick_contact_form() {
 // Quick Contact Form
 
 function mm4_you_quick_contact_form() {
+
 	$options_arr  = get_option('mm4-you-cf-settings');
 	$subject_line = $options_arr['form-subject'];
 	$public_key   = $options_arr['recaptcha-public-key'];
@@ -141,16 +141,16 @@ function mm4_you_quick_contact_form() {
 	<div class="form-quick-contact-wrapper">
 		<h2>Have a Question?</h2>
 		<hr>
-		<form id="form-quick-contact" name="form-quick-contact" method="post" action="<?php echo $form_action; ?>" novalidate>
+		<form id="form-quick-contact" name="form-quick-contact" method="POST" action="<?php echo $form_action; ?>" novalidate>
 			<input type="hidden" value="<?php echo $subject_line; ?>" name="subject" id="subject">
 			<div class="flex">
 				<div>
-					<label for="contact-names">Name</label>
-					<input type="text" id="contact-names" name="contact-names">
+					<label for="first-name">Name</label>
+					<input type="text" name="first-name" id="first-name" class="required" data-error-label="Name">
 				</div>
 				<div>
-					<label for="contact-email">Email</label>
-					<input type="email" id="contact-email" name="contact-email">
+					<label for="email-address">Email</label>
+					<input type="email" name="email-address" id="email-address" class="required" data-error-label="Email">
 				</div>
 				<!-- <div>
 					<label for="contact-phone">Phone</label>
@@ -159,13 +159,13 @@ function mm4_you_quick_contact_form() {
 			</div>
 			<div class="flex">
 				<div>
-					<label for="contact-comments">Comments</label>
-					<textarea name="contact-comments" rows="5" id="contact-comments"></textarea>
+					<label for="comments">Comments</label>
+					<textarea name="comments" id="comments" rows="5"></textarea>
 				</div>
 			</div>
 			<div class="g-recaptcha" data-sitekey="<?php echo $public_key; ?>"></div>
 			<div class="msg-box"></div>
-			<button class="form-button">Submit Request</button>
+			<div class="quick-form-button-wrapper"><input class="form-button" type="submit" value="Submit Request"><span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27"><defs><clipPath id="a"><path fill="none" d="M0 0h27v27H0z"/></clipPath></defs><title>submit-arrow</title><g><g fill="#d0a449" clip-path="url(#a)"><path d="M25.2 13.5A11.7 11.7 0 1 1 13.5 1.8a11.7 11.7 0 0 1 11.7 11.7M0 13.5A13.5 13.5 0 1 0 13.5 0 13.5 13.5 0 0 0 0 13.5M10.54 8.33l5.23 5.23-5.23 5.23a.9.9 0 1 0 1.28 1.27l5.87-5.86a.9.9 0 0 0 .25-.63.9.9 0 0 0-.26-.64L11.8 7.06a.9.9 0 0 0-1.28 1.28"/></g></g></svg></span></div>
 		</form>
 	</div>
 <?php }
@@ -195,13 +195,13 @@ function mm4_you_contact_form() {
 			<input type="email" name="email-address" id="email-address" class="required" data-error-label="Email">
 		</label>
 		<label for="primary-phone">Phone Number
-			<input type="tel" name="primary-phone" id="primary-phone" class="required" data-error-label="Primary Phone">
+			<input type="tel" name="primary-phone" id="primary-phone" data-error-label="Phone">
 		</label>
 		<label for="move-in">Desired Move In Date
-			<input type="text" name="move-in" id="move-in" class="required" data-error-label="Move In">
+			<input type="text" name="move-in" id="move-in" data-error-label="Move In Date">
 		</label>
 		<label for="how-hear">How Did You Hear About Us?
-			<input type="text" name="how-hear" id="how-hear" class="required" data-error-label="How Hear">
+			<input type="text" name="how-hear" id="how-hear" data-error-label="How Did You Hear About Us?">
 		</label>
 		<label for="comments">Comments
 			<textarea name="comments" id="comments" rows="6"></textarea>

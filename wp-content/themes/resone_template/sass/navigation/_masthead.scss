@@ -49,9 +49,10 @@
     font-family: $font__bold;
     color: $color__nav-phone;
 
-    img {
-      max-width: 30px;
-      margin-right: 5px;
+    svg {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
     }
   }
 
