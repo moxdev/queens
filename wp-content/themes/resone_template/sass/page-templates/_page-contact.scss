@@ -22,6 +22,18 @@
     .g-recaptcha {
       padding: 1em 0;
     }
+
+    .msg-box.error {
+      padding-bottom: 1em;
+
+      span {
+        display: block;
+      }
+
+      strong {
+        color: red;
+      }
+    }
   }
 
   aside {

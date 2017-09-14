@@ -1081,37 +1081,6 @@ button.imagelightbox-arrow {
     opacity: 1; } }
 
 /*--------------------------------------------------------------
-## Galleries
---------------------------------------------------------------*/
-.gallery {
-  margin-bottom: 1.5em; }
-
-.gallery-item {
-  display: inline-block;
-  text-align: center;
-  vertical-align: top;
-  width: 100%; }
-  .gallery-columns-2 .gallery-item {
-    max-width: 50%; }
-  .gallery-columns-3 .gallery-item {
-    max-width: 33.3333333333%; }
-  .gallery-columns-4 .gallery-item {
-    max-width: 25%; }
-  .gallery-columns-5 .gallery-item {
-    max-width: 20%; }
-  .gallery-columns-6 .gallery-item {
-    max-width: 16.6666666667%; }
-  .gallery-columns-7 .gallery-item {
-    max-width: 14.2857142857%; }
-  .gallery-columns-8 .gallery-item {
-    max-width: 12.5%; }
-  .gallery-columns-9 .gallery-item {
-    max-width: 11.1111111111%; }
-
-.gallery-caption {
-  display: block; }
-
-/*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
@@ -1250,12 +1219,9 @@ button.imagelightbox-arrow {
   @media (min-width: 575px) {
     #home-carousel {
       min-height: 300px; } }
-  @media (min-width: 950px) {
-    #home-carousel {
-      min-height: 400px; } }
   @media (min-width: 1150px) {
     #home-carousel {
-      min-height: 500px; } }
+      min-height: 400px; } }
 
 ol.carousel-nav {
   margin: 0;
@@ -1536,11 +1502,27 @@ ol.carousel-nav li.active a:hover {
 --------------------------------------------------------------*/
 .gallery {
   max-width: 1500px;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
   margin: 0 auto; }
+  @media (min-width: 750px) {
+    .gallery {
+      padding-left: 2.75rem;
+      padding-right: 2.75rem; } }
+  @media screen and (1450) {
+    .gallery {
+      padding-left: 4.75rem;
+      padding-right: 4.75rem; } }
+  .gallery img {
+    display: block; }
   .gallery ul {
-    list-style-type: none; }
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
     .gallery ul li {
-      margin-bottom: .5em; }
+      margin-bottom: 1em; }
   @media (min-width: 575px) {
     .gallery ul {
       display: -webkit-box;
@@ -1548,19 +1530,19 @@ ol.carousel-nav li.active a:hover {
       display: flex;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
-    .gallery li {
-      -webkit-box-flex: 0;
-          -ms-flex: 0 1 50%;
-              flex: 0 1 50%;
-      padding: 0 .5em .5em;
-      margin-bottom: 0; } }
+      .gallery ul li {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 1 50%;
+                flex: 0 1 50%;
+        padding: 0 .5em .5em;
+        margin-bottom: .5em; } }
   @media (min-width: 750px) {
-    .gallery li {
+    .gallery ul li {
       -webkit-box-flex: 0;
           -ms-flex: 0 1 33%;
               flex: 0 1 33%; } }
   @media (min-width: 950px) {
-    .gallery li {
+    .gallery ul li {
       -webkit-box-flex: 0;
           -ms-flex: 0 1 25%;
               flex: 0 1 25%; } }
@@ -1599,6 +1581,13 @@ ol.carousel-nav li.active a:hover {
 
 .page-template-page-contact form .g-recaptcha {
   padding: 1em 0; }
+
+.page-template-page-contact form .msg-box.error {
+  padding-bottom: 1em; }
+  .page-template-page-contact form .msg-box.error span {
+    display: block; }
+  .page-template-page-contact form .msg-box.error strong {
+    color: red; }
 
 .page-template-page-contact aside {
   padding-top: 1.5em;
@@ -1661,6 +1650,34 @@ ol.carousel-nav li.active a:hover {
     max-width: 40%; } }
 
 /*--------------------------------------------------------------
+## Thank You Page
+--------------------------------------------------------------*/
+.page-id-116 article {
+  min-height: 400px;
+  text-align: center; }
+
+.page-id-116 h1 {
+  margin-top: 2em;
+  margin-bottom: 2em; }
+
+.page-id-116 .entry-content p {
+  font-size: 1.3em; }
+
+/*--------------------------------------------------------------
+## 404 Error Page
+--------------------------------------------------------------*/
+.error404 .error-404 {
+  text-align: center;
+  min-height: 400px; }
+
+.error404 h1 {
+  margin-top: 2em;
+  margin-bottom: 2em; }
+
+.error404 .page-content p {
+  font-size: 1.3em; }
+
+/*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 .site-footer {
@@ -1696,10 +1713,9 @@ ol.carousel-nav li.active a:hover {
   .site-footer .social {
     margin: 1em 0; }
   .site-footer .translate {
-    padding: 10px;
     max-width: 200px;
     margin: 0 auto 2em auto;
-    background-color: #111111; }
+    background-color: transparent; }
   .site-footer .property-management-logos {
     font-size: 12px;
     margin-bottom: 1em; }
@@ -1750,8 +1766,12 @@ ol.carousel-nav li.active a:hover {
               justify-content: flex-end;
       max-width: 670px;
       margin: 0; }
+    .site-footer .contact-information {
+      padding-top: 0; }
     .site-footer .social {
-      margin-right: 1em; }
+      margin-right: 1em;
+      margin-top: 0;
+      margin-bottom: 0; }
     .site-footer .translate {
       -ms-flex-item-align: baseline;
           align-self: baseline;

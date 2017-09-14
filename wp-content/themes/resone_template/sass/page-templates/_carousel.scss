@@ -11,11 +11,11 @@
   }
 
   @include respond-to('950') {
-    min-height: 400px;
+    // min-height: 400px;
   }
 
   @include respond-to('1150') {
-    min-height: 500px;
+    min-height: 400px;
   }
 }
 

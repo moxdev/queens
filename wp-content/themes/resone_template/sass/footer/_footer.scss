@@ -35,10 +35,10 @@
   }
 
   .translate {
-    padding: 10px;
+    // padding: 10px;
     max-width: 200px;
     margin: 0 auto 2em auto;
-    background-color: $color__background-google-translate;
+    background-color: transparent;
   }
 
   .property-management-logos {
@@ -104,8 +104,14 @@
       margin:0;
     }
 
+    .contact-information {
+      padding-top: 0;
+    }
+
     .social {
       margin-right: 1em;
+      margin-top: 0;
+      margin-bottom: 0;
     }
 
     .translate {

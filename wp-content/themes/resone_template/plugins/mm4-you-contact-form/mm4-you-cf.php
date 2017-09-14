@@ -197,11 +197,11 @@ function mm4_you_contact_form() {
 		<label for="primary-phone">Phone Number
 			<input type="tel" name="primary-phone" id="primary-phone" class="required" data-error-label="Primary Phone">
 		</label>
-		<label for="primary-phone">Desired Move In Date
-			<input type="tel" name="move-in" id="move-in" class="required" data-error-label="Move In">
+		<label for="move-in">Desired Move In Date
+			<input type="text" name="move-in" id="move-in" class="required" data-error-label="Move In">
 		</label>
-		<label for="primary-phone">How Did You Hear About Us?
-			<input type="tel" name="how-hear" id="how-hear" class="required" data-error-label="How Hear">
+		<label for="how-hear">How Did You Hear About Us?
+			<input type="text" name="how-hear" id="how-hear" class="required" data-error-label="How Hear">
 		</label>
 		<label for="comments">Comments
 			<textarea name="comments" id="comments" rows="6"></textarea>
