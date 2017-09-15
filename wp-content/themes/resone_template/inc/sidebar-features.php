@@ -9,7 +9,7 @@ function resone_template_features_sidebar() {
   if ( function_exists( 'get_field' ) ) {
     $add_apartment = get_field( 'add_an_apartment_features_section' );
     $add_community = get_field( 'add_an_community_features_section' );
-    $disclaimer = get_field( 'features_disclaimer' );
+    $disclaimer    = get_field( 'features_disclaimer' );
 
     if ( $add_apartment || $add_community ) { ?>
 

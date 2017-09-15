@@ -1428,7 +1428,8 @@ ol.carousel-nav li.active a:hover {
       padding: 1em 0; } }
 
 .right-sidebar .features-disclaimer {
-  margin: 1em 0; }
+  margin: 1em;
+  font-size: 12px; }
 
 /*--------------------------------------------------------------
 ## Floor Plans Page
@@ -1450,7 +1451,8 @@ ol.carousel-nav li.active a:hover {
   .floorplans .floorplan .img-wrapper {
     margin: 1em 0 2em; }
   .floorplans .floor-plan-disclaimer {
-    font-size: 12px; }
+    font-size: 12px;
+    padding-bottom: 3em; }
   @media (min-width: 750px) {
     .floorplans .floorplan-inner-wrapper {
       display: -webkit-box;

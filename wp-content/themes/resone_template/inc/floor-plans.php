@@ -19,7 +19,7 @@ function resone_template_floor_plans() {
 
               $style = get_sub_field('floorplan_style');
               $bed   = get_sub_field('number_of_bedrooms');
-              $bath  = get_sub_field('number_of_bedrooms');
+              $bath  = get_sub_field('number_of_bathrooms');
               $price = get_sub_field('price');
               $img   = get_sub_field('floor_plan_image'); ?>
 
