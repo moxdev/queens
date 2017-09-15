@@ -507,11 +507,11 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: #21759b; }
+  color: #00467e; }
   a:visited {
-    color: red; }
+    color: #111111; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #d0a449; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -1706,6 +1706,12 @@ ol.carousel-nav li.active a:hover {
 
 .error404 .page-content p {
   font-size: 1.3em; }
+
+/*--------------------------------------------------------------
+## Default Page
+--------------------------------------------------------------*/
+.page-template-default #primary {
+  min-height: 400px; }
 
 /*--------------------------------------------------------------
 # Footer
