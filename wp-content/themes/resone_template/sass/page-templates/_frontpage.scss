@@ -11,30 +11,6 @@
       @include container;
     }
 
-    @include respond-to('750') {
-      #secondary {
-        .right-sidebar {
-          display: flex;
-          justify-content: space-between;
-
-          .features {
-            flex: 1 1 50%;
-            padding-right: 1em;
-
-            h2 {
-              text-align: left;
-              padding-left: 1em;
-            }
-
-            ul {
-              padding-left: 2.8em;
-            }
-          }
-        }
-      }
-
-    }
-
     @include respond-to('950') {
       .page-flex-wrapper {
         display: flex;

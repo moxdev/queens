@@ -8,10 +8,41 @@
       padding: 5px;
       text-align: center;
     }
+  }
 
-    @include respond-to('1150') {
+  .features-disclaimer {
+    margin: 1em;
+    font-size: 12px;
+  }
+
+  @include respond-to('750') {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .features {
+      flex: 1 1 50%;
+      padding-right: 1em;
+
+      h2 {
+        text-align: left;
+        padding-left: 1em;
+      }
+
+      ul {
+        padding-left: 2.8em;
+      }
+    }
+
+    .features-disclaimer {
+      flex: 1 1 100%;
+    }
+  }
+
+  @include respond-to('1150') {
+
+    .features {
       font-size: .9em;
-      // padding-top: .5em;
 
       h2 {
         font-size: 1.2em;
@@ -21,12 +52,6 @@
       .wrapper {
         padding: 1em 0;
       }
-
     }
-  }
-
-  .features-disclaimer {
-    margin: 1em;
-    font-size: 12px;
   }
 }

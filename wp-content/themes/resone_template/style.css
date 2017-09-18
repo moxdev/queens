@@ -1096,25 +1096,6 @@ button.imagelightbox-arrow {
   margin-left: auto;
   margin-right: auto; }
 
-@media (min-width: 750px) {
-  .page-template-frontpage #page #secondary .right-sidebar {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
-    .page-template-frontpage #page #secondary .right-sidebar .features {
-      -webkit-box-flex: 1;
-          -ms-flex: 1 1 50%;
-              flex: 1 1 50%;
-      padding-right: 1em; }
-      .page-template-frontpage #page #secondary .right-sidebar .features h2 {
-        text-align: left;
-        padding-left: 1em; }
-      .page-template-frontpage #page #secondary .right-sidebar .features ul {
-        padding-left: 2.8em; } }
-
 @media (min-width: 950px) {
   .page-template-frontpage #page .page-flex-wrapper {
     display: -webkit-box;
@@ -1418,6 +1399,35 @@ ol.carousel-nav li.active a:hover {
   padding: 5px;
   text-align: center; }
 
+.right-sidebar .features-disclaimer {
+  margin: 1em;
+  font-size: 12px; }
+
+@media (min-width: 750px) {
+  .right-sidebar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .right-sidebar .features {
+      -webkit-box-flex: 1;
+          -ms-flex: 1 1 50%;
+              flex: 1 1 50%;
+      padding-right: 1em; }
+      .right-sidebar .features h2 {
+        text-align: left;
+        padding-left: 1em; }
+      .right-sidebar .features ul {
+        padding-left: 2.8em; }
+    .right-sidebar .features-disclaimer {
+      -webkit-box-flex: 1;
+          -ms-flex: 1 1 100%;
+              flex: 1 1 100%; } }
+
 @media (min-width: 1150px) {
   .right-sidebar .features {
     font-size: .9em; }
@@ -1426,10 +1436,6 @@ ol.carousel-nav li.active a:hover {
       margin: 0; }
     .right-sidebar .features .wrapper {
       padding: 1em 0; } }
-
-.right-sidebar .features-disclaimer {
-  margin: 1em;
-  font-size: 12px; }
 
 /*--------------------------------------------------------------
 ## Floor Plans Page
