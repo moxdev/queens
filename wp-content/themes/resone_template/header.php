@@ -32,7 +32,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="site">
+<div id="page" class="site"><!-- start-page -->
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'resone_template' ); ?></a>
 
 	<header id="masthead" class="site-header">
@@ -68,11 +68,11 @@
 							$app_download_file = get_field( 'download_application_upload', option );
 							$app_download_link_text = get_field( 'download_application_display_name', option ); ?>
 
-							<span class="icon-download"><svg xmlns="http://www.w3.org/2000/svg" width="43.75" height="45.45" viewBox="0 0 43.75 45.45"><title>icon-download</title><g><path fill="#e5ce9e" d="M25 19.4H8.4a.78.78 0 1 0 0 1.6H25a.78.78 0 1 0 0-1.56m0-6.3H8.4a.78.78 0 1 0 0 1.57H25a.78.78 0 0 0 0-1.55M31.7 42a.85.85 0 0 1-.86.85H15.36l-1.4.45a2.83 2.83 0 0 1-.86.14 2.65 2.65 0 0 1-1.66-.58h-8a.85.85 0 0 1-.9-.86V6.3a.85.85 0 0 1 .86-.84h3.2V6.8a.85.85 0 0 0 1.7 0V5.47h4.88V6.8a.85.85 0 0 0 1.7 0V5.47h4.25V6.8a.85.85 0 0 0 1.7 0V5.47h4.7V6.8a.85.85 0 1 0 1.7 0V5.47h3.6a.85.85 0 0 1 .86.85v5.9l2.54-2.55V6.3a3.4 3.4 0 0 0-3.4-3.4h-3.6V.86a.85.85 0 0 0-1.7 0V2.9h-4.7V.86a.85.85 0 0 0-1.7 0V2.9H14.9V.86a.85.85 0 0 0-1.7 0V2.9H8.3V.86a.85.85 0 0 0-1.7 0V2.9H3.4A3.4 3.4 0 0 0 0 6.3V42a3.4 3.4 0 0 0 3.4 3.4h27.44a3.4 3.4 0 0 0 3.4-3.4V29.66L31.7 32.2zm.78-25a.64.64 0 0 0-.9 0L18.46 30.18a.64.64 0 0 0 .9.9L32.5 18a.64.64 0 0 0 0-.9M20.8 37.6l-4.34-4.34-1.16 3.66 1.85 1.85zm11.96-23.35l7.06 7.06L23 38.16a1.34 1.34 0 0 1-.6.37h-.1l-8.78 2.8a.6.6 0 0 1-.8-.78l2.8-8.8v-.1a1.32 1.32 0 0 1 .38-.6l3.17-3.15H8.4a.78.78 0 1 1 0-1.57h12.25zm10.77 3.35L41 20.14l-7.06-7.06 2.53-2.54a1.92 1.92 0 0 1 2.68-.22l4.6 4.6"/></g></svg></span><a class="download-file" href="<?php echo $app_download_file; ?>" target="_blank"><?php echo $app_download_link_text; ?></a>
+							<span class="icon-download"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"><title>icon-download</title><path fill="#d0a449" d="M17.14 12.82H5.76a.53.53 0 1 0 0 1.06h11.38a.52.52 0 1 0 0-1m0-4.16H5.76a.52.52 0 1 0 0 1h11.38a.52.52 0 0 0 .47-.57.53.53 0 0 0-.46-.45m4.6 19.06a.57.57 0 0 1-.6.56h-10.6l-.94.3a2 2 0 0 1-.6.08 1.86 1.86 0 0 1-1.14-.38H2.4a.58.58 0 0 1-.63-.53V4.15a.57.57 0 0 1 .6-.56h2.16v.9a.58.58 0 0 0 1.17 0v-.9H9v.9a.58.58 0 0 0 1.17 0v-.9h2.9v.9a.58.58 0 0 0 1.18 0v-.9h3.22v.9a.58.58 0 0 0 1.17 0v-.9h2.47a.57.57 0 0 1 .6.57v3.9l1.74-1.7v-2.2A2.3 2.3 0 0 0 21.1 1.9h-2.43V.57a.58.58 0 0 0-1.17 0V1.9h-3.22V.57a.58.58 0 0 0-1.17 0V1.9h-2.9V.57a.58.58 0 0 0-1.16 0V1.9H5.7V.57a.58.58 0 0 0-1.18 0V1.9h-2.2A2.3 2.3 0 0 0 0 4.17v23.6A2.3 2.3 0 0 0 2.33 30h18.82a2.3 2.3 0 0 0 2.33-2.25V19.6l-1.74 1.68zm.52-16.52a.45.45 0 0 0-.62 0l-9 8.7a.4.4 0 0 0 .07.6.45.45 0 0 0 .56 0l9-8.65a.4.4 0 0 0 0-.6m-8 13.55l-3-2.87-.8 2.42 1.27 1.22zm8.2-15.43l4.84 4.67-11.53 11.1a.92.92 0 0 1-.4.25h-.08l-6 1.85a.42.42 0 0 1-.55-.2.38.38 0 0 1 0-.32l1.9-5.78v-.07a.87.87 0 0 1 .25-.4l2.17-2.08h-7.3a.52.52 0 1 1 0-1h8.4zm7.4 2.2L28.1 13.3l-4.83-4.66L25 7a1.35 1.35 0 0 1 1.84-.15l3.15 3"/></svg></span><a class="download-file" href="<?php echo $app_download_file; ?>" target="_blank"><?php echo $app_download_link_text; ?></a>
 
 						<?php endif ?>
 
-						<a class="tel-link" href="tel:<?php echo esc_html( $ph ) ?>"><span><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45"><defs><clipPath id="a"><path fill="none" d="M0 0h45v45H0z"/></clipPath></defs><title>icon-phone</title><g><g fill="#e6cf9f" clip-path="url(#a)"><path d="M42.46 3.43A.75.75 0 0 0 41.4 4.5a7.2 7.2 0 0 1 0 10.15.75.75 0 1 0 1.06 1.06 8.7 8.7 0 0 0 0-12.27M39.3 5.13a.75.75 0 0 0-1.06 1.07 4.92 4.92 0 0 1 0 7 .75.75 0 1 0 1.06 1.06 6.43 6.43 0 0 0 0-9.08M3.6 4.5a.75.75 0 0 0-1.06-1.07 8.7 8.7 0 0 0 0 12.3.75.75 0 1 0 1.06-1.08 7.2 7.2 0 0 1 0-10.16M6.76 4.93a.75.75 0 0 0-1.06 0 6.43 6.43 0 0 0 0 9.07.75.75 0 1 0 1.06-1.06 4.93 4.93 0 0 1 0-7 .75.75 0 0 0 0-1.06M24 39.75a1.5 1.5 0 1 1-1.5-1.5 1.5 1.5 0 0 1 1.5 1.5M33.75 34.5h-22.5V6h22.5zM22.5 42.75a3 3 0 1 1 3-3 3 3 0 0 1-3 3m-3-40.5h3a.75.75 0 0 1 0 1.5h-3a.75.75 0 0 1 0-1.5m5.25 0h.75a.75.75 0 0 1 0 1.5h-.75a.75.75 0 0 1 0-1.5M31.95 0h-18.9a3.3 3.3 0 0 0-3.3 3.3v38.4a3.3 3.3 0 0 0 3.3 3.3h18.9a3.3 3.3 0 0 0 3.3-3.3V3.3a3.3 3.3 0 0 0-3.3-3.3"/></g></g></svg></span><span class="call">Call Today!</span><span class="tel"><?php echo esc_html( $ph ); ?></span></a>
+						<a class="tel-link" href="tel:<?php echo esc_html( $ph ) ?>"><span><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"><title>icon-phone</title><path fill="#d0a449" d="M28.3 2.3a.5.5 0 0 0-.7.7 4.8 4.8 0 0 1 0 6.77.5.5 0 0 0 .7.73 5.8 5.8 0 0 0 0-8.17m-2.1 1.1a.5.5 0 0 0-.7.7 3.28 3.28 0 0 1 0 4.65.5.5 0 0 0 .68.73 4.3 4.3 0 0 0 0-6.04M2.4 3a.5.5 0 1 0-.7-.7 5.8 5.8 0 0 0 0 8.2.5.5 0 0 0 .7-.73A4.8 4.8 0 0 1 2.4 3m2.12.3a.5.5 0 0 0-.7 0 4.3 4.3 0 0 0 0 6 .5.5 0 0 0 .72-.7A3.3 3.3 0 0 1 4.5 4a.5.5 0 0 0 0-.7M16 26.5a1 1 0 1 1-1-1 1 1 0 0 1 1 1m6.5-3.5h-15V4h15zM15 28.5a2 2 0 1 1 2-2 2 2 0 0 1-2 2m-2-27h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1m3.5 0h.5a.5.5 0 0 1 0 1h-.5a.5.5 0 0 1 0-1M21.3 0H8.7a2.2 2.2 0 0 0-2.2 2.2v25.6A2.2 2.2 0 0 0 8.7 30h12.6a2.2 2.2 0 0 0 2.2-2.2V2.2A2.2 2.2 0 0 0 21.3 0"/></svg></span><span class="call">Call Today!</span><span class="tel"><?php echo esc_html( $ph ); ?></span></a>
 					</div>
 
 				<?php endif; ?>
@@ -101,4 +101,5 @@
 	    resone_template_specials_callout();
 	}  ?>
 
-	<div class="page-flex-wrapper">
+	<div id="content" class="site-content">
+		<div class="page-flex-wrapper">

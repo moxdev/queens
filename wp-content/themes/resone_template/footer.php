@@ -10,7 +10,7 @@
  */
 
 ?>
-		</div><!-- page-flex-wrapper -->
+		</div><!-- end-page-flex-wrapper -->
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
@@ -73,47 +73,57 @@
 					<div class="social">
 
 						<?php
+
+						// Change fill="" color of svg's to match theme colors
+
 						$facebook    = get_field( 'facebook', option );
 						$google_plus = get_field( 'google_plus', option );
 						$twitter     = get_field( 'twitter', option );
 						$instagram   = get_field( 'instagram', option );
 						$linkedin    = get_field( 'linkedin', option );
 						$youtube     = get_field( 'youtube', option );
+						$pinterest   = get_field( 'pinterest', option );
 						?>
 
 						<?php if ( $facebook ): ?>
 
-								<a href="<?php echo esc_url( $facebook ); ?>" alt="link to facebook page" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40"><defs><clipPath id="clip-path"><rect width="40" height="40" style="fill:none"/></clipPath></defs><title>icon-facebook</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><g style="clip-path:url(#clip-path)"><path d="M24.39,39.84H20V40h3.6a6.76,6.76,0,0,0,.79-.16M40,33.31V6.54A6.56,6.56,0,0,0,33.44,0H6.56A6.56,6.56,0,0,0,0,6.54V33.31a6.56,6.56,0,0,0,6.56,6.54H20V27.59a2.52,2.52,0,0,0-2.52-2.68H15V18.67h5V15.53c0-4.5,3.39-8.16,7.56-8.16h5v6.22h-5c-.6,0-1.26.8-1.26,1.88v3.19h6.3v6.24H26.3V37.32a2.38,2.38,0,0,1-1.91,2.53h9A6.55,6.55,0,0,0,40,33.31" style="fill:#231f20"/></g></g></g></svg></a>
+								<a href="<?php echo esc_url( $facebook ); ?>" alt="hyperlink to facebook page" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"><title>facebook-icon</title><path fill="#111111" d="M37.8 0H2.2A2.22 2.22 0 0 0 0 2.2v35.6A2.22 2.22 0 0 0 2.2 40h19.1V24.6h-5.2v-6h5.2v-4.5c0-5.2 3.2-8 7.8-8a41.12 41.12 0 0 1 4.7.2v5.4h-3.2c-2.5 0-3 1.2-3 2.9v3.9h6l-.8 6h-5.2V40h10.2a2.22 2.22 0 0 0 2.2-2.2V2.2A2.22 2.22 0 0 0 37.8 0z"/></svg></a>
 
 						<?php endif ?>
 
 						<?php if ( $google_plus ): ?>
 
-								<a href="<?php echo esc_url( $google_plus ); ?>" alt="link to google plus page" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"><title>icon-g-plus</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path d="M11.39,31.2a9.08,9.08,0,0,0-1.33-.06,23.15,23.15,0,0,0-6.1.93,8.43,8.43,0,0,0-4,2.67v3C0,39.74,1.65,40,3.69,40H18.76A2.51,2.51,0,0,0,19,38.95c0-3-3.2-4.6-7.62-7.75" style="fill:#231f20"/><path d="M7.67,25.54a5.26,5.26,0,0,1,.58-2.28c-.64.06-1.28.12-1.86.12A9.9,9.9,0,0,1,0,21.05V31.38c2.63-2.11,7.19-1.73,9.42-1.88a6.13,6.13,0,0,1-1.74-4" style="fill:#231f20"/><path d="M14.74,15.86c0-4.2-2.43-10.73-7.25-10.73A5.43,5.43,0,0,0,3.41,7.05a6.64,6.64,0,0,0-1.14,4.32c0,3.91,2.05,9.68,7,9.68a5.06,5.06,0,0,0,3.9-1.46,6.35,6.35,0,0,0,1.52-3.73" style="fill:#231f20"/><path d="M32.63,21.05H29.47V13.62H22.1V10.53h7.37V3.16h3.16v7.37H40V3.68A3.35,3.35,0,0,0,36.31,0H3.68A3.35,3.35,0,0,0,0,3.68V6.84c.14-.14.31-.3.47-.43a15.28,15.28,0,0,1,10-3.26H22.74L19.48,5.79H15.92a9.36,9.36,0,0,1,3.55,7.39c0,4.31-2.27,6.36-4.71,8.28a4.11,4.11,0,0,0-1.63,2.86,3.2,3.2,0,0,0,1.51,2.51l2.09,1.63c2.56,2.16,5.89,4.66,5.89,8.68A7.3,7.3,0,0,1,22.16,40H36.31c2,0,3.69-.26,3.69-2.29V13.62H32.63Z" style="fill:#231f20"/></g></g></svg></path></a>
+								<a href="<?php echo esc_url( $google_plus ); ?>" alt="hyperlink to google plus page" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"><title>google-plus-icon</title><path fill="#111111" d="M37.8 0H2.2A2.22 2.22 0 0 0 0 2.2v35.6A2.22 2.22 0 0 0 2.2 40h35.6a2.22 2.22 0 0 0 2.2-2.2V2.2A2.22 2.22 0 0 0 37.8 0zM14.6 29.5a9.5 9.5 0 1 1 0-19A9.17 9.17 0 0 1 21 13c-2 1.9-1.9 2-2.7 2.8a5.4 5.4 0 0 0-3.7-1.4 5.7 5.7 0 0 0 0 11.4c3.1 0 4.3-1.3 5.2-3.8h-5.2v-3.8h9.2c.6 4.5-1.3 11.3-9.2 11.3zm20.5-8.8h-3.3v3.4h-2.4v-3.4H26v-2.4h3.4V15h2.4v3.3h3.3z"/></svg></a>
 
 						<?php endif ?>
 
 						<?php if ( $twitter ): ?>
 
-							<a href="<?php echo esc_url( $facebook ); ?>" alt="link to facebook page" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40"><defs><clipPath id="clip-path"><rect width="40" height="40" style="fill:none"/></clipPath></defs><title>icon-facebook</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><g style="clip-path:url(#clip-path)"><path d="M24.39,39.84H20V40h3.6a6.76,6.76,0,0,0,.79-.16M40,33.31V6.54A6.56,6.56,0,0,0,33.44,0H6.56A6.56,6.56,0,0,0,0,6.54V33.31a6.56,6.56,0,0,0,6.56,6.54H20V27.59a2.52,2.52,0,0,0-2.52-2.68H15V18.67h5V15.53c0-4.5,3.39-8.16,7.56-8.16h5v6.22h-5c-.6,0-1.26.8-1.26,1.88v3.19h6.3v6.24H26.3V37.32a2.38,2.38,0,0,1-1.91,2.53h9A6.55,6.55,0,0,0,40,33.31" style="fill:#231f20"/></g></g></g></svg></a>
+							<a href="<?php echo esc_url( $twitter ); ?>" alt="hyperlink to twitter page" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"><title>twitter-icon</title><path fill="#111111" d="M37.8 0H2.2A2.2 2.2 0 0 0 0 2.2v35.6A2.2 2.2 0 0 0 2.2 40h35.6a2.2 2.2 0 0 0 2.2-2.2V2.2A2.2 2.2 0 0 0 37.8 0zm-7.9 14.9v.7A14.55 14.55 0 0 1 7.5 27.9a4.87 4.87 0 0 0 1.2.1 10.36 10.36 0 0 0 3.45-.58 1.38 1.38 0 0 0 .33-2.42 5.42 5.42 0 0 1-2.18-2.8 3.4 3.4 0 0 0 1 .1 5.9 5.9 0 0 0 1.4-.2 5.06 5.06 0 0 1-4.1-5V17a6 6 0 0 0 2.3.6 5.1 5.1 0 0 1-2.3-4.3 1.33 1.33 0 0 1 2.23-1 14.43 14.43 0 0 0 9.07 3.8 4.87 4.87 0 0 1-.1-1.2 5.1 5.1 0 0 1 8.37-3.9 1.3 1.3 0 0 0 1.13.27 9.2 9.2 0 0 0 2.6-1.06 4.92 4.92 0 0 1-2.3 2.8 9.6 9.6 0 0 0 2.9-.8 9.58 9.58 0 0 1-2.6 2.7z"/></svg></a>
 
 						<?php endif ?>
 
 						<?php if ( $instagram ): ?>
 
-							<a href="<?php echo esc_url( $facebook ); ?>" alt="link to facebook page" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40"><defs><clipPath id="clip-path"><rect width="40" height="40" style="fill:none"/></clipPath></defs><title>icon-facebook</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><g style="clip-path:url(#clip-path)"><path d="M24.39,39.84H20V40h3.6a6.76,6.76,0,0,0,.79-.16M40,33.31V6.54A6.56,6.56,0,0,0,33.44,0H6.56A6.56,6.56,0,0,0,0,6.54V33.31a6.56,6.56,0,0,0,6.56,6.54H20V27.59a2.52,2.52,0,0,0-2.52-2.68H15V18.67h5V15.53c0-4.5,3.39-8.16,7.56-8.16h5v6.22h-5c-.6,0-1.26.8-1.26,1.88v3.19h6.3v6.24H26.3V37.32a2.38,2.38,0,0,1-1.91,2.53h9A6.55,6.55,0,0,0,40,33.31" style="fill:#231f20"/></g></g></g></svg></a>
+							<a href="<?php echo esc_url( $instagram ); ?>" alt="hyperlink to instagram page" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"><title>instagram-icon</title><path fill="#111111" d="M20 14.67h-.1a5.16 5.16 0 0 0-3.5 1.4 5.5 5.5 0 0 0-1.6 3.83 5.35 5.35 0 0 0 5.3 5.33 5.48 5.48 0 0 0 5.3-5.33 5.12 5.12 0 0 0-1.3-3.72 6.55 6.55 0 0 0-4.1-1.5zM37.8 0H2.2A2.2 2.2 0 0 0 0 2.2v35.6A2.2 2.2 0 0 0 2.2 40h35.6a2.2 2.2 0 0 0 2.2-2.2V2.2A2.2 2.2 0 0 0 37.8 0zm-3.3 32.76A2.2 2.2 0 0 1 32.3 35H7.7a2.2 2.2 0 0 1-2.2-2.2V7.23A2.2 2.2 0 0 1 7.7 5h24.6a2.2 2.2 0 0 1 2.2 2.2zM30.1 7.24H9.9a2.2 2.2 0 0 0-2.2 2.2v21.1a2.2 2.2 0 0 0 2.2 2.22h20.2a2.2 2.2 0 0 0 2.2-2.2V9.45a2.2 2.2 0 0 0-2.2-2.22zM27.9 20a8.07 8.07 0 0 1-7.9 7.94A8 8 0 0 1 12.1 20a8.26 8.26 0 0 1 2.4-5.73 7.68 7.68 0 0 1 5.5-2.2 8.18 8.18 0 0 1 5.9 2.4 7.15 7.15 0 0 1 2 5.53zm.2-6.43a1.8 1.8 0 1 1 1.8-1.8 1.8 1.8 0 0 1-1.8 1.8z"/></svg></a>
 
 						<?php endif ?>
 
 						<?php if ( $linkedin ): ?>
 
-							<a href="<?php echo esc_url( $facebook ); ?>" alt="link to facebook page" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40"><defs><clipPath id="clip-path"><rect width="40" height="40" style="fill:none"/></clipPath></defs><title>icon-facebook</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><g style="clip-path:url(#clip-path)"><path d="M24.39,39.84H20V40h3.6a6.76,6.76,0,0,0,.79-.16M40,33.31V6.54A6.56,6.56,0,0,0,33.44,0H6.56A6.56,6.56,0,0,0,0,6.54V33.31a6.56,6.56,0,0,0,6.56,6.54H20V27.59a2.52,2.52,0,0,0-2.52-2.68H15V18.67h5V15.53c0-4.5,3.39-8.16,7.56-8.16h5v6.22h-5c-.6,0-1.26.8-1.26,1.88v3.19h6.3v6.24H26.3V37.32a2.38,2.38,0,0,1-1.91,2.53h9A6.55,6.55,0,0,0,40,33.31" style="fill:#231f20"/></g></g></g></svg></a>
+							<a href="<?php echo esc_url( $linkedin ); ?>" alt="link to linkedin page" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"><title>linkedin-icon</title><path fill="#111111" d="M37 0H2.9A2.9 2.9 0 0 0 0 2.9v34.2A2.9 2.9 0 0 0 2.9 40H37a3 3 0 0 0 3-2.9V2.9A2.93 2.93 0 0 0 37 0zM11.9 34.1H6V15h5.9zm-3-21.7A3.4 3.4 0 1 1 12.3 9a3.37 3.37 0 0 1-3.4 3.4zm25.2 21.7h-5.9v-9.3c0-2.2 0-5.1-3.1-5.1s-3.6 2.4-3.6 4.9V34h-5.9V15h5.7v2.6h.1a6.2 6.2 0 0 1 5.6-3.1c6 0 7.1 4 7.1 9.1z"/></svg></a>
+
+						<?php endif ?>
+
+						<?php if ( $pinterest ): ?>
+
+							<a href="<?php echo esc_url( $pinterest ); ?>" alt="link to linkedin page" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"><title>pinterest-icon</title><path fill="#111111" d="M19.9 0a20 20 0 0 0-8 38.3 18.2 18.2 0 0 1 .3-4.6c.4-1.6 2.6-10.9 2.6-10.9a8.35 8.35 0 0 1-.6-3.2c0-3 1.68-5.2 3.87-5.2a2.7 2.7 0 0 1 2.7 3c0 1.8-1.2 4.6-1.8 7.1a3.16 3.16 0 0 0 3.18 3.9c3.78 0 6.27-4.9 6.27-10.6 0-4.4-3-7.7-8.26-7.7a9.38 9.38 0 0 0-9.75 9.6 5.73 5.73 0 0 0 1.3 3.9 1 1 0 0 1 .3 1.1c-.1.4-.3 1.3-.4 1.6a.66.66 0 0 1-1 .5c-2.8-1.1-4.08-4.2-4.08-7.6 0-5.7 4.78-12.5 14.23-12.5 7.56 0 12.64 5.5 12.64 11.5 0 7.8-4.4 13.7-10.76 13.7a5.74 5.74 0 0 1-4.88-2.5s-1.2 4.6-1.4 5.5a18.92 18.92 0 0 1-2 4.3 21 21 0 0 0 5.68.8A20 20 0 0 0 40 20 20.3 20.3 0 0 0 19.9 0z"/></svg></a>
 
 						<?php endif ?>
 
 						<?php if ( $youtube ): ?>
 
-							<a href="<?php echo esc_url( $facebook ); ?>" alt="link to facebook page" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40"><defs><clipPath id="clip-path"><rect width="40" height="40" style="fill:none"/></clipPath></defs><title>icon-facebook</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><g style="clip-path:url(#clip-path)"><path d="M24.39,39.84H20V40h3.6a6.76,6.76,0,0,0,.79-.16M40,33.31V6.54A6.56,6.56,0,0,0,33.44,0H6.56A6.56,6.56,0,0,0,0,6.54V33.31a6.56,6.56,0,0,0,6.56,6.54H20V27.59a2.52,2.52,0,0,0-2.52-2.68H15V18.67h5V15.53c0-4.5,3.39-8.16,7.56-8.16h5v6.22h-5c-.6,0-1.26.8-1.26,1.88v3.19h6.3v6.24H26.3V37.32a2.38,2.38,0,0,1-1.91,2.53h9A6.55,6.55,0,0,0,40,33.31" style="fill:#231f20"/></g></g></g></svg></a>
+							<a href="<?php echo esc_url( $youtube ); ?>" alt="link to youtube page" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"><title>youtube-icon</title><path fill="none" d="M37.8 40a2.22 2.22 0 0 0 2.2-2.2V2.2A2.22 2.22 0 0 0 37.8 0H2.2A2.22 2.22 0 0 0 0 2.2v35.6A2.22 2.22 0 0 0 2.2 40z"/><path fill="#111111" d="M39.6 12s-.4-2.8-1.6-4a5.66 5.66 0 0 0-4-1.7c-5.6-.4-14-.4-14-.4s-8.4 0-14 .4A5.66 5.66 0 0 0 2 8C.8 9.2.4 12 .4 12a59.76 59.76 0 0 0-.4 6.5v3A62.24 62.24 0 0 0 .4 28s.4 2.8 1.6 4c1.5 1.6 3.5 1.5 4.4 1.7 3.2.3 13.6.4 13.6.4s8.4 0 14-.4a5.66 5.66 0 0 0 4-1.7c1.2-1.2 1.6-4 1.6-4a59.76 59.76 0 0 0 .4-6.5v-3a59.76 59.76 0 0 0-.4-6.5zM15.9 25.2V14l10.8 5.6z"/></svg></a>
 
 						<?php endif ?>
 
@@ -178,7 +188,8 @@
 			<span id="mms">Site by: <a href="http://www.mm4solutions.com" target="_blank">Millennium Marketing Solutions</a></span>
 		</div>
 	</footer><!-- #colophon -->
-</div><!-- #page -->
+
+</div><!-- #end-page -->
 
 <?php wp_footer(); ?>
 
