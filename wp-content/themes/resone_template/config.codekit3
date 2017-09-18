@@ -582,48 +582,6 @@
 		"oF": 0,
 		"opt": 0
 		},
-	"\/imgs\/floorplans\/cropped\/1br_lg.gif": {
-		"ft": 4194304,
-		"iS": 31625,
-		"oA": 0,
-		"oAP": "\/imgs\/floorplans\/cropped\/1br_lg.gif",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/imgs\/floorplans\/cropped\/2br_lg.gif": {
-		"ft": 4194304,
-		"iS": 27844,
-		"oA": 0,
-		"oAP": "\/imgs\/floorplans\/cropped\/2br_lg.gif",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/imgs\/floorplans\/cropped\/3br_lg.gif": {
-		"ft": 4194304,
-		"iS": 24050,
-		"oA": 0,
-		"oAP": "\/imgs\/floorplans\/cropped\/3br_lg.gif",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/imgs\/floorplans\/Queens Manor_ThreeBR.jpg": {
-		"ft": 16384,
-		"iS": 112849,
-		"oA": 0,
-		"oAP": "\/imgs\/floorplans\/Queens Manor_ThreeBR.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/imgs\/floorplans\/Queens-Manor_ThreeBR.gif": {
-		"ft": 4194304,
-		"iS": 26033,
-		"oA": 0,
-		"oAP": "\/imgs\/floorplans\/Queens-Manor_ThreeBR.gif",
-		"oF": 0,
-		"opt": 0
-		},
 	"\/imgs\/for-gallery\/downloaded-from-site\/gallery\/1_lg.jpg": {
 		"ft": 16384,
 		"iS": 120073,
@@ -1275,123 +1233,83 @@
 		"oAP": "\/imgs\/og-submit-arrow.xml",
 		"oF": 0
 		},
-	"\/imgs\/slider-test\/old\/front-1600x500.jpg": {
+	"\/imgs\/slider-test\/front-1600x500.jpg": {
 		"ft": 16384,
 		"iS": 240266,
 		"oA": 0,
-		"oAP": "\/imgs\/slider-test\/old\/front-1600x500.jpg",
+		"oAP": "\/imgs\/slider-test\/front-1600x500.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/imgs\/slider-test\/old\/Queens-Manor-Exterior-1400.png": {
+	"\/imgs\/slider-test\/Queens-Manor-Exterior-1400.png": {
 		"ft": 32768,
 		"iS": 392209,
 		"oA": 0,
-		"oAP": "\/imgs\/slider-test\/old\/Queens-Manor-Exterior-1400.png",
+		"oAP": "\/imgs\/slider-test\/Queens-Manor-Exterior-1400.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/imgs\/slider-test\/old\/Queens-Manor-Exterior-1600x500.jpg": {
+	"\/imgs\/slider-test\/Queens-Manor-Exterior-1600x500.jpg": {
 		"ft": 16384,
 		"iS": 388224,
 		"oA": 0,
-		"oAP": "\/imgs\/slider-test\/old\/Queens-Manor-Exterior-1600x500.jpg",
+		"oAP": "\/imgs\/slider-test\/Queens-Manor-Exterior-1600x500.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/imgs\/slider-test\/old\/Queens-Manor-Exterior-2-1600x500.jpg": {
+	"\/imgs\/slider-test\/Queens-Manor-Exterior-2-1600x500.jpg": {
 		"ft": 16384,
 		"iS": 444405,
 		"oA": 0,
-		"oAP": "\/imgs\/slider-test\/old\/Queens-Manor-Exterior-2-1600x500.jpg",
+		"oAP": "\/imgs\/slider-test\/Queens-Manor-Exterior-2-1600x500.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/imgs\/slider-test\/old\/Queens-Manor-Exterior-3-1600x500.jpg": {
+	"\/imgs\/slider-test\/Queens-Manor-Exterior-3-1600x500.jpg": {
 		"ft": 16384,
 		"iS": 344204,
 		"oA": 0,
-		"oAP": "\/imgs\/slider-test\/old\/Queens-Manor-Exterior-3-1600x500.jpg",
+		"oAP": "\/imgs\/slider-test\/Queens-Manor-Exterior-3-1600x500.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/imgs\/slider-test\/old\/Queens-Manor-Exterior-3.png": {
+	"\/imgs\/slider-test\/Queens-Manor-Exterior-3.png": {
 		"ft": 32768,
 		"iS": 0,
 		"oA": 0,
-		"oAP": "\/imgs\/slider-test\/old\/Queens-Manor-Exterior-3.png",
+		"oAP": "\/imgs\/slider-test\/Queens-Manor-Exterior-3.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/imgs\/slider-test\/old\/shot10.jpg": {
+	"\/imgs\/slider-test\/shot10.jpg": {
 		"ft": 16384,
 		"iS": 153319,
 		"oA": 0,
-		"oAP": "\/imgs\/slider-test\/old\/shot10.jpg",
+		"oAP": "\/imgs\/slider-test\/shot10.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/imgs\/slider-test\/old\/shot12.jpg": {
+	"\/imgs\/slider-test\/shot12.jpg": {
 		"ft": 16384,
 		"iS": 72798,
 		"oA": 0,
-		"oAP": "\/imgs\/slider-test\/old\/shot12.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/imgs\/slider-test\/Queens_Manor_2015_CMC-3026.jpg": {
-		"ft": 16384,
-		"iS": 781754,
-		"oA": 0,
-		"oAP": "\/imgs\/slider-test\/Queens_Manor_2015_CMC-3026.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/imgs\/slider-test\/Queens_Manor_2015_CMC-3070.jpg": {
-		"ft": 16384,
-		"iS": 670575,
-		"oA": 0,
-		"oAP": "\/imgs\/slider-test\/Queens_Manor_2015_CMC-3070.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/imgs\/slider-test\/Queens_Manor_2015_CMC-3122.jpg": {
-		"ft": 16384,
-		"iS": 726825,
-		"oA": 0,
-		"oAP": "\/imgs\/slider-test\/Queens_Manor_2015_CMC-3122.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/imgs\/slider-test\/Queens_Manor_2015_CMC-3147.jpg": {
-		"ft": 16384,
-		"iS": 964757,
-		"oA": 0,
-		"oAP": "\/imgs\/slider-test\/Queens_Manor_2015_CMC-3147.jpg",
+		"oAP": "\/imgs\/slider-test\/shot12.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -1757,12 +1675,22 @@
 		"oAP": "\/plugins\/mm4-you-contact-form\/inc\/contact.php",
 		"oF": 0
 		},
-	"\/plugins\/mm4-you-contact-form\/js\/min\/mm4-you-quick-contact-validate-min.js": {
+	"\/plugins\/mm4-you-contact-form\/js\/form-quick-validate.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/plugins\/mm4-you-contact-form\/js\/min\/mm4-you-quick-contact-validate-min-min.js",
+		"oAP": "\/plugins\/mm4-you-contact-form\/js\/min\/form-quick-validate-min.js",
+		"oF": 2,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/plugins\/mm4-you-contact-form\/js\/min\/form-quick-validate-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/plugins\/mm4-you-contact-form\/js\/min\/form-quick-validate-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -1777,13 +1705,13 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"\/plugins\/mm4-you-contact-form\/js\/mm4-you-quick-contact-validate.js": {
+	"\/plugins\/mm4-you-contact-form\/js\/min\/validate.min.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/plugins\/mm4-you-contact-form\/js\/min\/mm4-you-quick-contact-validate-min.js",
-		"oF": 2,
+		"oAP": "\/plugins\/mm4-you-contact-form\/js\/min\/validate.min-min.js",
+		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},
@@ -1998,6 +1926,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/sass\/media\/_galleries.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/media\/_galleries.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/sass\/media\/_lightbox.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -2128,19 +2069,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/sass\/navigation\/_mobile-menu.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/sass\/navigation\/_mobile-menu.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"\/sass\/navigation\/_navigation.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -2206,19 +2134,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/sass\/page-templates\/_page-404-error.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/sass\/page-templates\/_page-404-error.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"\/sass\/page-templates\/_page-community.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -2241,19 +2156,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/sass\/page-templates\/_page-contact.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/sass\/page-templates\/_page-default.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/sass\/page-templates\/_page-default.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -2293,19 +2195,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/sass\/page-templates\/_page-templates.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/sass\/page-templates\/_page-thank-you.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/sass\/page-templates\/_page-thank-you.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

@@ -1,0 +1,1 @@
+[18-Sep-2017 09:02:06 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home/queensma/public_html/wp-content/themes/resone_template/404.php on line 10
