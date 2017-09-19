@@ -8,11 +8,10 @@
   .flex-wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: center;
   }
 
   .site-branding {
-
+    flex: 1;
     a {
       color: $color__brand-1;
       text-decoration: none;
@@ -23,9 +22,14 @@
     }
   }
 
+  .flex-group {
+    flex: 2;
+  }
+
   #masthead-tel {
     display: flex;
     justify-content: flex-end;
+    padding-bottom: .75em;
   }
 
   .download-file-link {
@@ -100,9 +104,6 @@
   }
 
   @include respond-to('750') {
-    #masthead-tel {
-      margin-bottom: .5em;
-    }
     .icon-download,
     .download-file-link {
       display: inline-flex;
