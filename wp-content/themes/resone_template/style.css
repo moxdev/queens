@@ -675,7 +675,7 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-  #masthead .site-branding h2 a {
+  #masthead .site-branding a {
     color: #00467e;
     text-decoration: none; }
   #masthead .site-branding img {
@@ -691,8 +691,9 @@ a {
     margin-right: 10px;
     display: none;
     text-decoration: none;
-    color: #00467e !important;
-    font-family: "Raleway-Bold"; }
+    color: #00467e;
+    font-family: "Raleway-Bold";
+    font-size: 1.1em; }
   #masthead .icon-download {
     margin-right: 10px;
     display: none; }
@@ -738,9 +739,7 @@ a {
     #masthead .call {
       display: none; }
     #masthead .tel {
-      display: -webkit-inline-box;
-      display: -ms-inline-flexbox;
-      display: inline-flex; } }
+      display: inline-block; } }
   @media (min-width: 750px) {
     #masthead #masthead-tel {
       margin-bottom: .5em; }
