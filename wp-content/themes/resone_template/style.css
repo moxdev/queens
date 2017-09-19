@@ -687,7 +687,7 @@ a {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end; }
-  #masthead .download-file {
+  #masthead .download-file-link {
     margin-right: 10px;
     display: none;
     text-decoration: none;
@@ -739,13 +739,17 @@ a {
     #masthead .call {
       display: none; }
     #masthead .tel {
-      display: inline-block; } }
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex; } }
   @media (min-width: 750px) {
     #masthead #masthead-tel {
       margin-bottom: .5em; }
     #masthead .icon-download,
-    #masthead .download-file {
-      display: block; } }
+    #masthead .download-file-link {
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex; } }
 
 /*--------------------------------------------------------------
 # Accessibility

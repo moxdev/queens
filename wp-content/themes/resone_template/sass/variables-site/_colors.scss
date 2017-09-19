@@ -1,74 +1,70 @@
 // COMPANY BRAND COLORS
-$color__brand-1: #00467e;
-$color__brand-2: #d0a449;
-$color__brand-3: #F4EAD5;
-$color__brand-4: #111111;
-
-// MASTHEAD
-$color__background-masthead: #ffffff;
-$color__border-bottom-masthead: $color__brand-1;
+$color__brand-1 : #00467e;
+$color__brand-2 : #d0a449;
+$color__brand-3 : #F4EAD5;
+$color__brand-4 : #111111;
 
 // BACKGROUND COLORS
-$color__background-page: #fff;
-
-
-$color__background-body: $color__brand-3;
-$color__background-alt-body: #E3E3E3;
-//$color__background-alt-body: #EEEDEE;
-$color__background-screen: #f1f1f1;
-$color__background-pre: #eee;
-$color__background-ins: #fff9c0;
+$color__background-body     : $color__brand-3;
+$color__background-page     : #fff;
+$color__background-alt-body : #E3E3E3;
+$color__background-screen   : #f1f1f1;
+$color__background-pre      : #eee;
+$color__background-ins      : #fff9c0;
+$color__background-hr       : #ccc;
 
 // TEXT COLORS
-$color__text-main: #111111;
-$color__text-input: #666;
-$color__text-input-focus: #111111;
-$color__text-screen: #21759b;
+$color__text-main        : #111111;
+$color__text-input       : #666;
+$color__text-input-focus : #111111;
+$color__text-screen      : #21759b;
 
 // LINK COLORS
-$color__link: $color__brand-1;
-$color__link-visited: $color__brand-4;
-$color__link-hover: $color__brand-2;
+$color__link         : $color__brand-1;
+$color__link-visited : $color__brand-4;
+$color__link-hover   : $color__brand-2;
 
-// NAV LINKS
-$color__nav-links:#6d6e70;
-$color__nav-phone: $color__brand-1;
+// MASTHEAD
+$color__background-masthead    : #ffffff;
+$color__border-bottom-masthead : $color__brand-1;
 
-// DOWNLOAD LINK
-$color__download-link: $color__brand-1;
+// MAIN NAV LINKS
+$color__nav-links : #6d6e70;
+
+// NAV PHONE NUMBER
+$color__nav-phone : $color__brand-1;
+
+// NAV DOWNLOAD LINK
+$color__download-link : $color__brand-1;
 
 // MOBILE TOGGLE BUTTON
-$color__mobile-toggle-btn:#6d6e70;
-
-$color__background-hr: #ccc;
+$color__mobile-toggle-btn : #6d6e70;
 
 // BUTTON COLORS
-$color__button-background: #ccc;
-$color__border-button: #ccc #ccc #bbb;
-$color__border-button-hover: #ccc #bbb #aaa;
-$color__border-button-focus: #aaa #bbb #bbb;
+$color__button-background   : #ccc;
+$color__border-button       : #ccc #ccc #bbb;
+$color__border-button-hover : #ccc #bbb #aaa;
+$color__border-button-focus : #aaa #bbb #bbb;
 
 // FORM COLORS
-$color__border-input: #ccc;
-$color__border-abbr: #666;
-$color__submit-btn: $color__brand-2;
+$color__border-input : #ccc;
+$color__border-abbr  : #666;
+$color__h2-quick-form: $color__brand-1;
+$color__submit-btn   : $color__brand-2;
 
 // HEADING COLORS
-$color__h1: $color__brand-1;
-$color__h2: $color__brand-2;
+$color__h1 : $color__brand-1;
+$color__h2 : $color__brand-2;
 
 // CAROUSEL NAV
-$color__background-carousel-nav: #fff;
-$color__background-carousel-nav-active: $color__brand-2;
+$color__background-carousel-nav        : #fff;
+$color__background-carousel-nav-active : $color__brand-2;
 
 // SPECIALS SIDEBAR
 $color__h2-specials: $color__brand-1;
 $color__h3-specials: $color__brand-2;
 $color__p-specials: #6d6e70;
 $color__hr-specials: lighten( $color__p-specials, 30% );
-
-// QUICK FORM SIDEBAR
-$color__h2-quick-form: $color__brand-1;
 
 // FEATURES SIDEBAR
 $color__h2-features: #ffffff;

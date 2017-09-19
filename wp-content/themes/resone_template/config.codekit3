@@ -2097,6 +2097,18 @@
 		"oAP": "\/readme.txt",
 		"oF": 0
 		},
+	"\/resone_template.sublime-project": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/resone_template.sublime-project",
+		"oF": 0
+		},
+	"\/resone_template.sublime-workspace": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/resone_template.sublime-workspace",
+		"oF": 0
+		},
 	"\/rtl.css": {
 		"aP": 1,
 		"bl": 0,

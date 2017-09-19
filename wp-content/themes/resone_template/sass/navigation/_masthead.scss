@@ -28,7 +28,7 @@
     justify-content: flex-end;
   }
 
-  .download-file {
+  .download-file-link {
     margin-right: 10px;
     display: none;
     text-decoration: none;
@@ -95,7 +95,7 @@
     }
 
     .tel {
-      display: inline-block;
+      display: inline-flex;
     }
   }
 
@@ -104,8 +104,8 @@
       margin-bottom: .5em;
     }
     .icon-download,
-    .download-file {
-      display: block;
+    .download-file-link {
+      display: inline-flex;
     }
   }
 }
