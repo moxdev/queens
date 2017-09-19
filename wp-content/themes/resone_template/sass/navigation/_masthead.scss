@@ -15,6 +15,11 @@
 
   .site-branding {
 
+    h2 a {
+      color: $color__brand-1;
+      text-decoration: none;
+    }
+
     img {
       max-width: 175px;
     }

@@ -675,6 +675,9 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+  #masthead .site-branding h2 a {
+    color: #00467e;
+    text-decoration: none; }
   #masthead .site-branding img {
     max-width: 175px; }
   #masthead #masthead-tel {
@@ -1797,16 +1800,16 @@ ol.carousel-nav li.active a:hover {
       text-align: left;
       font-size: .8em; }
     .site-footer .right-column {
-      -webkit-box-flex: 2;
-          -ms-flex: 2;
-              flex: 2;
+      -webkit-box-flex: 3;
+          -ms-flex: 3;
+              flex: 3;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-pack: end;
           -ms-flex-pack: end;
               justify-content: flex-end;
-      max-width: 670px;
+      max-width: 900px;
       margin: 0; }
     .site-footer .contact-information {
       padding-top: 0; }
