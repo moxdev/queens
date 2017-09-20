@@ -3,10 +3,9 @@
 }
 
 #mobile-navigation {
-  // display: none;
   border-top: 5px solid #fff;
   font-family: $font__bold;
-  background-color:darken($color__brand-1, 5);
+  background-color:darken($color__brand-1, 5%);
   padding-left: 1em;
   padding-bottom: 2em;
   padding-top: 2em;
@@ -27,22 +26,30 @@
 
     .sub-menu {
       padding-top: 1em;
+      margin-left: 1em;
+      font-size: .9em;
+      font-family: $font__regular;
+
+      li:last-child {
+        padding-bottom: 0;
+      }
     }
   }
 
   li {
     padding-bottom: 1em;
+    position: relative;
 
     &:before {
+      content: '';
+      position: absolute;
+      display: inline-block;
       width: 0;
       height: 0;
-      border: 1em solid transparent;
-      content: '';
-      display: inline-block;
+      border: .9em solid transparent;
       border-right: none;
       border-left-color: #fff;
-      margin-right: 1em;
-      vertical-align: top;
+
     }
   }
 
@@ -50,6 +57,7 @@
     color: #fff;
     text-decoration: none;
     font-size: 1.3em;
+    margin-left: 1.5em;
   }
 }
 

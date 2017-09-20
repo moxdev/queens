@@ -739,23 +739,29 @@ a {
   #mobile-navigation ul {
     list-style-type: none; }
     #mobile-navigation ul .sub-menu {
-      padding-top: 1em; }
+      padding-top: 1em;
+      margin-left: 1em;
+      font-size: .9em;
+      font-family: "Raleway-Regular"; }
+      #mobile-navigation ul .sub-menu li:last-child {
+        padding-bottom: 0; }
   #mobile-navigation li {
-    padding-bottom: 1em; }
+    padding-bottom: 1em;
+    position: relative; }
     #mobile-navigation li:before {
+      content: '';
+      position: absolute;
+      display: inline-block;
       width: 0;
       height: 0;
-      border: 1em solid transparent;
-      content: '';
-      display: inline-block;
+      border: .9em solid transparent;
       border-right: none;
-      border-left-color: #fff;
-      margin-right: 1em;
-      vertical-align: top; }
+      border-left-color: #fff; }
   #mobile-navigation a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.3em; }
+    font-size: 1.3em;
+    margin-left: 1.5em; }
 
 #mobile-navigation.active {
   -webkit-transform: translate3d(0, 0, 0);
